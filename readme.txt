@@ -7,7 +7,7 @@ Tested up to: WP 4.8<br>
 
 Author: Shanti Paija<br>
 Author URI: http://themes.login.plus/wp/<br>
-License: GNU General Public License v3.0
+License: GNU General Public License v3.0 
 License URI: http://www.gnu.org/licenses/gpl.html
 -------------------------------------------------------
 Peace theme, Copyright 2017 themes.login.plus
