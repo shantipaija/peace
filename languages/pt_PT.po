@@ -701,8 +701,8 @@ msgid "http://themes.login.plus/"
 msgstr "http://themes.login.plus/"
 
 #. Theme URI of the plugin/theme
-msgid "http://themes.login.plus/wp/themes/Peace"
-msgstr "http://themes.login.plus/wp/themes/Peace"
+msgid "http://wp.login.plus/peace"
+msgstr "http://wp.login.plus/peace"
 
 #. Author of the plugin/theme
 msgid "Login.Plus"

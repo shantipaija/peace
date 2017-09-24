@@ -1,18 +1,19 @@
 # About Theme
 
 Theme Name: Peace<br>
-Theme URI: http://themes.login.plus/wp/Peace/<br>
+Theme URI: http://wp.login.plus/peace/<br>
 Version: 1.0.1<br>
 Tested up to: WP 4.8<br>
 
 Author: Shanti Paija<br>
-Author URI: http://themes.login.plus/wp/<br>
+Author URI: http://wp.login.plus/peace/<br>
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl.html
 -------------------------------------------------------
-Peace theme, Copyright 2017 themes.login.plus
+Peace theme, Copyright 2017 http://login.plus
 Peace WordPress theme is distributed under the terms of the GNU GPL
 Peace is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc.
+
 -------------------------------------------------------
 
 # Credits
@@ -23,6 +24,7 @@ Peace theme uses:
 * Bootstrap (http://getbootstrap.com/) licensed under MIT license (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 * WP-Bootstrap-NavWalker licensed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
 * FlexSlider by WooThemes licensed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
+* Peace theme is a fork of GNU GPL Sparkling theme.
 * Unless otherwise specified, all images are created by Login.Plus
 
 # Description
@@ -31,7 +33,7 @@ Peace is a clean minimal and responsive WordPress theme well suited for travel, 
 
 
 
-For questions, comments or bug reports, visit Login.Plus support forum (http://themes.login.plus/wp/forums).
+For questions, comments or bug reports, visit Login.Plus support forum (http://community.login.plus/forum/peace/).
 
 # Installation
 
@@ -39,7 +41,7 @@ You can install the theme through the WordPress installer under "Themes" > "Inst
 
 Alternatively you can download the file, unzip it and move the unzipped contents to the "wp-content/themes" folder of your WordPress installation. You will then be able to activate the theme.
 
-Afterwards you can continue theme setup and customization via WordPress Dashboard - Appearance - Theme Options. For detailed theme documentation, please visit http://themes.login.plus/wp/support/Peace
+Afterwards you can continue theme setup and customization via WordPress Dashboard - Appearance - Theme Options. For detailed theme documentation, please visit http://documentation.login.plus/peace/
 
 # Theme Features
 
@@ -60,7 +62,7 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 
 # Documentation
 
-Theme documentation is available on http://themes.login.plus/wp/support/Peace
+Theme documentation is available on http://documentation.login.plus/peace/
 
 # Changelog
 
