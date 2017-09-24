@@ -5,7 +5,7 @@ msgstr ""
 "POT-Creation-Date: 2016-03-18 11:04+0200\n"
 "PO-Revision-Date: Mon May 16 2016 19:10:09 GMT+0300 (FLE Standard Time)\n"
 "Last-Translator: admin <a12velkv@nkm.lt>\n"
-"Language-Team: Login.Plus <info@themes.login.plus>\n"
+"Language-Team: Login.Plus <themes@login.plus>\n"
 "Language: Lithuanian\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 "
 "&&(n%100<10||n%100 >= 20)? 1 : 2)\n"
@@ -735,8 +735,8 @@ msgid "Peace"
 msgstr "Peace"
 
 #. Theme URI of the theme
-msgid "http://themes.login.plus/wp/themes/Peace"
-msgstr "http://themes.login.plus/wp/themes/Peace"
+msgid "http://wp.login.plus/peace"
+msgstr "http://wp.login.plus/peace"
 
 #. Description of the theme
 msgid ""

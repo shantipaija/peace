@@ -6,7 +6,7 @@ msgstr ""
 "PO-Revision-Date: Mon Apr 11 2016 10:54:56 GMT-0500 (Central Daylight Time "
 "(Mexico))\n"
 "Last-Translator: Oro Constanzo <mexicanplus@gmail.com>\n"
-"Language-Team: Login.Plus <info@themes.login.plus>\n"
+"Language-Team: Login.Plus <themes@login.plus>\n"
 "Language: Spanish (Mexico)\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
@@ -522,8 +522,8 @@ msgid "Peace"
 msgstr "Peace"
 
 #. Theme URI of the theme
-msgid "http://themes.login.plus/wp/themes/Peace"
-msgstr "http://themes.login.plus/wp/themes/Peace"
+msgid "http://wp.login.plus/peace"
+msgstr "http://wp.login.plus/peace"
 
 #. Description of the theme
 msgid ""

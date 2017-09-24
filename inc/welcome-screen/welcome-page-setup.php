@@ -27,8 +27,8 @@ function peace_welcome_customize_register( $wp_customize ) {
 					'plugins'                       => $customizer_recommended_plugins,
 					'theme_specific_option'         => $theme_slug . '_show_required_actions',
 					'theme_specific_plugin_option'  => $theme_slug . '_show_recommended_plugins',
-					'facebook'                      => 'https://www.facebook.com/Login.Plus',
-					'twitter'                       => 'https://twitter.com/Login.Plus',
+					'facebook'                      => '//www.facebook.com/LogHQ/',
+					'twitter'                       => '//www.twitter.com/logHQ/',
 					'wp_review'                     => true,
 					'priority'                      => 0,
 				)
@@ -42,7 +42,7 @@ function peace_welcome_customize_register( $wp_customize ) {
 				array(
 					'title'       => esc_html__( 'peace', 'peace' ),
 					'button_text' => esc_html__( 'Documentation', 'peace' ),
-					'button_url'  => esc_url_raw( 'https://themes.login.plus/wp/support/Peace/' ),
+					'button_url'  => esc_url_raw( 'http://documentation.login.plus/peace/' ),
 					'priority'    => 0,
 				)
 			)
