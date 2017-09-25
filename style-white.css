@@ -99,12 +99,12 @@ hr.section-divider {
 }
 
 .pagination li a {
-  color: #FF9800 ;
+  /* color: #FF9800 ; */
 }
 
 
 .pagination li:hover a {
-  color: #FF9800 ;
+  /* color: #FF9800 ; */
 }
 
 
@@ -116,7 +116,7 @@ hr.section-divider {
 .pagination>.active>span:focus {
   color: #FFF ;
   background-color: #FFB74D ;
-  border-color: #FF9800 ;
+  /* border-color: #FF9800 ; */
 }
 
 
@@ -200,7 +200,7 @@ button:hover, .button:hover {
 #infinite-handle span {
   border: 1px solid #DADADA ;
   background: #fff ;
-  color: #FF9800 ;
+  /* color: #FF9800 ; */
 }
 
 #infinite-handle span:hover {
@@ -289,11 +289,11 @@ i.social_icon.fa:hover {
 
 .navbar-default .navbar-nav.peace-mobile-menu > li.open > a,
 .navbar-default .navbar-nav.peace-mobile-menu > li.open > .caret {
-  color: #FF9800 ;
+  /* color: #FF9800 ; */
 }
 
 .navbar-default .navbar-nav .current-menu-ancestor a.dropdown-toggle {
-  color: #FF9800 ;
+  /* color: #FF9800 ; */
 }
 
 
@@ -335,7 +335,7 @@ i.social_icon.fa:hover {
 }
 
 .dropdown-menu > .active {
-  background-color: #FF9800 ;
+  /* background-color: #FF9800 ; */
   color: #fff ;
 }
 
@@ -355,14 +355,12 @@ i.social_icon.fa:hover {
 }
 
 .navbar-nav > li:hover > .caret {
-  color: #FF9800 ;
+  /* color: #FF9800 ; */
 }
 
 
 .navigation .wp-pagenavi-pagination span.current,
 .navigation .wp-pagenavi-pagination a:hover {
-  background-color: #FF9800 ;
-  border-color: #FF9800 ;
   color: #FFF ;
 }
 
@@ -372,7 +370,7 @@ i.social_icon.fa:hover {
 .pagination>li>a:hover,
 .pagination>li>span:focus,
 .pagination>li>span:hover {
-  color: #FF9800 ;
+  /* color: #FF9800 ; */
 }
 
 
@@ -386,7 +384,6 @@ i.social_icon.fa:hover {
 
 #image-navigation .nav-previous a:hover,
 #image-navigation .nav-next a:hover{
-  background-color: #FF9800 ;
   color: #fff ;
 }
 
@@ -479,3 +476,7 @@ i.social_icon.fa:hover {
 button#searchsubmit:hover {
    background-color:#DADADA !important;
 }
+a.navbar-brand {
+    color: #636467 !important;
+}
+
