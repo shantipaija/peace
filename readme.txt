@@ -1,12 +1,12 @@
 # About Theme
 
-Theme Name: Peace<br>
-Theme URI: http://wp.login.plus/peace/<br>
-Version: 1.0.1<br>
-Tested up to: WP 4.8<br>
+Theme Name: Peace
+Theme URI: http://wp.login.plus/peace/
+Version: 1.0.1
+Tested up to: WP 4.8
 
-Author: Shanti Paija<br>
-Author URI: http://wp.login.plus/peace/<br>
+Author: Shanti Paija
+Author URI: http://wp.login.plus/peace/
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl.html
 -------------------------------------------------------
