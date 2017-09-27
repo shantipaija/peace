@@ -24,7 +24,7 @@ Peace theme uses:
 * Bootstrap (http://getbootstrap.com/) licensed under MIT license (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 * WP-Bootstrap-NavWalker licensed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
 * FlexSlider by WooThemes licensed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
-* Peace theme is a fork of GNU GPL Sparkling theme.
+* Peace theme is a fork of a GPL lisenced theme
 * Unless otherwise specified, all images are created by Login.Plus
 
 # Description

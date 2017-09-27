@@ -1835,6 +1835,19 @@ header.search-header{
 
 
 
+/* expand image on hover */
 
-
+.imghov {
+    overflow: hidden;
+}
+.imghov a:hover img {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.imghov a img {
+    -moz-transition: all -0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
 
