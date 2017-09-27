@@ -387,9 +387,14 @@ hr.section-divider {
   padding-top: 0;
   padding-bottom: 0;
 }
+<<<<<<< HEAD
 .single-view,
 .blog-item-wrap {
   margin-bottom:0 !important;
+=======
+.single-view, .blog-item-wrap {
+    margin-bottom: 40px;
+>>>>>>> 3476b42384179a6db74365487dda9ac54b63ec91
 }
 .post-inner-content {
   padding: 45px 50px;
@@ -1833,6 +1838,7 @@ header.search-header{
     border: 1px solid #DADADA;
 }
 
+<<<<<<< HEAD
 
 
 /* expand image on hover */
@@ -1850,4 +1856,10 @@ header.search-header{
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
+=======
+/* */
+
+
+
+>>>>>>> 3476b42384179a6db74365487dda9ac54b63ec91
 
