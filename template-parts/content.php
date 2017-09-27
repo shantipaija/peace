@@ -6,6 +6,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="blog-item-wrap">
+        <?php if ( has_post_thumbnail() ) : ?>
             <div class="imghov">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 				<?php
@@ -22,6 +23,7 @@
 				?>
                 </a>
             </div>
+        <?php endif; ?>
 		<div class="post-inner-content">
 			<header class="entry-header page-header">
 
