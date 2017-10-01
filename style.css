@@ -1828,7 +1828,7 @@ header.search-header{
 
 .footer-widget .tagcloud a {
     color: #999 !important;
-    background-color: #000000;
+    background-color: #444;
     /* border-color: white; */
     /* border: 1px solid #DADADA; */
 }
