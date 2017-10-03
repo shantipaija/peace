@@ -9,15 +9,21 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<div class="post-inner-content">
-
 				<section class="error-404 not-found">
 					<header class="page-header">
 						<h1 class="page-title text-center"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'peace' ); ?></h1>
 					</header><!-- .page-header -->
-
 					<div class="page-content">
-                        <p class="text-center"><img src="<?php echo get_template_directory_uri()."/assets/images/bird-searching.gif" ?>" title="404 Not Found" alt="404 Not Found" /></p>
-						<p class="text-center"><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'peace' ); ?></p>
+                        <p class="text-center">
+                        <?php if ( true ) : // placeholder for ability to choose media or turn it off ?>
+                            
+                            <img src="<?php echo get_template_directory_uri()."/assets/images/bird-searching.gif" ?>" title="404 Not Found" alt="404 Not Found" />
+                            
+                        <?php endif; ?>
+                        </p>
+						<p class="text-center">
+                            <?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'peace' ); ?>
+                        </p>
                         
 						<?php get_search_form(); ?>
                         
