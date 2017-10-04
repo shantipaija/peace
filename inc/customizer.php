@@ -288,17 +288,6 @@ function peace_customizer( $wp_customize ) {
 		'section' => 'peace_action_options',
 	)));
 
-	$wp_customize->add_setting('peace[element_color]', array(
-		'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
-		'type'  => 'option',
-		'sanitize_callback' => 'peace_sanitize_hexcolor',
-	));
-	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'peace[element_color]', array(
-		'label' => __( 'CTA Button Color', 'peace' ),
-		'description'   => __( 'Default used if no color is selected','peace' ),
-		'section' => 'peace_action_options',
-		'settings' => 'peace[element_color]',
-	)));
 	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'peace[element_color_hover]', array(
 		'label' => __( 'CTA Button Color on hover', 'peace' ),
 		'description'   => __( 'Default used if no color is selected','peace' ),
@@ -317,6 +306,22 @@ function peace_customizer( $wp_customize ) {
 		'section' => 'peace_action_options',
 	)));
 
+
+	/* this setting overrides other buttons */
+	/*
+		$wp_customize->add_setting('peace[element_color]', array(
+			'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
+			'type'  => 'option',
+			'sanitize_callback' => 'peace_sanitize_hexcolor',
+		));
+		$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'peace[element_color]', array(
+			'label' => __( 'CTA Button Color', 'peace' ),
+			'description'   => __( 'Default used if no color is selected','peace' ),
+			'section' => 'peace_action_options',
+			'settings' => 'peace[element_color]',
+		)));
+
+		*/
 	/* Peace Typography Options */
 	$wp_customize->add_section('peace_typography_options', array(
 		'title' => __( 'Typography', 'peace' ),
