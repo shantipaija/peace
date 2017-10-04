@@ -30,8 +30,8 @@ function peace_customizer( $wp_customize ) {
 		'description' => __( 'Panel to update Peace theme options', 'peace' ), // Include html tags such as <p>.
 		'priority' => 10,// Mixed with top-level-section hierarchy.
 	));
-	
-	
+
+
 	/* Main option Settings Panel */
 	$wp_customize->add_panel('peace_homepage_options', array(
 		'capability' => 'edit_theme_options',
@@ -94,7 +94,7 @@ function peace_customizer( $wp_customize ) {
 		'sanitize_callback' => 'peace_sanitize_checkbox',
 	) );
 	$wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'peace[peace_slider_link_checkbox]', array(
-		'label' => esc_html__( 'Uncheck this option to remove the link from the slides', 'peace' ),
+		'label' => esc_html__( 'Turn "off" this option to remove the link from the slides', 'peace' ),
 		'section'   => 'peace_slider_options',
 		'priority'  => 6,
 		'type'      => 'epsilon-toggle',
@@ -150,7 +150,7 @@ function peace_customizer( $wp_customize ) {
 		'priority' => 31,
 		'panel' => 'peace_main_options',
 	));
-	
+
 	// Layout options
 	global $site_layout;
 	$wp_customize->add_setting('peace[site_layout]', array(
@@ -204,7 +204,7 @@ function peace_customizer( $wp_customize ) {
 	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'peace[element_color]', array(
 		'label' => __( 'Call To Action Button Color', 'peace' ),
 		'description'   => __( 'Default used if no color is selected','peace' ),
-		'section' => 'peace_slider_options',
+		'section' => 'peace_action_options',
 		'settings' => 'peace[element_color]',
 	)));
 
@@ -216,7 +216,7 @@ function peace_customizer( $wp_customize ) {
 	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'peace[element_color_hover]', array(
 		'label' => __( 'Call To Action Button Color on hover', 'peace' ),
 		'description'   => __( 'Default used if no color is selected','peace' ),
-		'section' => 'peace_slider_options',
+		'section' => 'peace_action_options',
 		'settings' => 'peace[element_color_hover]',
 	)));
 
