@@ -12,7 +12,7 @@ add_action( 'add_meta_boxes', 'peace_add_custom_box' );
  */
 function peace_add_custom_box() {
 	add_meta_box('siderbar-layout', //Unique ID
-		__( 'Select layout for this specific Page only ( Note: This setting only reflects if page Template is set as Default Template and Blog Type Templates.)', 'peace' ), //Title
+		__( 'Select layout for this specific Page only.', 'peace' ), //Title
 		'peace_sidebar_layout', //Callback function
 		'page' //show metabox in pages
 	);

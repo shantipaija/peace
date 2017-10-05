@@ -521,7 +521,7 @@ msgid "Theme by %1$s Powered by %2$s"
 msgstr ""
 
 #: ../inc/metaboxes.php:16
-msgid "Select layout for this specific Page only ( Note: This setting only reflects if page Template is set as Default Template and Blog Type Templates.)"
+msgid "Select layout for this specific Page only."
 msgstr ""
 
 #: ../inc/metaboxes.php:21

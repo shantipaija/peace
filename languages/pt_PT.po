@@ -67,7 +67,7 @@ msgid "Check to show social icons in footer"
 msgstr "Seleccione para mostrar ícones sociais no rodapé"
 
 #: inc/metaboxes.php:16
-msgid "Select layout for this specific Page only ( Note: This setting only reflects if page Template is set as Default Template and Blog Type Templates.)"
+msgid "Select layout for this specific Page only."
 msgstr "Seleccione um layout específico para esta página (Nota: esta definição apenas funciona se o modelo de página for o modelo por omissão e modelos tipo blog.)"
 
 #: inc/metaboxes.php:21
