@@ -141,7 +141,7 @@ function peace_customizer( $wp_customize ) {
 	));
 */
 	$wp_customize->add_section('peace_layout_options', array(
-		'title' => __( 'Layout options', 'peace' ),
+		'title' => __( 'Layout Options', 'peace' ),
 		'priority' => 31,
 		'panel' => 'peace_main_options',
 	));
@@ -384,7 +384,7 @@ function peace_customizer( $wp_customize ) {
         'sanitize_callback' => 'esc_html'
     ));
     $wp_customize->add_control('peace[main_body_typography][subset]', array(
-        'label' => __('Font subset', 'peace'),
+        'label' => __('Font Subset', 'peace'),
         'section' => 'peace_typography_options',
         'description' => __('Enter the Google fonts subset', 'peace'),
         'type' => 'text'
@@ -423,18 +423,18 @@ function peace_customizer( $wp_customize ) {
 
 	/* Peace Header Options */
 	$wp_customize->add_section('peace_header_options', array(
-		'title' => __( 'Header', 'peace' ),
+		'title' => __( 'Header Menu', 'peace' ),
 		'priority' => 31,
 		'panel' => 'peace_main_options',
 	));
 
-	$wp_customize->add_setting('peace[sticky_header]', array(
+	$wp_customize->add_setting('peace[sticky_menu]', array(
 		'default' => 0,
 		'type' => 'option',
 		'sanitize_callback' => 'peace_sanitize_checkbox',
 	));
-	$wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'peace[sticky_header]', array(
-		'label' => __( 'Sticky Header', 'peace' ),
+	$wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'peace[sticky_menu]', array(
+		'label' => __( 'Sticky Menu', 'peace' ),
 		'description' => sprintf( __( 'Check to show fixed header', 'peace' ) ),
 		'section' => 'peace_header_options',
 		'type' => 'epsilon-toggle',
