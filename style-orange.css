@@ -161,10 +161,7 @@ hr.section-divider {
 }
 
 
-a.more-link {
-  background-color: #FF9800;
-  border-color: #FF9800;
-}
+
 
 a.more-link:hover {
   background-color:#FFB74D;
@@ -173,15 +170,15 @@ a.more-link:hover {
 }
 
 .btn.btn-default:hover{
-	background-color:#FB8C00 !important;
-	border-color:#FB8C00 !important;
+	background-color:#FFB74D;
+	border-color:#FFB74D;
 }
 .btn.btn-default, .woocommerce #respond input#submit, .woocommerce a.button,
 .woocommerce button.button, .woocommerce input.button,
 a.more-link {
   color: #fff;
-  background-color:#FFB74D;
-  border-color:#FFB74D;
+  background-color:#FF9800;
+  border-color: #FF9800;
   
 }
  
@@ -430,7 +427,7 @@ p.logged-in-as a:hover {
 
 .scroll-to-top:hover{
 	background-color:#FB8C00;
-	background-color:transparent;
+	/* background-color:transparent; */
 }
 .scroll-to-top {
   background:#FFB74D;
