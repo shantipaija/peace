@@ -115,7 +115,7 @@ h6,
   font-size: 13px;
 }
 body.search {
-	background-color:#ffffff !important;
+	background-color:#ffffff;
 }
 
 img {
@@ -355,6 +355,7 @@ a.more-link {
   font-size: 12px;
   padding: 11px 13px;
   border-radius: 4px;
+  /* color:#fff; */
 }
 .search .entry-summary > p:last-child:after {
   content: "";
@@ -704,8 +705,8 @@ object {
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt,
 .woocommerce button.button.alt, .woocommerce input.button.alt,
 a.more-link {
- background-color: #DA4453;
-  border-color: #DA4453;
+ /* background-color: #DA4453; */
+  /* border-color: #DA4453; */
   -webkit-transition: background-color 0.3s linear;
      -moz-transition: background-color 0.3s linear;
        -o-transition: background-color 0.3s linear;
@@ -736,7 +737,7 @@ a.more-link {
   margin-left: 0;
 }
 button, .button {
-  background-color: transparent !important;
+  background-color: transparent;
   border: none;
   text-transform: uppercase;
   -webkit-border-radius: 4px;
@@ -750,7 +751,7 @@ button, .button {
           transition: background-color 0.3s linear;
 }
 button:hover, .button:hover {
-  background-color:transparent !important;
+  background-color:transparent;
 }
 #subscription-toggle {
     float: right;
@@ -1474,7 +1475,7 @@ p.logged-in-as {
   text-transform: uppercase;
 }
 .footer-widget-area h3 {
-    color: #DADADA !important;
+    color: #DADADA;
 }
 
 @media (max-width: 768px) {
@@ -1820,15 +1821,15 @@ header.search-header{
 
 .footer-widget .tagcloud a:hover {
     background-color: #ccc;
-    color: #000000 !important;
+    color: #000000 ;
 }
 
 
 
 
 .footer-widget .tagcloud a {
-    color: #999 !important;
-    background-color: #000000;
+    color: #999;
+    background-color: #444;
     /* border-color: white; */
     /* border: 1px solid #DADADA; */
 }
