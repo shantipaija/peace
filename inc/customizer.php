@@ -146,7 +146,7 @@ function peace_customizer( $wp_customize ) {
 		'panel' => 'peace_main_options',
 	));
 	$wp_customize->add_section('peace_style_color_options', array(
-		'title' => __( 'Color Template Styles options', 'peace' ),
+		'title' => __( 'Color Templates', 'peace' ),
 		'priority' => 31,
 		'panel' => 'peace_main_options',
 	));
@@ -174,7 +174,7 @@ function peace_customizer( $wp_customize ) {
 		'sanitize_callback' => 'peace_sanitize_template',
 	));
 	$wp_customize->add_control('peace[style_color]', array(
-		'label' => __( 'Color Template Style Options', 'peace' ),
+		'label' => __( 'Color Templates', 'peace' ),
 		'section' => 'peace_style_color_options',
 		'type'    => 'select',
 		'description' => __( 'Choose between different color template options to be used as default', 'peace' ),
@@ -365,7 +365,7 @@ function peace_customizer( $wp_customize ) {
         'sanitize_callback' => 'esc_html'
     ));
     $wp_customize->add_control('peace[main_body_typography][subset]', array(
-        'label' => __('Font susbet', 'peace'),
+        'label' => __('Font subset', 'peace'),
         'section' => 'peace_typography_options',
         'description' => __('Enter the Google fonts subset', 'peace'),
         'type' => 'text'

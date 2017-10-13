@@ -201,6 +201,24 @@ function peace_widgets_init() {
 		'before_title'  => '<h3 class="widgettitle">',
 		'after_title'   => '</h3>',
 	));
+	register_sidebar(array(
+		'id'            => 'footer-widget-4',
+		'name'          => esc_html__( 'Footer Widget 4', 'peace' ),
+		'description'   => esc_html__( 'Used for footer widget area', 'peace' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widgettitle">',
+		'after_title'   => '</h3>',
+	));
+	register_sidebar(array(
+		'id'            => 'footer-widget-5',
+		'name'          => esc_html__( 'Footer Widget 5', 'peace' ),
+		'description'   => esc_html__( 'Used for footer widget area', 'peace' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widgettitle">',
+		'after_title'   => '</h3>',
+	));
 
 	register_widget( 'peace_Social_Widget' );
 	register_widget( 'peace_Popular_Posts' );
