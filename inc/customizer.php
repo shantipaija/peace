@@ -141,7 +141,7 @@ function peace_customizer( $wp_customize ) {
 	));
 */
 	$wp_customize->add_section('peace_layout_options', array(
-		'title' => __( 'Layout options', 'peace' ),
+		'title' => __( 'Layout Options', 'peace' ),
 		'priority' => 31,
 		'panel' => 'peace_main_options',
 	));
@@ -365,7 +365,7 @@ function peace_customizer( $wp_customize ) {
         'sanitize_callback' => 'esc_html'
     ));
     $wp_customize->add_control('peace[main_body_typography][subset]', array(
-        'label' => __('Font subset', 'peace'),
+        'label' => __('Font Subset', 'peace'),
         'section' => 'peace_typography_options',
         'description' => __('Enter the Google fonts subset', 'peace'),
         'type' => 'text'
