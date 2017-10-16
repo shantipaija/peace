@@ -551,8 +551,8 @@ if ( ! function_exists( 'get_style_color' ) ) :
 		
 	}
 	
-	// add_action('wp_head','get_style_color',8);
-	add_action('wp_head','get_style_color');
+	 add_action('wp_head','get_style_color',8);
+	// add_action('wp_head','get_style_color');
 	// hook the colorful stylesheet in wp_head
 	
 endif;
