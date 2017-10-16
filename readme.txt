@@ -23,7 +23,8 @@ Peace theme uses:
 * Bootstrap (http://getbootstrap.com/) licensed under MIT license (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 * WP-Bootstrap-NavWalker licensed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
 * FlexSlider by WooThemes licensed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
-* Sparkling by Aigars Silkalns licensed under the GPLv3 (http://www.gnu.org/licenses/gpl.html)
+* Epsilon Framework by MachoThemes under the GPL V3 licence (http://www.gnu.org/licenses/gpl.html)
+* Sparkling by Aigars Silkalns licensed under the GPL V3 licence (http://www.gnu.org/licenses/gpl.html)
 * Some Images licensed under the CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
 
 # Description
