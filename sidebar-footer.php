@@ -12,6 +12,8 @@
 	if ( ! is_active_sidebar( 'footer-widget-1' ) && ! is_active_sidebar( 'footer-widget-2' ) && ! is_active_sidebar( 'footer-widget-3' ) ) {
 		return;
 	}
+
+
 	// If we made it this far we must have widgets.
 	?>
 
@@ -36,11 +38,11 @@
 		<?php if ( is_active_sidebar( 'footer-widget-4' ) ) : ?>
 		<div class="col-sm-2 footer-widget" role="complementary">
 			<?php dynamic_sidebar( 'footer-widget-4' ); ?>
-		</div><!-- .widget-area .third -->
+		</div><!-- .widget-area .forth -->
 		<?php endif; ?>
 		<?php if ( is_active_sidebar( 'footer-widget-5' ) ) : ?>
 		<div class="col-sm-3 footer-widget" role="complementary">
 			<?php dynamic_sidebar( 'footer-widget-5' ); ?>
-		</div><!-- .widget-area .third -->
+		</div><!-- .widget-area .fifth -->
 		<?php endif; ?>
 	</div>

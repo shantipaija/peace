@@ -31,7 +31,19 @@
 
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
-					<?php peace_posted_on(); ?><?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+					<?php
+						if ( get_theme_mod( 'peace_post_date' ) == 1 ) :
+							peace_posted_on();
+						endif;
+					?>
+					<?php
+						if(get_theme_mod('peace_post_modified') == 1): ?>
+							<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Last updated on: <?php the_modified_date('F j, Y'); ?> &nbsp;
+						<?php endif;
+					?>
+					
+					<?php 
+						if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 				<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'peace' ), esc_html__( '1 Comment', 'peace' ), esc_html__( '% Comments', 'peace' ) ); ?></span>
 				<?php endif; ?>
 
