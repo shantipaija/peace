@@ -21,7 +21,7 @@ a:focus {
 }   
  
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #fd3c3d ;
+  color: #000000 ;
 }
 
 input[type="text"],
@@ -156,16 +156,9 @@ hr.section-divider {
   color: #000000 ;
 }
 
-
-
-a.more-link {
-  background-color: #fd3c3d ;
-  border-color: #fd3c3d ;
-}
-
 a.more-link:hover {
-  background-color:#d10203 ;
-  border-color:#d10203 ;
+  background-color:#6B6B6B ;
+  border-color:#6B6B6B ;
   color: #FFF ;
 }
 .btn.btn-default:hover{
