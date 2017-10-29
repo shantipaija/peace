@@ -17,7 +17,7 @@
 			<i><?php esc_html_e( 'This is the place to go to reference different aspects of the theme. Our online documentation is an incredible resource for learning the ins and outs of using Peace.', 'peace' ) ?></i>
 		</p>
 		<p>
-			<a target="_blank" href="<?php echo esc_url( 'http://documentation.login.plus/peace/' ); ?>"><?php esc_html_e( 'See our full documentation', 'peace' ); ?></a>
+			<a target="_blank" href="<?php echo esc_url( 'https://wp.login.plus/doc/peace-theme/' ); ?>"><?php esc_html_e( 'See our full documentation', 'peace' ); ?></a>
 		</p>
 	</div><!--/.col-->
 
