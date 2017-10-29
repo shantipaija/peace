@@ -2,7 +2,7 @@
 
 /**
  * Social  Widget
- * Peace Theme
+ * Peace
  */
 class peace_Social_Widget extends WP_Widget {
 

@@ -42,7 +42,7 @@ function peace_welcome_customize_register( $wp_customize ) {
 				array(
 					'title'       => esc_html__( 'peace', 'peace' ),
 					'button_text' => esc_html__( 'Documentation', 'peace' ),
-					'button_url'  => esc_url_raw( 'https://wp.login.plus/doc/peace-theme/' ),
+					'button_url'  => esc_url_raw( 'https://wp.login.plus/doc/peacefulness/' ),
 					'priority'    => 0,
 				)
 			)

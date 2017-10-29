@@ -2,7 +2,7 @@
 
 /**
  * Custom Categories Widget
- * Peace Theme
+ * Peace
  */
 class peace_Categories extends WP_Widget {
 

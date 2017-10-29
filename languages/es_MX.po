@@ -1,12 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Peace Theme\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-18 11:04+0200\n"
-"PO-Revision-Date: Mon Apr 11 2016 10:54:56 GMT-0500 (Central Daylight Time "
-"(Mexico))\n"
-"Last-Translator: Oro Constanzo <mexicanplus@gmail.com>\n"
-"Language-Team: Login.Plus <themes@login.plus>\n"
+"Project-Id-Version: Peace\n"
+"POT-Creation-Date: 2017-10-15 11:11+1111\n"
+"PO-Revision-Date: 2017-10-15 11:11+1111\n"
+"Last-Translator: LogHQ <dev@login.plus>\n"
+"Language-Team: LogHQ <dev@login.plus>\n"
 "Language: Spanish (Mexico)\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +23,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes\n"
 "X-Loco-Target-Locale: es_MX\n"
-"X-Generator: Loco - https://localise.biz/"
+"X-Generator: Loco - "
 
 #: ../archive.php:39
 msgid "Asides"
@@ -592,8 +590,8 @@ msgid "Login.Plus"
 msgstr "Login.Plus"
 
 #. Author URI of the theme
-msgid "http://themes.login.plus/"
-msgstr "http://themes.login.plus/"
+msgid "https://wp.login.plus/"
+msgstr "https://wp.login.plus/"
 
 #: ../search.php:16
 #, php-format

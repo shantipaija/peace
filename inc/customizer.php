@@ -1,6 +1,6 @@
 <?php
 /**
- * Peace Theme Customizer
+ * Peace Customizer
  *
  * @package Peace
  */
@@ -18,7 +18,7 @@ function peace_customize_register( $wp_customize ) {
 add_action( 'customize_register', 'peace_customize_register' );
 
 /**
- * Options for Peace Theme Customizer.
+ * Options for Peace Customizer.
  */
 function peace_customizer( $wp_customize ) {
 
@@ -26,7 +26,7 @@ function peace_customizer( $wp_customize ) {
 	$wp_customize->add_panel('peace_main_options', array(
 		'capability' => 'edit_theme_options',
 		'theme_supports' => '',
-		'title' => __( 'Peace Theme Options', 'peace' ),
+		'title' => __( 'Peace Options', 'peace' ),
 		'description' => __( 'Panel to update Peace theme options', 'peace' ), // Include html tags such as <p>.
 		'priority' => 10,// Mixed with top-level-section hierarchy.
 	));
@@ -592,7 +592,7 @@ function peace_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('peace[custom_footer_text]', array(
-		'default' => 'Peace',
+		'default' => 'peace',
 		'type' => 'option',
 		'sanitize_callback' => 'peace_sanitize_strip_slashes',
 	));
