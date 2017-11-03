@@ -170,15 +170,15 @@ a.more-link:hover {
 }
 
 .btn.btn-default:hover{
-	background-color:#FFB74D;
-	border-color:#FFB74D;
+	background-color:#FF9800;
+	border-color:#FF9800;
 }
 .btn.btn-default, .woocommerce #respond input#submit, .woocommerce a.button,
 .woocommerce button.button, .woocommerce input.button,
 a.more-link {
   color: #fff;
-  background-color:#FF9800;
-  border-color: #FF9800;
+  background-color:#FFB74D;
+  border-color: #FFB74D;
   
 }
  

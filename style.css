@@ -502,7 +502,7 @@ body.blog .post-inner-content,
   margin: auto;
 }
 .single-featured:hover {
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .wp-caption {
   border: 1px solid #ccc;

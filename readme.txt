@@ -33,7 +33,7 @@ Peace is a clean minimal and responsive WordPress theme well suited for travel, 
 
 
 
-For questions, comments or bug reports, visit Login.Plus support forum (https://community.login.plus/forum/peace/).
+For questions, comments or bug reports, visit Login.Plus support forum (https://community.login.plus/forum/peacefulness/).
 
 # Installation
 
