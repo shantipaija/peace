@@ -264,6 +264,7 @@ if ( ! function_exists( 'get_peace_theme_options' ) ) {
 
 		if ( of_get_option( 'element_color_hover' ) ) {
 			// echo '.btn-default:hover, .label-default[href]:hover, .tagcloud a:hover,button, .main-content [class*="navigation"] a:hover,.label-default[href]:focus, #infinite-handle span:hover,.btn.btn-default.read-more:hover, .btn-default:hover, .scroll-to-top:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .more-link:hover, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover, .cfa-button:hover,.woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, a:hover .flex-caption h2 { background-color: ' . of_get_option( 'element_color_hover' ) . '; border-color: ' . of_get_option( 'element_color_hover' ) . '; }';
+			echo '.btn.btn-lg.cfa-button:hover { background-color: ' . of_get_option( 'element_color_hover' ) . '; border-color: ' . of_get_option( 'element_color_hover' ) . '; }';
 		}
 		
 		
