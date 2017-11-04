@@ -20,7 +20,7 @@ a:focus {
 }   
  
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #008DBC ;
+  color: #000000 ;
 }
 
 input[type="text"],
@@ -172,8 +172,8 @@ a.more-link:hover {
   color: #FFF ;
 }
 .btn.btn-default:hover{
-	background-color:#90CAF9 ;
-	border-color:#90CAF9 ;
+	background-color:#90CAF9 !important ;
+	border-color:#90CAF9 !important;
 	
 }
 
@@ -181,7 +181,7 @@ a.more-link:hover {
 .btn.btn-default, .woocommerce #respond input#submit, .woocommerce a.button,
 .woocommerce button.button, .woocommerce input.button,
 a.more-link {
-  color: #FFF ;
+  color: #fff ;
    background-color: #008DBC ;
   border-color: #008DBC ;
   
@@ -236,7 +236,7 @@ button:hover, .button:hover {
 }
 
 .navbar > .container .navbar-brand {
-  color: #DADADA ;
+  color: #fff ;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -332,7 +332,7 @@ button:hover, .button:hover {
 }
 
 .dropdown-menu > .active {
-  background-color: #FF9800 ;
+  /* background-color: #FF9800 ; */
   color: #fff ;
 }
 
@@ -422,6 +422,7 @@ button:hover, .button:hover {
 #footer-area a:focus,
 #footer-area a:hover {
   color: #90CAF9  ;
+  background-color:transparent;
 }
 
 .site-info {
@@ -460,3 +461,6 @@ button:hover, .button:hover {
 .woocommerce .main-content-inner{
   background-color: #fff ;
  }
+ #secondary .widget ul li{
+	color:#008DBC ;
+}

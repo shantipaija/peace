@@ -2,7 +2,7 @@
 
 /**
  * Peace Top Posts Widget
- * Peace Theme
+ * Peace
  */
 class peace_Popular_Posts extends WP_Widget {
 	function __construct() {

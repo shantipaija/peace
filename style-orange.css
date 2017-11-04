@@ -161,10 +161,7 @@ hr.section-divider {
 }
 
 
-a.more-link {
-  background-color: #FF9800;
-  border-color: #FF9800;
-}
+
 
 a.more-link:hover {
   background-color:#FFB74D;
@@ -173,15 +170,15 @@ a.more-link:hover {
 }
 
 .btn.btn-default:hover{
-	background-color:#FB8C00;
-	border-color:#FB8C00;
+	background-color:#FF9800;
+	border-color:#FF9800;
 }
 .btn.btn-default, .woocommerce #respond input#submit, .woocommerce a.button,
 .woocommerce button.button, .woocommerce input.button,
 a.more-link {
-  color: #FFF;
+  color: #fff;
   background-color:#FFB74D;
-  border-color:#FFB74D;
+  border-color: #FFB74D;
   
 }
  
@@ -234,7 +231,7 @@ button:hover, .button:hover {
 }
 
 .navbar > .container .navbar-brand {
-  color: #DADADA;
+  color: #fff;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -430,6 +427,7 @@ p.logged-in-as a:hover {
 
 .scroll-to-top:hover{
 	background-color:#FB8C00;
+	/* background-color:transparent; */
 }
 .scroll-to-top {
   background:#FFB74D;
@@ -461,9 +459,12 @@ p.logged-in-as a:hover {
   background-color: #fff;
  }
  
- .form-control:focus {
-    border-color: #FFB74D;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #ffb74d;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 183, 77, 0.85);
+.form-control:focus {
+       border-color: #5b9dd9;
+    -webkit-box-shadow: 0 0 2px rgba(30,140,190,.8);
+    box-shadow: 0 0 2px rgba(30,140,190,.8);
+}
+
+ #secondary .widget ul li{
+	color:#FF9800 ;
 }

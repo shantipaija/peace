@@ -1,13 +1,13 @@
 /*
 Theme Name: Peace
-Theme URI: http://wp.login.plus/peace/
-Author: Shanti Paija
-Author URI: http://wp.login.plus/
+Theme URI: http://wp.login.plus/peacefulness/
+Author: LogHQ
+Author URI: https://login.plus/
 Description: Peace is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal, ecommerce and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Peace incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options based on WordPress Customizer to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Simplified Chinese, Indonesian, Estonian, Spanish (Argentina), Hungarian and Italian. Peace is a free WordPress theme with premium functionality and design. Theme is ecommerce ready thanks to its WooCommerce integration. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack, WooCommerce and other popular free and premium plugins. Lately we introduced a sticky/fixed navigation that you can enable or disable via WordPress Customizer.
 Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: Peace
+Text Domain: peace
 Domain Path: /languages/
 Tags: grid-layout, footer-widgets, blog, education, entertainment, food-and-drink, news, photography, portfolio, e-commerce
 
@@ -115,7 +115,7 @@ h6,
   font-size: 13px;
 }
 body.search {
-	background-color:#ffffff !important;
+	background-color:#ffffff;
 }
 
 img {
@@ -355,6 +355,7 @@ a.more-link {
   font-size: 12px;
   padding: 11px 13px;
   border-radius: 4px;
+  /* color:#fff; */
 }
 .search .entry-summary > p:last-child:after {
   content: "";
@@ -501,7 +502,7 @@ body.blog .post-inner-content,
   margin: auto;
 }
 .single-featured:hover {
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .wp-caption {
   border: 1px solid #ccc;
@@ -704,8 +705,8 @@ object {
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt,
 .woocommerce button.button.alt, .woocommerce input.button.alt,
 a.more-link {
- background-color: #DA4453;
-  border-color: #DA4453;
+ /* background-color: #DA4453; */
+  /* border-color: #DA4453; */
   -webkit-transition: background-color 0.3s linear;
      -moz-transition: background-color 0.3s linear;
        -o-transition: background-color 0.3s linear;
@@ -736,7 +737,7 @@ a.more-link {
   margin-left: 0;
 }
 button, .button {
-  background-color: transparent !important;
+  background-color: transparent;
   border: none;
   text-transform: uppercase;
   -webkit-border-radius: 4px;
@@ -750,7 +751,7 @@ button, .button {
           transition: background-color 0.3s linear;
 }
 button:hover, .button:hover {
-  background-color:transparent !important;
+  background-color:transparent;
 }
 #subscription-toggle {
     float: right;
@@ -1474,7 +1475,7 @@ p.logged-in-as {
   text-transform: uppercase;
 }
 .footer-widget-area h3 {
-    color: #DADADA !important;
+    color: #DADADA;
 }
 
 @media (max-width: 768px) {
@@ -1820,15 +1821,15 @@ header.search-header{
 
 .footer-widget .tagcloud a:hover {
     background-color: #ccc;
-    color: #000000 !important;
+    color: #000000 ;
 }
 
 
 
 
 .footer-widget .tagcloud a {
-    color: #999 !important;
-    background-color: #000000;
+    color: #999;
+    background-color: #444;
     /* border-color: white; */
     /* border: 1px solid #DADADA; */
 }

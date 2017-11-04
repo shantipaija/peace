@@ -174,29 +174,9 @@ function peace_widgets_init() {
 
 	register_sidebar(array(
 		'id'            => 'footer-widget-1',
-		'name'          => esc_html__( 'Footer Widget 1', 'peace' ),
+		'name'          => esc_html__( 'Footer Widgets', 'peace' ),
 		'description'   => esc_html__( 'Used for footer widget area', 'peace' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widgettitle">',
-		'after_title'   => '</h3>',
-	));
-
-	register_sidebar(array(
-		'id'            => 'footer-widget-2',
-		'name'          => esc_html__( 'Footer Widget 2', 'peace' ),
-		'description'   => esc_html__( 'Used for footer widget area', 'peace' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widgettitle">',
-		'after_title'   => '</h3>',
-	));
-
-	register_sidebar(array(
-		'id'            => 'footer-widget-3',
-		'name'          => esc_html__( 'Footer Widget 3', 'peace' ),
-		'description'   => esc_html__( 'Used for footer widget area', 'peace' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'before_widget' => '<div id="%1$s" class="widget col-sm-3 %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widgettitle">',
 		'after_title'   => '</h3>',
@@ -533,8 +513,8 @@ if ( ! function_exists( 'get_style_color' ) ) :
 		
 	}
 	
-	// add_action('wp_head','get_style_color',8);
-	add_action('wp_head','get_style_color');
+	 add_action('wp_head','get_style_color',8);
+	// add_action('wp_head','get_style_color');
 	// hook the colorful stylesheet in wp_head
 	
 endif;
