@@ -287,6 +287,10 @@ if ( ! function_exists( 'get_peace_theme_options' ) ) {
 		if ( of_get_option( 'heading_color' ) ) {
 			echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title, .entry-title a {color: ' . of_get_option( 'heading_color' ) . ';}';
 		}
+		if ( of_get_option( 'header_text_color' ) ) {
+			echo '.navbar > .container .navbar-brand {color: ' . of_get_option( 'header_text_color' ) . ' !important;}';
+		}
+
 		if ( of_get_option( 'nav_bg_color' ) ) {
 			echo '.navbar.navbar-default, .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: ' . of_get_option( 'nav_bg_color' ) . ';}';
 		}

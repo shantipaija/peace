@@ -26,8 +26,13 @@
 						<?php peace_footer_links(); ?>
 					</nav>
 					<div class="copyright col-md-6">
-						<?php echo of_get_option( 'custom_footer_text', 'peace' ); ?>
-						<?php peace_footer_info(); ?>
+						<?php 
+							if(of_get_option('custom_footer_text')): 
+							 	echo of_get_option('custom_footer_text','peace');
+							else: 
+								peace_footer_info(); 
+							endif;
+						?>
 					</div>
 				</div>
 			</div><!-- .site-info -->
