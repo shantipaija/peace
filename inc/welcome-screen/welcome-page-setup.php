@@ -74,10 +74,7 @@ require get_template_directory() . '/inc/welcome-screen/class-peace-notify-syste
 if ( is_admin() ) {
 	global $peace_required_actions, $peace_recommended_plugins;
 	$peace_recommended_plugins = array(
-		'fancybox-for-wordpress'    => array(
-			'recommended' => true,
-		),
-		'simple-custom-post-order'  => array(
+		'notice-box-loghq'    => array(
 			'recommended' => true,
 		),
 	);
