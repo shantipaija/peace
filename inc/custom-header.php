@@ -23,6 +23,7 @@
  * @uses peace_admin_header_image()
  *
  */
+
 function peace_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'peace_custom_header_args', array(
 		'default-image'          => '',
