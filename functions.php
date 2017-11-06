@@ -22,14 +22,23 @@ function peace_content_width() {
 	}
 }
 add_action( 'template_redirect', 'peace_content_width' );
-
+	
 if ( ! function_exists( 'peace_main_content_bootstrap_classes' ) ) :
 	/**
  * Add Bootstrap classes to the main-content-area wrapper.
  */
 	function peace_main_content_bootstrap_classes() {
+		
+		$layout_class = get_layout_class(); 
+		if($layout_class=="dbar"){
+			
+			return 'col-sm-6 col-md-6';
+			
+		}else
 		if ( is_page_template( 'page-fullwidth.php' ) ) {
+			
 			return 'col-sm-12 col-md-12';
+			
 		}
 		return 'col-sm-12 col-md-8';
 	}
@@ -124,6 +133,14 @@ add_action( 'after_setup_theme', 'peace_setup' );
  * Register widgetized area and update sidebar with default widgets.
  */
 function peace_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar left (double sidebar)', 'peace' ),
+		'id'            => 'sidebar-left',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	));
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'peace' ),
 		'id'            => 'sidebar-1',
@@ -320,6 +337,7 @@ global $site_layout;
 $site_layout = array(
 	'side-pull-left' => esc_html__( 'Right Sidebar', 'peace' ),
 	'side-pull-right' => esc_html__( 'Left Sidebar', 'peace' ),
+	'dbar' => esc_html__( 'Double Sidebar', 'peace' ),
 	'no-sidebar' => esc_html__( 'No Sidebar', 'peace' ),
 	'full-width' => esc_html__( 'Full Width', 'peace' ),
 );
