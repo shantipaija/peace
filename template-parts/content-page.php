@@ -29,7 +29,7 @@ if ( is_page_template( 'page-fullwidth.php' ) ) {
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'peace' ),
 				'after'  => '</div>',
-			) );
+			) ); 
 		?>
 
 	<?php
