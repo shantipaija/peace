@@ -14,6 +14,7 @@ function peace_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	$wp_customize->remove_control('header_textcolor');
 }
 add_action( 'customize_register', 'peace_customize_register' );
 
@@ -469,8 +470,21 @@ function peace_customizer( $wp_customize ) {
 		'type' => 'epsilon-toggle',
 	) ) );
 
+//header-text-color
+	$wp_customize->add_setting('peace[header_text_color]', array(
+		'default' => '', //sanitize_hex_color( '#ffffff' ),
+		'type'  => 'option',
+		'sanitize_callback' => 'peace_sanitize_hexcolor',
+	));
+	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'peace[header_text_color]', array(
+		'label' => __( 'Header Text Color', 'peace' ),
+		'description'   => __( 'Default used if no color is selected','peace' ),
+		'section' => 'peace_header_options',
+	)));
+//header-text-color
+
 	$wp_customize->add_setting('peace[nav_bg_color]', array(
-		'default' => sanitize_hex_color( '#ffffff' ),
+		'default' => '', //sanitize_hex_color( '#ffffff' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -479,6 +493,7 @@ function peace_customizer( $wp_customize ) {
 		'description'   => __( 'Default used if no color is selected','peace' ),
 		'section' => 'peace_header_options',
 	)));
+
 	$wp_customize->add_setting('peace[nav_link_color]', array(
 		'default' => sanitize_hex_color( '#000000' ),
 		'type'  => 'option',

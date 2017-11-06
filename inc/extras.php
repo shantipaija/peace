@@ -263,8 +263,15 @@ if ( ! function_exists( 'get_peace_theme_options' ) ) {
 		}
 
 		if ( of_get_option( 'element_color_hover' ) ) {
-			echo '.btn-default:hover, .label-default[href]:hover, .tagcloud a:hover,button, .main-content [class*="navigation"] a:hover,.label-default[href]:focus, #infinite-handle span:hover,.btn.btn-default.read-more:hover, .btn-default:hover, .scroll-to-top:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .more-link:hover, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover, .cfa-button:hover,.woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, a:hover .flex-caption h2 { background-color: ' . of_get_option( 'element_color_hover' ) . '; border-color: ' . of_get_option( 'element_color_hover' ) . '; }';
+			// echo '.btn-default:hover, .label-default[href]:hover, .tagcloud a:hover,button, .main-content [class*="navigation"] a:hover,.label-default[href]:focus, #infinite-handle span:hover,.btn.btn-default.read-more:hover, .btn-default:hover, .scroll-to-top:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .more-link:hover, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover, .cfa-button:hover,.woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, a:hover .flex-caption h2 { background-color: ' . of_get_option( 'element_color_hover' ) . '; border-color: ' . of_get_option( 'element_color_hover' ) . '; }';
+			echo '.btn.btn-lg.cfa-button:hover { background-color: ' . of_get_option( 'element_color_hover' ) . '; border-color: ' . of_get_option( 'element_color_hover' ) . '; }';
 		}
+		
+		
+		
+		
+		
+		
 		if ( of_get_option( 'element_color_hover' ) ) {
 			echo '.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {color: ' . of_get_option( 'element_color_hover' ) . ';}';
 		}
@@ -280,6 +287,10 @@ if ( ! function_exists( 'get_peace_theme_options' ) ) {
 		if ( of_get_option( 'heading_color' ) ) {
 			echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title, .entry-title a {color: ' . of_get_option( 'heading_color' ) . ';}';
 		}
+		if ( of_get_option( 'header_text_color' ) ) {
+			echo '.navbar > .container .navbar-brand {color: ' . of_get_option( 'header_text_color' ) . ' !important;}';
+		}
+
 		if ( of_get_option( 'nav_bg_color' ) ) {
 			echo '.navbar.navbar-default, .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: ' . of_get_option( 'nav_bg_color' ) . ';}';
 		}
@@ -380,7 +391,7 @@ function peace_options_display_sidebar() {
 			<div class="tw-follow" ><a href="https://twitter.com/LogHQ" class="twitter-follow-button" data-show-count="false">Follow @Login.Plus</a></div>
 		  </div>
 			<p><b><a href="<?php echo esc_url( 'https://wp.login.plus/doc/peacefulness/' ); ?>"><?php esc_html_e( 'Peace Documentation','peace' ); ?></a></b></p>
-			<p><?php _e( 'The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','peace' ) ?> <a href="<?php echo esc_url( 'https://community.login.plus/forum/peace/' ); ?>"><?php esc_html_e( 'Login.Plus support forum','peace' ) ?></a>.</p>
+			<p><?php _e( 'The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','peace' ) ?> <a href="<?php echo esc_url( 'https://community.login.plus/forum/peacefulness/' ); ?>"><?php esc_html_e( 'Login.Plus support forum','peace' ) ?></a>.</p>
 			<p><?php esc_html_e( 'If you like this theme, I\'d appreciate any of the following:','peace' ) ?></p>
 			<ul>
 			  <li><a class="button" href="<?php echo esc_url( 'http://wordpress.org/support/view/theme-reviews/Peace?filter=5' ); ?>" title="<?php esc_attr_e( 'Rate this Theme', 'peace' ); ?>" target="_blank"><?php printf( esc_html__( 'Rate this Theme','peace' ) ); ?></a></li>

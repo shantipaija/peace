@@ -26,12 +26,21 @@
 						<?php peace_footer_links(); ?>
 					</nav>
 					<div class="copyright col-md-6">
+<<<<<<< HEAD
 						<?php
 							if(of_get_option('custom_footer_text')):
 							 	echo of_get_option('custom_footer_text','peace');
 							else:
 								peace_footer_info();
 						endif;
+=======
+						<?php 
+							if(of_get_option('custom_footer_text')): 
+							 	echo of_get_option('custom_footer_text','peace');
+							else: 
+								peace_footer_info(); 
+							endif;
+>>>>>>> dffa696defe58341fa0c1a498a75506711ba6ba0
 						?>
 					</div>
 				</div>
