@@ -81,18 +81,6 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 		</div>
 
 		<div class="container main-content-area">
-			<?php 
-			$layout_class = get_layout_class(); 
-			?>
-			<div class="row <?php 
-			// what is this line doing here?
-			echo $layout_class; 
-			
-			?>">
-			<?php
-				
-				if($layout_class=="dbar"){
-					get_sidebar("left");
-				}
-			?>
+			<?php $layout_class = get_layout_class(); ?>
+			<div class="row <?php echo $layout_class; ?>">
 				<div class="main-content-inner <?php echo peace_main_content_bootstrap_classes(); ?>">

@@ -1,14 +1,5 @@
 </div><!-- close .main-content-inner -->
-<?php
-	
-	$sidebar_class = "col-sm-12 col-md-4";
-		
-	$layout_class = get_layout_class(); 
-	if($layout_class=="dbar"){
-		$sidebar_class ="col-sm-3 col-md-3";
-	}
- ?>
-<div id="secondary" class="widget-area <?php echo $sidebar_class;?>" role="complementary">
+<div id="secondary" class="widget-area col-sm-12 col-md-4" role="complementary">
 	<div class="well">
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
