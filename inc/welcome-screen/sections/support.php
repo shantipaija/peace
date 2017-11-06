@@ -7,7 +7,7 @@
 			<i><?php esc_html_e( 'We offer excellent support through our advanced ticketing system. Make sure to register your purchase before contacting support!', 'peace' ) ?></i>
 		</p>
 		<p><a target="_blank"  class="button button-primary"
-			  href="<?php echo esc_url( 'https://community.login.plus/forum/peace/' ); ?>"><?php esc_html_e( 'Contact Support', 'peace' ); ?></a>
+			  href="<?php echo esc_url( 'https://community.login.plus/forum/peacefulness/' ); ?>"><?php esc_html_e( 'Contact Support', 'peace' ); ?></a>
 		</p>
 	</div><!--/.col-->
 

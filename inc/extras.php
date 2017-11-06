@@ -387,7 +387,7 @@ function peace_options_display_sidebar() {
 			<div class="tw-follow" ><a href="https://twitter.com/LogHQ" class="twitter-follow-button" data-show-count="false">Follow @Login.Plus</a></div>
 		  </div>
 			<p><b><a href="<?php echo esc_url( 'https://wp.login.plus/doc/peacefulness/' ); ?>"><?php esc_html_e( 'Peace Documentation','peace' ); ?></a></b></p>
-			<p><?php _e( 'The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','peace' ) ?> <a href="<?php echo esc_url( 'https://community.login.plus/forum/peace/' ); ?>"><?php esc_html_e( 'Login.Plus support forum','peace' ) ?></a>.</p>
+			<p><?php _e( 'The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','peace' ) ?> <a href="<?php echo esc_url( 'https://community.login.plus/forum/peacefulness/' ); ?>"><?php esc_html_e( 'Login.Plus support forum','peace' ) ?></a>.</p>
 			<p><?php esc_html_e( 'If you like this theme, I\'d appreciate any of the following:','peace' ) ?></p>
 			<ul>
 			  <li><a class="button" href="<?php echo esc_url( 'http://wordpress.org/support/view/theme-reviews/Peace?filter=5' ); ?>" title="<?php esc_attr_e( 'Rate this Theme', 'peace' ); ?>" target="_blank"><?php printf( esc_html__( 'Rate this Theme','peace' ) ); ?></a></li>
