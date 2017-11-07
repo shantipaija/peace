@@ -5,18 +5,18 @@
  * @package Peace
  */
 ?>
-
-<?php
-if ( is_page_template( 'page-fullwidth.php' ) ) {
-	the_post_thumbnail( 'peace-featured-fullwidth', array(
+<div class="imghov">
+	<?php
+	if ( is_page_template( 'page-fullwidth.php' ) ) {
+		the_post_thumbnail( 'peace-featured-fullwidth', array(
+			'class' => 'single-featured',
+		) );
+	} else {    the_post_thumbnail( 'peace-featured', array(
 		'class' => 'single-featured',
 	) );
-} else {    the_post_thumbnail( 'peace-featured', array(
-	'class' => 'single-featured',
-) );
-}
-?>
-
+	}
+	?>
+</div>
 <div class="post-inner-content">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header page-header">
