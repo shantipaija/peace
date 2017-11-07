@@ -1852,6 +1852,16 @@ header.search-header{
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
+.imghov  img:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.imghov  img {
+    -moz-transition: all -0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
 
 /* 404 */
 .mt-100{margin-top:100px;}
