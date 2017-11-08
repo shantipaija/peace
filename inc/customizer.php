@@ -15,6 +15,7 @@ function peace_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 	$wp_customize->remove_control('header_textcolor');
+	$wp_customize->remove_control('background_color');
 }
 add_action( 'customize_register', 'peace_customize_register' );
 
@@ -94,6 +95,19 @@ function peace_customizer( $wp_customize ) {
 	// add checkbox control for Show/Hide posts modified date toggle
 	$wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'peace_post_modified', array(
 		'label'     => esc_html__( 'Show Modified date?', 'peace' ),
+		'section'   => 'peace_content_section',
+		'priority'  => 40,
+		'type'      => 'epsilon-toggle',
+	) ) );
+
+	// add setting for Show/Hide posts Author Bio toggle
+	$wp_customize->add_setting( 'peace_post_author_bio', array(
+		'default'           => 1,
+		'sanitize_callback' => 'peace_sanitize_checkbox',
+	) );
+	// add checkbox control for Show/Hide posts Author Bio toggle
+	$wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'peace_post_author_bio', array(
+		'label'     => esc_html__( 'Show Author Bio?', 'peace' ),
 		'section'   => 'peace_content_section',
 		'priority'  => 40,
 		'type'      => 'epsilon-toggle',
@@ -210,6 +224,19 @@ function peace_customizer( $wp_customize ) {
 		'description' => __( 'Choose between different color template options to be used as default', 'peace' ),
 		'choices'    => $style_color,
 	));
+
+	//Background color
+	$wp_customize->add_setting('peace[background_color]', array(
+		'default' => sanitize_hex_color( 'cccccc' ),
+		'type'  => 'option',
+		'sanitize_callback' => 'peace_sanitize_hexcolor',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'peace[background_color]', array(
+		'label' => __( 'Background Color', 'peace' ),
+		//'description'   => __( 'Background Color','peace' ),
+		'section' => 'peace_style_color_options',
+	)));
 
 	if ( class_exists( 'WooCommerce' ) ) {
 		$wp_customize->add_setting('peace[woo_site_layout]', array(
