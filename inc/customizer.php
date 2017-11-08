@@ -15,6 +15,7 @@ function peace_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 	$wp_customize->remove_control('header_textcolor');
+	$wp_customize->remove_control('background_color');
 }
 add_action( 'customize_register', 'peace_customize_register' );
 
@@ -223,6 +224,19 @@ function peace_customizer( $wp_customize ) {
 		'description' => __( 'Choose between different color template options to be used as default', 'peace' ),
 		'choices'    => $style_color,
 	));
+
+	//Background color
+	$wp_customize->add_setting('peace[background_color]', array(
+		'default' => sanitize_hex_color( 'cccccc' ),
+		'type'  => 'option',
+		'sanitize_callback' => 'peace_sanitize_hexcolor',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'peace[background_color]', array(
+		'label' => __( 'Background Color', 'peace' ),
+		//'description'   => __( 'Background Color','peace' ),
+		'section' => 'peace_style_color_options',
+	)));
 
 	if ( class_exists( 'WooCommerce' ) ) {
 		$wp_customize->add_setting('peace[woo_site_layout]', array(

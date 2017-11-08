@@ -270,7 +270,9 @@ if ( ! function_exists( 'get_peace_theme_options' ) ) {
 		
 		
 		
-		
+		if ( of_get_option( 'background_color' ) ) {
+			echo 'body.custom-background { background-color: ' . of_get_option( 'background_color' ) . ' !important;}';
+		}
 		
 		if ( of_get_option( 'element_color_hover' ) ) {
 			echo '.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {color: ' . of_get_option( 'element_color_hover' ) . ';}';
