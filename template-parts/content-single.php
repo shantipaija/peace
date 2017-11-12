@@ -1,17 +1,21 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="imghov">
 	<?php
-	
+	/*
 	if ( is_page_template( 'page-fullwidth.php' ) ) {
 		the_post_thumbnail( 'peace-featured-fullwidth',  array(
 		'class' => 'single-featured fullwidth',
 	) );
 	} else {
+			
 		the_post_thumbnail( 'peace-featured', array(
-		'class' => 'single-featured sidebars',
-	) );
-	}
+			'class' => 'single-featured sidebars',
+		) );
+	}*/
 	?>
+		<div class="tiles">
+		    <div class="zoom-thumbnail-tile" data-scale="1.6" data-image="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>"></div>
+		</div>
 	</div>
 	<div class="post-inner-content">
 		<header class="entry-header page-header">
