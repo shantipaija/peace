@@ -1866,17 +1866,6 @@ header.search-header{
 /* 404 */
 .mt-100{margin-top:100px;}
 
-
-
-
-  @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700);
-
-  body {
-    background: #fff;
-    color: #000;
-    margin: 0;
-  }
-
   .zoom-thumbnail-tiles {
     position: absolute;
     top: 0;
