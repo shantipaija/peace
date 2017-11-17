@@ -254,11 +254,8 @@ function peace_scripts() {
 
 	$peace_bootstrap = 'peace-bootstrap';
 	// Add main theme stylesheet
-<<<<<<< HEAD
+
 	wp_enqueue_style( 'peace-style', get_stylesheet_uri(), array('peace-bootstrap','peace-fontawesome') );
-=======
-	wp_enqueue_style( 'peace-style', get_stylesheet_uri(), array($peace_bootstrap) );
->>>>>>> 70a66290d63a2012a0ea688b2d1143f366848cdd
 
 	// Add Modernizr for better HTML5 and CSS3 support
 	wp_enqueue_script( 'peace-modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr.min.js', array( 'jquery' ) );
