@@ -523,16 +523,16 @@ if ( ! function_exists( 'get_style_color' ) ) :
 
 	function get_style_color() {
 		
-		$name_style_color = of_get_option( 'style_color', 'white-style' );
+		$color_scheme = of_get_option( 'style_color', 'white-style' );
 		
-		$name_style_color = "
+		$color_scheme = "
 <link rel='stylesheet' id='peace-color-template'  href='" 
-		.get_template_directory_uri(). '/'. $name_style_color . '.css'
+		.get_template_directory_uri(). '/'. $color_scheme . '.css'
 		."' type='text/css' media='all' />
 		";
 		
-		// return $name_style_color;
-		echo $name_style_color;
+		// return $color_scheme;
+		echo $color_scheme;
 		
 	}
 	
