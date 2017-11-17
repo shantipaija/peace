@@ -32,7 +32,7 @@ function peace_custom_header_setup() {
 		'height'                 => 76,
 		'flex-height'                        => true,
 		'flex-width'                         => true,
-		'wp-head-callback'       => 'peace_header_style',
+		'wp-head-callback'       => '',
 		'admin-head-callback'    => 'peace_admin_header_style',
 		'admin-preview-callback' => 'peace_admin_header_image',
 	) ) );
