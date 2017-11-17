@@ -1893,3 +1893,11 @@ header.search-header{
     background-size: cover;
     transition: transform .5s ease-out;
   }
+
+  
+  
+  
+  
+.flex-caption h2 {
+  background: rgba(81, 81, 81, 0.7);
+  }
