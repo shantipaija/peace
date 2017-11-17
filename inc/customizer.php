@@ -190,7 +190,7 @@ function peace_customizer( $wp_customize ) {
 		'panel' => 'peace_main_options',
 	));
 	$wp_customize->add_section('peace_style_color_options', array(
-		'title' => __( 'Color Templates', 'peace' ),
+		'title' => __( 'Color Schemes', 'peace' ),
 		'priority' => 31,
 		'panel' => 'peace_main_options',
 	));
@@ -213,12 +213,12 @@ function peace_customizer( $wp_customize ) {
 	// Colorful Template Styles options
 	global $style_color;
 	$wp_customize->add_setting('peace[style_color]', array(
-		'default' => 'style-white',
+		'default' => 'white-style',
 		'type' => 'option',
 		'sanitize_callback' => 'peace_sanitize_template',
 	));
 	$wp_customize->add_control('peace[style_color]', array(
-		'label' => __( 'Color Templates', 'peace' ),
+		'label' => __( 'Color Schemes', 'peace' ),
 		'section' => 'peace_style_color_options',
 		'type'    => 'select',
 		'description' => __( 'Choose between different color template options to be used as default', 'peace' ),
