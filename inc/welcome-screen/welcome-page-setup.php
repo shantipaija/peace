@@ -29,7 +29,7 @@ function peace_welcome_customize_register( $wp_customize ) {
 					'theme_specific_plugin_option'  => $theme_slug . '_show_recommended_plugins',
 					'facebook'                      => '//www.facebook.com/LogHQ/',
 					'twitter'                       => '//www.twitter.com/logHQ/',
-					'wp_review'                     => true,
+					'wp_review'                     => false,  // Review this theme on w.org
 					'priority'                      => 0,
 				)
 			)

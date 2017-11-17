@@ -1,4 +1,5 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<<<<<<< HEAD
 	<?php if ( has_post_thumbnail() ) : ?>
 		<div class="imghov">
 			<?php
@@ -15,6 +16,22 @@
 			?>
 		</div>
 	<?php endif; ?>
+=======
+	<div class="imghov">
+		<div class="tiles">
+			<div 
+			 data-scale="1.6" 
+			 data-image="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>" 
+			 class="zoom-thumbnail-tile <?php 
+			if ( is_page_template( 'page-fullwidth.php' ) ) {
+				echo "single-featured fullwidth";
+			} else {
+				echo "single-featured sidebars";
+			} 
+			?>"></div>
+		</div>
+	</div>
+>>>>>>> cdefa6905387c58cb60f257af4d82d6fac240542
 	<div class="post-inner-content">
 		<header class="entry-header page-header">
 
@@ -22,7 +39,11 @@
 
 			<div class="entry-meta">
 				<?php peace_posted_on(); ?>
-
+				<?php
+					if(get_theme_mod('peace_post_modified') == 1): ?>
+						<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Last updated on: <?php the_modified_date('F j, Y'); ?> &nbsp;
+					<?php endif;
+				?>
 				<?php
 					/* translators: used between list items, there is a space after the comma */
 					$categories_list = get_the_category_list( esc_html__( ', ', 'peace' ) );
@@ -81,31 +102,29 @@
 
 		</footer><!-- .entry-meta -->
 	</div>
-
-	<?php if ( get_the_author_meta( 'description' ) ) :  ?>
+	<?php if ( get_theme_mod( 'peace_post_author_bio' ) == 1 ) : ?>
 		<div class="post-inner-content secondary-content-box">
-	  <!-- author bio -->
-	  <div class="author-bio content-box-inner">
+	  	<!-- author bio -->
+	  		<div class="author-bio content-box-inner">
 
-		<!-- avatar -->
-		<div class="avatar">
-			<?php echo get_avatar( get_the_author_meta( 'ID' ) , '60' ); ?>
+			<!-- avatar -->
+				<div class="avatar">
+					<?php echo get_avatar( get_the_author_meta( 'ID' ) , '60' ); ?>
+				</div>
+			<!-- end avatar -->
+
+			<!-- user bio -->
+				<div class="author-bio-content">
+		  			<h4 class="author-name"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_the_author_meta( 'display_name' ); ?></a></h4>
+				  	<p class="author-description">
+				  		<?php 
+					  		if ( get_the_author_meta( 'description' ) ) :
+								echo get_the_author_meta( 'description' );
+							endif; 
+						?>
+				  	</p>
+				</div><!-- end .author-bio-content -->
+	  		</div><!-- end .author-bio  -->
 		</div>
-		<!-- end avatar -->
-
-		<!-- user bio -->
-		<div class="author-bio-content">
-
-		  <h4 class="author-name"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_the_author_meta( 'display_name' ); ?></a></h4>
-		  <p class="author-description">
-				<?php echo get_the_author_meta( 'description' ); ?>
-		  </p>
-
-		</div><!-- end .author-bio-content -->
-
-	  </div><!-- end .author-bio  -->
-
-		</div>
-		<?php endif; ?>
-
+	<?php endif; ?>
 </article><!-- #post-## -->
