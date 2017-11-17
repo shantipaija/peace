@@ -252,8 +252,9 @@ function peace_scripts() {
 		wp_enqueue_style( 'flexslider-css', get_template_directory_uri() . '/assets/css/flexslider.css' );
 	}
 
+	$peace_bootstrap = 'peace-bootstrap';
 	// Add main theme stylesheet
-	wp_enqueue_style( 'peace-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'peace-style', get_stylesheet_uri(), array($peace_bootstrap) );
 
 	// Add Modernizr for better HTML5 and CSS3 support
 	wp_enqueue_script( 'peace-modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr.min.js', array( 'jquery' ) );
