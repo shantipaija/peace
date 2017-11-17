@@ -1901,3 +1901,6 @@ header.search-header{
 .flex-caption h2 {
   background: rgba(81, 81, 81, 0.7);
   }
+  .flex-control-paging li a {
+    width: 21px;
+    height: 21px;
