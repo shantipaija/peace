@@ -1,4 +1,22 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<<<<<<< HEAD
+	<?php if ( has_post_thumbnail() ) : ?>
+		<div class="imghov">
+			<?php
+			
+			if ( is_page_template( 'page-fullwidth.php' ) ) {
+				the_post_thumbnail( 'peace-featured-fullwidth',  array(
+				'class' => 'single-featured fullwidth',
+			) );
+			} else {
+				the_post_thumbnail( 'peace-featured', array(
+				'class' => 'single-featured sidebars',
+			) );
+			}
+			?>
+		</div>
+	<?php endif; ?>
+=======
 	<div class="imghov">
 		<div class="tiles">
 			<div 
@@ -13,6 +31,7 @@
 			?>"></div>
 		</div>
 	</div>
+>>>>>>> cdefa6905387c58cb60f257af4d82d6fac240542
 	<div class="post-inner-content">
 		<header class="entry-header page-header">
 
