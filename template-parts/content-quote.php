@@ -1,6 +1,5 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<?php if ( has_post_thumbnail() ) : ?>
-
+    <?php if ( has_post_thumbnail() ) : ?>
 	<div class="imghov">
 		<?php
 		$featured_image_args = array(
@@ -13,7 +12,7 @@
 		}
 		?>
 	</div>
-        <?php endif; ?>
+    <?php endif; ?>
 	<div class="post-inner-content">
 		<header class="entry-header page-header">
 

@@ -1,16 +1,4 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php
-    /*
-	$featured_image_args = array(
-		'class' => 'single-featured',
-	);
-	if ( is_page_template( 'page-fullwidth.php' ) ) {
-		the_post_thumbnail( 'peace-featured-fullwidth', $featured_image_args );
-	} else {
-		the_post_thumbnail( 'peace-featured', $featured_image_args );
-	}
-    */
-	?>
 	<div class="post-inner-content search-post-inner-content">
 		<header class="entry-header page-header search-header">
         
