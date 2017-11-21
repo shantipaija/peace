@@ -10,7 +10,7 @@
             <div class="imghov">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 				<?php
-				/*
+				
 				if ( is_page_template( 'page-fullwidth.php' ) ) {
 					the_post_thumbnail( 'peace-featured-fullwidth', array(
 						'class' => 'single-featured',
@@ -21,11 +21,9 @@
 						
 					) );
 				}
-				*/
+				
 				?>
-				<div class="tiles">
-				    <div class="zoom-thumbnail-tile" data-scale="1.6" data-image="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>"></div>
-				</div>
+				
                 </a>
             </div>
         <?php endif; ?>
