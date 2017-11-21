@@ -1,5 +1,5 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+    <?php if ( has_post_thumbnail() ) : ?>
 	<div class="imghov">
 		<div class="tiles">
 			<div 
@@ -14,7 +14,7 @@
 			?>"></div>
 		</div>
 	</div>
-    
+    <?php endif; ?>
 	<div class="post-inner-content">
 		<header class="entry-header page-header">
 
