@@ -634,13 +634,13 @@ function peace_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('peace[custom_footer_text]', array(
-		'default' => 'peace',
+		//'default' => 'peace',
 		'type' => 'option',
 		'sanitize_callback' => 'peace_sanitize_strip_slashes',
 	));
 	$wp_customize->add_control('peace[custom_footer_text]', array(
 		'label' => __( 'Footer information', 'peace' ),
-		'description' => sprintf( __( 'Copyright text in footer', 'peace' ) ),
+		'description' => sprintf( __( 'Footer Text (like Copyright Message)', 'peace' ) ),
 		'section' => 'peace_footer_options',
 		'type' => 'textarea',
 	));
