@@ -349,12 +349,12 @@ $site_layout = array(
 
 global $style_color;
 $style_color = array(
-	'white-style' 	=> esc_html__( 'White Style', 'peace' ),
-	'black-style' 	=> esc_html__( 'Black Style', 'peace' ),
-	'red-style' 	=> esc_html__( 'Red Style', 'peace' ),
-	'green-style' 	=> esc_html__( 'Green Style', 'peace' ),
-	'blue-style' 	=> esc_html__( 'Blue Style', 'peace' ),
-	'orange-style' 	=> esc_html__( 'Orange Style', 'peace' ),
+	'graylight-style' 	=> esc_html__( 'Gray Light ', 'peace' ),
+	'graydark-style' 	=> esc_html__( 'Gray Dark ', 'peace' ),
+	'red-style' 	=> esc_html__( 'Red ', 'peace' ),
+	'green-style' 	=> esc_html__( 'Green ', 'peace' ),
+	'blue-style' 	=> esc_html__( 'Blue ', 'peace' ),
+	'orange-style' 	=> esc_html__( 'Orange ', 'peace' ),
 	// todo
 	// translation required
 );
