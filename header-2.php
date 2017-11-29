@@ -33,8 +33,12 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 <body <?php body_class(); ?>>
 	<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 	<div id="page" class="hfeed site">
+		
 		<header id="masthead" class="site-header" role="banner">
-			<nav class="navbar navbar-default <?php if ( of_get_option( 'sticky_menu' ) ) { echo 'navbar-fixed-top'; } ?>" role="navigation">
+		<div class="top-section">
+			<?php peace_featured_slider(); ?>
+		</div>
+			<nav class="navbar navbar-default <?php if ( of_get_option( 'sticky_menu' ) ) { echo 'navbar-fixed-top';} ?>" role="navigation">
 				<div class="container">
 					<div class="row">
 						<div class="site-navigation-inner col-sm-12">
@@ -77,10 +81,6 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 		</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-		<div class="top-section">
-			<?php peace_featured_slider(); ?>
-			<?php peace_call_for_action(); ?>
-		</div>
 		<div class="container main-content-area">
 			<?php 
 			$layout_class = get_layout_class(); 

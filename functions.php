@@ -229,11 +229,11 @@ add_filter( 'gallery_style', 'peace_remove_gallery_css' );
  */
 function peace_scripts() {
 
-	// Add Bootstrap default CSS
-	wp_enqueue_style( 'peace-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
+	// register Bootstrap default CSS
+	wp_register_style( 'peace-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
 
-	// Add Font Awesome stylesheet
-	wp_enqueue_style( 'peace-icons', get_template_directory_uri() . '/assets/css/font-awesome.min.css' );
+	// register Font Awesome stylesheet
+	wp_register_style( 'peace-fontawesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css' );
 
 	// Add Google Fonts
 	$font = of_get_option('main_body_typography');
@@ -252,8 +252,10 @@ function peace_scripts() {
 		wp_enqueue_style( 'flexslider-css', get_template_directory_uri() . '/assets/css/flexslider.css' );
 	}
 
+	$peace_bootstrap = 'peace-bootstrap';
 	// Add main theme stylesheet
-	wp_enqueue_style( 'peace-style', get_stylesheet_uri() );
+
+	wp_enqueue_style( 'peace-style', get_stylesheet_uri(), array('peace-bootstrap','peace-fontawesome') );
 
 	// Add Modernizr for better HTML5 and CSS3 support
 	wp_enqueue_script( 'peace-modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr.min.js', array( 'jquery' ) );
@@ -278,6 +280,9 @@ function peace_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// Main.js
+	wp_enqueue_script( 'main-custom-js', get_template_directory_uri() . '/assets/js/main.js', array(), '2017118', true );
 }
 add_action( 'wp_enqueue_scripts', 'peace_scripts' );
 
@@ -344,12 +349,12 @@ $site_layout = array(
 
 global $style_color;
 $style_color = array(
-	'style-white' 	=> esc_html__( 'White Template', 'peace' ),
-	'style-black' 	=> esc_html__( 'Black Template', 'peace' ),
-	'style-red' 	=> esc_html__( 'Red Template', 'peace' ),
-	'style-green' 	=> esc_html__( 'Green Template', 'peace' ),
-	'style-blue' 	=> esc_html__( 'Blue Template', 'peace' ),
-	'style-orange' 	=> esc_html__( 'Orange Template', 'peace' ),
+	'white-style' 	=> esc_html__( 'White Style', 'peace' ),
+	'black-style' 	=> esc_html__( 'Black Style', 'peace' ),
+	'red-style' 	=> esc_html__( 'Red Style', 'peace' ),
+	'green-style' 	=> esc_html__( 'Green Style', 'peace' ),
+	'blue-style' 	=> esc_html__( 'Blue Style', 'peace' ),
+	'orange-style' 	=> esc_html__( 'Orange Style', 'peace' ),
 	// todo
 	// translation required
 );
@@ -512,22 +517,22 @@ if ( ! function_exists( 'get_layout_class' ) ) :
 endif;
 
 /**
-* get_style_color - Returns  stylesheet name (eg: style-white.css) with html tag 
+* get_style_color - Returns  stylesheet name (eg: white-style.css) with html tag 
 */
 if ( ! function_exists( 'get_style_color' ) ) :
 
 	function get_style_color() {
 		
-		$name_style_color = of_get_option( 'style_color', 'style-white' );
+		$color_scheme = of_get_option( 'style_color', 'white-style' );
 		
-		$name_style_color = "
+		$color_scheme = "
 <link rel='stylesheet' id='peace-color-template'  href='" 
-		.get_template_directory_uri(). '/'. $name_style_color . '.css'
+		.get_template_directory_uri(). '/'. $color_scheme . '.css'
 		."' type='text/css' media='all' />
 		";
 		
-		// return $name_style_color;
-		echo $name_style_color;
+		// return $color_scheme;
+		echo $color_scheme;
 		
 	}
 	
