@@ -254,7 +254,7 @@ function peace_customizer( $wp_customize ) {
 	}
 
 	$wp_customize->add_setting('peace[element_color_hover]', array(
-		'default' => sanitize_hex_color( '#DADADA' ),
+		// 'default' => sanitize_hex_color( '#DADADA' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -269,7 +269,7 @@ function peace_customizer( $wp_customize ) {
 
 
 	$wp_customize->add_setting('peace[cfa_bg_color]', array(
-		'default' => sanitize_hex_color( '#FFF' ),
+		// 'default' => sanitize_hex_color( '#FFF' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -294,7 +294,7 @@ function peace_customizer( $wp_customize ) {
 
 
 	$wp_customize->add_setting('peace[cfa_color]', array(
-		'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
+		// 'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -334,7 +334,7 @@ function peace_customizer( $wp_customize ) {
 
 
 	$wp_customize->add_setting('peace[cfa_btn_txt_color]', array(
-		'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
+		// 'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -353,7 +353,7 @@ function peace_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('peace[cfa_btn_color]', array(
-		'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
+		// 'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -428,7 +428,7 @@ function peace_customizer( $wp_customize ) {
 		'choices'    => $typography_options['styles'],
 	));
 	$wp_customize->add_setting('peace[main_body_typography][color]', array(
-		'default' => sanitize_hex_color( '#6B6B6B' ),
+		// 'default' => sanitize_hex_color( '#6B6B6B' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -448,7 +448,7 @@ function peace_customizer( $wp_customize ) {
     ));
 
 	$wp_customize->add_setting('peace[heading_color]', array(
-		'default' => sanitize_hex_color( '#444' ),
+		// 'default' => sanitize_hex_color( '#444' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -458,7 +458,7 @@ function peace_customizer( $wp_customize ) {
 		'section' => 'peace_typography_options',
 	)));
 	$wp_customize->add_setting('peace[link_color]', array(
-		'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
+		// 'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -468,7 +468,7 @@ function peace_customizer( $wp_customize ) {
 		'section' => 'peace_typography_options',
 	)));
 	$wp_customize->add_setting('peace[link_hover_color]', array(
-		'default' => sanitize_hex_color( '#000000' ),
+		// 'default' => sanitize_hex_color( '#000000' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -522,7 +522,7 @@ function peace_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('peace[nav_link_color]', array(
-		'default' => sanitize_hex_color( '#000000' ),
+		// 'default' => sanitize_hex_color( '#000000' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -533,7 +533,7 @@ function peace_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('peace[nav_item_hover_color]', array(
-		'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
+		// 'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -544,7 +544,7 @@ function peace_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('peace[nav_dropdown_bg]', array(
-		'default' => sanitize_hex_color( '#ffffff' ),
+		// 'default' => sanitize_hex_color( '#ffffff' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -555,7 +555,7 @@ function peace_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('peace[nav_dropdown_item]', array(
-		'default' => sanitize_hex_color( '#636467' ),
+		// 'default' => sanitize_hex_color( '#636467' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -566,7 +566,7 @@ function peace_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('peace[nav_dropdown_item_hover]', array(
-		'default' => sanitize_hex_color( '#FFF' ),
+		// 'default' => sanitize_hex_color( '#FFF' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -577,7 +577,7 @@ function peace_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('peace[nav_dropdown_bg_hover]', array(
-		'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
+		// 'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -594,7 +594,7 @@ function peace_customizer( $wp_customize ) {
 		'panel' => 'peace_main_options',
 	));
 	$wp_customize->add_setting('peace[footer_widget_bg_color]', array(
-		'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
+		// 'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -604,7 +604,7 @@ function peace_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('peace[footer_bg_color]', array(
-		'default' => sanitize_hex_color( '#1F1F1F' ),
+		// 'default' => sanitize_hex_color( '#1F1F1F' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -614,7 +614,7 @@ function peace_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('peace[footer_text_color]', array(
-		'default' => sanitize_hex_color( '#999' ),
+		// 'default' => sanitize_hex_color( '#999' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -624,7 +624,7 @@ function peace_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('peace[footer_link_color]', array(
-		'default' => sanitize_hex_color( '#DADADA' ),
+		// 'default' => sanitize_hex_color( '#DADADA' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -652,7 +652,7 @@ function peace_customizer( $wp_customize ) {
 		'panel' => 'peace_main_options',
 	));
 	$wp_customize->add_setting('peace[social_color]', array(
-		'default' => sanitize_hex_color( '#DADADA' ),
+		// 'default' => sanitize_hex_color( '#DADADA' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
@@ -663,7 +663,7 @@ function peace_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('peace[social_footer_color]', array(
-		'default' => sanitize_hex_color( '#DADADA' ),
+		// 'default' => sanitize_hex_color( '#DADADA' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'peace_sanitize_hexcolor',
 	));
