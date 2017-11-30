@@ -35,6 +35,19 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 	<div id="page" class="hfeed site">
 		
 		<header id="masthead" class="site-header" role="banner">
+		<div class="top-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<p> <span><i class="fa fa-phone"></i><a href="tel:0123 - 45678">0123 - 45678</a></span> <span><i class="fa fa-envelope-o"></i><a href="mailto:info@company.com">info@company.com</a></span> </p>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6 text-right">
+						<p> <span><i class="fa fa-certificate"></i><a href="certificates.html">Our Certifications</a></span>
+						<span><i class="fa fa-file-pdf-o"></i><a href="brochure.pdf">Download Brochure</a></span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="top-section">
 			<?php peace_featured_slider(); ?>
 		</div>
