@@ -1,9 +1,9 @@
 
-/* White Template */
+/* Gray Light Template */
 
 body {
   color: #6B6B6B ;
-  /* background-color: #FFFFFF ; */
+  
 }
 
 
@@ -46,16 +46,16 @@ textarea:focus {
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
-  background-color: #f1f1f1 ;
+  background-color: #8c8c8c ;
   color: #21759b ;
 }
 
 .entry-meta a {
-  color: #6B6B6B ;
+  color: #000 ;
 }
 
 .entry-meta a:hover {
- color: #00b9eb 
+ color: #000; 
 }
 .entry-meta .fa {
 	color: #000000  ;
@@ -69,7 +69,7 @@ textarea:focus {
   color: #444 ;
 }
 .entry-title a:hover {
-  color: #6B6B6B ;
+  color: #000 ;
 }
 
 hr.section-divider {
@@ -81,20 +81,20 @@ hr.section-divider {
 }
 
 .page-links span {
-  color: #fff ;
-  background-color: #DADADA ;
+  color: #000 ;
+  background-color: #bdbdbd ;
 }
 
 
  .page-links a span {
-    border-color: 1px solid #E8E8E8 ;
-    background-color: #ffffff ;
-    color: #6B6B6B ;
+    border-color: 1px solid #bcbcbc ;
+    background-color: #bcbcbc ;
+    color: #000 ;
 }
 
 .page-links a:hover span {
-  background-color: #ffffff ;
-  border: 1px solid #000000 ;
+  background-color: #8c8c8c ;
+  border: 1px solid #8c8c8c ;
   color: #000000 ;
 }
 
@@ -114,7 +114,7 @@ hr.section-divider {
 .pagination>.active>span:hover,
 .pagination>.active>a:focus,
 .pagination>.active>span:focus {
-  color: #FFF ;
+  color: #000 ;
   background-color: #FFB74D ;
   /* border-color: #FF9800 ; */
 }
@@ -122,7 +122,7 @@ hr.section-divider {
 
 .pagination>li>a,
 .pagination>li>span {
-  border-color: #dadada ;
+  border-color: #bdbdbd ;
 }
   
 #secondary .widget {
@@ -150,7 +150,7 @@ hr.section-divider {
 }
 
 .popular-posts-wrapper .post .post-image {
-  background-color: #DADADA ;
+  background-color: #bdbdbd ;
 }
 
 #secondary .widget .post-content a {
@@ -170,12 +170,12 @@ a.more-link {
 }
 
 a.more-link:hover {
-  background-color:#DADADA ;
-  border-color:#DADADA ;
-  color: #FFF ;
+  background-color:#8d8d8d ;
+  border-color:#8d8d8d ;
+  color: #000 ;
 }
 .btn.btn-default:hover{
-	background-color:#DADADA ;
+	background-color:#8d8d8d ;
 }
 
 
@@ -183,13 +183,13 @@ a.more-link:hover {
 .woocommerce button.button, .woocommerce input.button,
 a.more-link {
      color: #000000 ;
-    background-color: #ffffff ;
-    border-color: #DADADA ;
+    background-color: #bdbdbd ;
+    border-color: #bdbdbd ;
 }
  
 button, .button {
   background-color: transparent ;
-  color: #fff ;
+  color: #000 ;
 }
 
 
@@ -198,14 +198,14 @@ button:hover, .button:hover {
 }
 
 #infinite-handle span {
-  border: 1px solid #DADADA ;
-  background: #fff ;
-  /* color: #FF9800 ; */
+  border: 1px solid #bcbcbc;
+  background: #bcbcbc ;
+  
 }
 
 #infinite-handle span:hover {
-  background-color: #FFB74D ;
-  color: #fff ;
+  background-color: #8c8c8c ;
+  color: #000 ;
 }
 
 .site-description {
@@ -216,19 +216,24 @@ button:hover, .button:hover {
 .page-numbers,
 .pagination .prev,
 .pagination .next {
-  border: 1px solid #DADADA ;
-  background-color: #FFF ;
+  border: 1px solid #bcbcbc;
+  background-color: #bcbcbc;
+  color:#000;
+  
+}
+.page-numbers:hover{
+	background-color:#8c8c8c;
 }
 
 .post-navigation a:hover,
 .pagination .prev:hover
 .pagination .next:hover {
     color: #000000 ;
-    background-color: #DADADA ;
+    background-color: #8c8c8c ;
 }
 
 .navbar.navbar-default {
-  background-color: #ffffff ;
+  background-color:#f9f9f9;
 }
 i.social_icon.fa:hover {
     color: #ffffff ;
@@ -238,7 +243,7 @@ i.social_icon.fa:hover {
 }
 
 .navbar > .container .navbar-brand {
-  color: #DADADA ;
+  color: #bdbdbd ;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -258,7 +263,7 @@ i.social_icon.fa:hover {
 .navbar-default .navbar-nav .dropdown-menu > li:hover,
 .navbar-default .navbar-nav .dropdown-menu > li:focus {
   color: #636467 ;
-  background-color: #DADADA  ;
+  background-color: #bdbdbd;
 }
 
 
@@ -283,7 +288,7 @@ i.social_icon.fa:hover {
 
 .navbar-default .navbar-nav.peace-mobile-menu > li:hover > a,
 .navbar-default .navbar-nav.peace-mobile-menu > li:hover > .caret {
-    color: #fff ;
+    color: #000 ;
 }
 
 
@@ -298,7 +303,7 @@ i.social_icon.fa:hover {
 
 
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a {
-  color: #fff ;
+  color: #000 ;
 }
   
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
@@ -336,13 +341,13 @@ i.social_icon.fa:hover {
 
 .dropdown-menu > .active {
   /* background-color: #FF9800 ; */
-  color: #fff ;
+  color: #000 ;
 }
 
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover,
 .dropdown-menu>.active>.caret {
-  color: #fff !important ;
+  color: #000 !important ;
 }
 
 
@@ -361,7 +366,7 @@ i.social_icon.fa:hover {
 
 .navigation .wp-pagenavi-pagination span.current,
 .navigation .wp-pagenavi-pagination a:hover {
-  color: #FFF ;
+  color: #000 ;
 }
 
 .pagination>li>a,
@@ -384,12 +389,12 @@ i.social_icon.fa:hover {
 
 #image-navigation .nav-previous a:hover,
 #image-navigation .nav-next a:hover{
-  color: #fff ;
+  color: #000 ;
 }
 
 .gallery-caption {
   background-color: rgba(0, 0, 0, 0.7);
-  color: #fff ;
+  color: #000 ;
 }
 
 #footer-area {
@@ -399,11 +404,11 @@ i.social_icon.fa:hover {
 
 
 #footer-area a {
-  color:#6B6B6B ;
+  color:#999 ;
 }
 
 #footer-area .social-icons li a {
-    background-color: #DADADA ;
+    background-color: #bdbdbd ;
 }
 
 
@@ -436,47 +441,31 @@ i.social_icon.fa:hover {
 
 .scroll-to-top {
  
-  background: #ffffff ;
+  background: #bcbcbc;
   color: #000000 ;
   }
 .scroll-to-top:hover{
-	background-color:rgba(100, 100, 100, 0.4);
-	color:#ffffff;
-}
-/*
-.cfa-text{
-    color: #6B6B6B ;
-  
- }
-
- .cfa-button {
-  color: #6B6B6B ;
-  border-color: #6B6B6B ;
+	background-color:#8d8d8d;
+	color:#000;
 }
 
-.cfa-button a {
-  color: #FF9800 ;
-}
-
-.cfa-button:hover {
-  background-color: #6B6B6B ;
-  color: #fff ;
-}
-*/
 .woocommerce .main-content-inner{
-  background-color: #fff ;
+  background-color: #000 ;
  }
  
 .form-control:focus {
-    border-color: #DADADA ;
+    border-color: #bdbdbd ;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(218, 218, 218, 0.82);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(218, 218, 218, 0.73);
 }
 button#searchsubmit:hover {
-   background-color:#DADADA !important;
+   background-color:#8d8d8d;
 }
 a.navbar-brand {
     color: #636467 !important;
+}
+span.page-numbers.current {
+    background-color: #8c8c8c;
 }
 
