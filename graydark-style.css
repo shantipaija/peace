@@ -1,5 +1,5 @@
 
-/* Black Template */
+/* Gray Dark Template */
 
 body {
   color: #6B6B6B ;
@@ -17,7 +17,8 @@ a:focus {
 }
 
 .nav-links a:hover {
-    color: #000000 ;
+    color: #fff ;
+	background-color:#000;
 }   
  
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -67,10 +68,10 @@ textarea:focus {
 }
 
 .entry-title a {
-  color: #444 ;
+  color: #212121 ;
 }
 .entry-title a:hover {
-  color: #6B6B6B ;
+  color: #000 ;
 }
 
 hr.section-divider {
@@ -82,14 +83,18 @@ hr.section-divider {
 }
 
 .page-links span {
-  color: #6B6B6B  ;
+  color: #fff;
+  background-color:#000;
+}
+.page-links a span{
+	color:#fff;
+	background-color:#212121
 }
 
-
 .page-links a:hover span {
-    background-color: #ffffff ;
-    border: 1px solid #000000 ;
-    color: #000000 ;
+    background-color: #000 ;
+    border: 1px solid #000 ;
+    color: #fff ;
 }
 
 .pagination li a {
@@ -128,7 +133,7 @@ hr.section-divider {
 }
 
 #secondary .widget > h3 {
-  color: #636467 ;
+  color: #212121 ;
 }
 
 #secondary .widget .social-icons a:hover{
@@ -136,7 +141,7 @@ hr.section-divider {
 }
 
 #secondary .widget a {
-  color: #6B6B6B ;
+  color: #212121 ;
 }
 
 #secondary .widget a:hover {
@@ -148,7 +153,7 @@ hr.section-divider {
 }
 
 #secondary .widget .post-content a {
-  color: #6B6B6B  ;
+  color: #212121  ;
 }
 
 
@@ -157,12 +162,13 @@ hr.section-divider {
 }
 
 a.more-link:hover {
-  background-color:#6B6B6B ;
-  border-color:#6B6B6B ;
+  background-color:#000;
+  border-color:#000 ;
   color: #FFF ;
 }
 .btn.btn-default:hover{
-	background-color:#000000 ;
+	background-color:#000;
+	color:#fff;
 }
 
 
@@ -170,8 +176,8 @@ a.more-link:hover {
 .woocommerce button.button, .woocommerce input.button,
 a.more-link {
   color: #fff ;
-   background-color: #6B6B6B ;
-  border-color:#6B6B6B ;
+   background-color: #212121 ;
+  border-color:#212121 ;
   
 }
  
@@ -192,7 +198,7 @@ button:hover, .button:hover {
 }
 
 #infinite-handle span:hover {
-  background-color: #FFB74D ;
+  background-color: #000 ;
   color: #fff ;
 }
 
@@ -207,8 +213,9 @@ button:hover, .button:hover {
 .page-numbers,
 .pagination .prev,
 .pagination .next {
-  border: 1px solid #DADADA ;
-  background-color: #FFF ;
+  border: 1px solid #212121 ;
+  background-color: #212121 ;
+  color:#fff;
 }
 
 .post-navigation a:hover,
@@ -219,7 +226,7 @@ button:hover, .button:hover {
 }
 
 .navbar.navbar-default {
-  background-color: #313233 ;
+  background-color: #494949 ;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -242,12 +249,14 @@ button:hover, .button:hover {
 .navbar-default .navbar-nav > .open > a:focus {
   color: #ffffff ;
 }
-
+.navbar-default .navbar-nav .dropdown-menu > li{
+	color:#000;
+}
 
 .navbar-default .navbar-nav .dropdown-menu > li:hover,
 .navbar-default .navbar-nav .dropdown-menu > li:focus {
   color: #fff ;
-  /* background-color: transparent ; */
+ background-color:#212121;
 }
 
 
@@ -255,7 +264,7 @@ button:hover, .button:hover {
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li:hover>a,
 .dropdown-menu>li:hover>.caret {
-  color: #000000 ;
+  color: #fff ;
 }
 .dropdown-menu{
 	background-color:#fffffff ;
@@ -389,7 +398,7 @@ button:hover, .button:hover {
 
 
 #footer-area a {
-  /* color: #DADADA ; */
+color: #999;
 }
 
 #footer-area .widget_nav_menu ul li a {
@@ -422,34 +431,14 @@ button:hover, .button:hover {
 }
 
 .scroll-to-top {
-  /* background:#FFB74D ; */
-  background: #6B6B6B ;
+  background: #212121 ;
   color: #FFF ;
   }
 .scroll-to-top:hover{
 	background-color:#000000 ;
 }
 
-/*
-.cfa-text{
-    color: #FF9800 ;
-  
- }
 
- .cfa-button {
-  color: #FF9800 ;
-  border-color: #FF9800 ;
-}
-
-.cfa-button a {
-  color: #FF9800 ;
-}
-
-.cfa-button:hover {
-  background-color: #FFB74D ;
-  color: #fff ;
-}
-*/
 .woocommerce .main-content-inner{
   background-color: #fff ;
  }
@@ -458,4 +447,15 @@ button:hover, .button:hover {
        border-color: #5b9dd9;
     -webkit-box-shadow: 0 0 2px rgba(30,140,190,.8);
     box-shadow: 0 0 2px rgba(30,140,190,.8);
+}
+.tagcloud a:hover{
+	color:#fff !important;
+	background-color:#212121;
+}
+.nav-links .page-numbers a:hover{
+	color:#fff;
+	background-color:#000;
+}
+span.page-numbers.current {
+    background-color: #000;
 }

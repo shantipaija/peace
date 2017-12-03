@@ -87,13 +87,14 @@ hr.section-divider {
 }
 
 .page-links a span {
-  /* color: #FF9800 ; */
+  color: #000 ;
+  background-color:#43a047;
 }
 
 .page-links a:hover span {
-  background-color: #ffffff ;
-  border: 1px solid #087135 ;
-  color: #087135 ;
+  background-color: #00701a ;
+  border: 1px solid #00701a ;
+  color: #000 ;
 }
 
 .pagination li a {
@@ -112,9 +113,9 @@ hr.section-divider {
 .pagination>.active>span:hover,
 .pagination>.active>a:focus,
 .pagination>.active>span:focus {
-  color: #FFF ;
-  background-color: #FFB74D ;
-  border-color: #FF9800 ;
+  color: #000 ;
+  background-color: #00701a ;
+  border-color: #00701a ;
 }
 
 
@@ -132,7 +133,7 @@ hr.section-divider {
 }
 
 #secondary .widget > h3 {
-  color: #636467 ;
+  color: #00701a ;
 }
 
 #secondary .widget .social-icons a:hover{
@@ -157,7 +158,7 @@ hr.section-divider {
 
 
 #secondary .widget .post-content a:hover {
-  color: #087135  ;
+  color:#00701a ;
 }
 
 
@@ -167,21 +168,21 @@ a.more-link {
 }
 
 a.more-link:hover {
-  background-color:#0A8E42 ;
-  border-color:#0A8E42 ;
-  color: #FFF ;
+  background-color:#00701a ;
+  border-color:#00701a ;
+  color: #000 ;
 }
 .btn.btn-default:hover{
-	background-color:#0A8E42 !important;
+	background-color:#00701a;
 }
 
 
 .btn.btn-default, .woocommerce #respond input#submit, .woocommerce a.button,
 .woocommerce button.button, .woocommerce input.button,
 a.more-link {
-  color: #fff ;
-   background-color: #087135;
-  border-color:#087135;
+  color: #000 ;
+   background-color: #43a047;
+  border-color:#43a047;
   
 }
  
@@ -196,9 +197,9 @@ button:hover, .button:hover {
 }
 
 #infinite-handle span {
-  border: 1px solid #DADADA ;
-  background: #fff ;
-  color: #FF9800 ;
+  border: 1px solid #43a047 ;
+  background-color: #43a047 ;
+  color: #000 ;
 }
 
 #infinite-handle span:hover {
@@ -214,8 +215,9 @@ button:hover, .button:hover {
 .page-numbers,
 .pagination .prev,
 .pagination .next {
-  border: 1px solid #DADADA ;
-  background-color: #FFF ;
+  border: 1px solid #43a047 ;
+  background-color: #43a047 ;
+  color:#000;
 }
 
 .post-navigation a:hover,
@@ -226,16 +228,32 @@ button:hover, .button:hover {
 }
 
 .navbar.navbar-default {
-  background-color: #087135 ;
+  background-color: #64ba69 ;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #F5F7FA ;
+  color: #000 ;
+}
+span.caret.peace-dropdown {
+    color: #000;
+}
+.navbar > .container .navbar-brand {
+  color: #000 ;
 }
 
-.navbar > .container .navbar-brand {
-  color: #fff ;
+a.page-numbers:hover {
+    color: #000;
+    background-color: #00701a;
 }
+span.page-numbers.current {
+    background-color: #00701a;
+}
+
+
+
+
+
+
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > .caret,
@@ -247,14 +265,14 @@ button:hover, .button:hover {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #ffffff ;
+  color: #000 ;
 }
 
 
 .navbar-default .navbar-nav .dropdown-menu > li:hover,
 .navbar-default .navbar-nav .dropdown-menu > li:focus {
-  color: #fff ;
-  background-color: #087135  ;
+  color: #000 ;
+  background-color: #43a047  ;
 }
 
 
@@ -262,7 +280,7 @@ button:hover, .button:hover {
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li:hover>a,
 .dropdown-menu>li:hover>.caret {
-  color: #fff ;
+  color: #000 ;
 }
 .dropdown-menu{
 	background-color:#fffffff ;
@@ -313,7 +331,7 @@ button:hover, .button:hover {
   .navbar-default .navbar-nav > li:hover > a,
   .navbar-default .navbar-nav > li:hover > .caret,
   .dropdown-menu>li>.caret {
-    color: #fff ;
+    color: #000 ;
   }
   
   
@@ -345,7 +363,7 @@ button:hover, .button:hover {
 }
 
 .navbar-nav > li {
-  color: #F5F7FA !important;
+  color: #000;
 }
 
 .navbar-nav > li:hover > .caret {
@@ -426,34 +444,14 @@ button:hover, .button:hover {
 }
 
 
-.scroll-to-top {
-  /* background:#FFB74D ; */
-  background: #087135 ;
-  color: #FFF ;
+.scroll-to-top { 
+  background: #43a047;
+  color: #000 ;
   }
 .scroll-to-top:hover{
-	background-color:#0A8E42 ;
-}
-/*
-.cfa-text{
-    color: #FF9800 ;
-  
- }
-
- .cfa-button {
-  color: #FF9800 ;
-  border-color: #FF9800 ;
+	background-color:#00701a;
 }
 
-.cfa-button a {
-  color: #FF9800 ;
-}
-
-.cfa-button:hover {
-  background-color: #FFB74D ;
-  color: #fff ;
-}
-*/
 .woocommerce .main-content-inner{
   background-color: #fff ;
  }
@@ -466,4 +464,28 @@ button:hover, .button:hover {
 
  #secondary .widget ul li{
 	color:#087135 ;
+}
+caption{
+	color:#00701a;
+}
+.table>thead>tr>th{
+	color:#00701a;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #96ed9878;
+}
+#secondary .widget .tagcloud a:hover{
+	color:#fff;
+	background-color:#00701a;
+} 
+.table-hover>tbody>tr:hover {
+    background-color: #96ed9878;
+}
+.page-links span{
+	color:#000;
+	background-color:#00701a;
+}
+.tagcloud a:hover{
+	color:#fff;
+	background-color:#087135;
 }

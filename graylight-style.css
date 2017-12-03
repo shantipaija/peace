@@ -469,3 +469,7 @@ span.page-numbers.current {
     background-color: #8c8c8c;
 }
 
+.page-links span {
+	color:#fff;
+	background-color:#8d8d8d;
+}
