@@ -6,7 +6,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="blog-item-wrap">
-        <?php if ( has_post_thumbnail() ) : ?>
+        <?php if ( has_post_thumbnail( $post->ID ) ) : ?>
             <div class="imghov">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 				<div class="tiles">

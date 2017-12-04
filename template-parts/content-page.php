@@ -6,7 +6,7 @@
  */
 ?>
 
-<?php if ( has_post_thumbnail() ) : ?>
+<?php if ( has_post_thumbnail(  $post->ID ) ) : ?>
 	<div class="imghov">
 		<?php
 		if ( is_page_template( 'page-fullwidth.php' ) ) {
