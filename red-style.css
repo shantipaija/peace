@@ -277,7 +277,7 @@ button:hover, .button:hover {
   background-color:#e53935;
 }
 .dropdown-menu{
-	background-color:#fffffff   ;
+	background-color:#ffffff;
 }
 
 .dropdown-menu>li>.caret {
@@ -477,7 +477,7 @@ caption{
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #ff6f604f;
+    background-color: #f9d5d2;
 }
 .tagcloud a:hover{
 	color:#fff;
@@ -491,7 +491,7 @@ span.page-numbers.current {
     background-color: #ab000d;
 }
 .table-hover>tbody>tr:hover {
-    background-color: #ff6f604f;
+    background-color: #f9d5d2;
 }
 
 .page-links a span{

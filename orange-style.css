@@ -278,7 +278,7 @@ button:hover, .button:hover {
   color: #000;
 }
 .dropdown-menu{
-	background-color:#fffffff;
+	background-color:#ffffff;
 }
 
 .dropdown-menu>li>.caret {
@@ -451,26 +451,7 @@ p.logged-in-as a:hover {
   color: #000;
   }
 
-/*
-  .cfa-text{
-    color: #FF9800;
-  
- }
 
- .cfa-button {
-  color: #FF9800;
-  border-color: #FF9800;
-}
-
-.cfa-button a {
-  color: #FF9800;
-}
-
-.cfa-button:hover {
-  background-color:  #ff9800;
-  color: #fff;
-}
-*/
 .woocommerce .main-content-inner{
   background-color: #000;
  }
@@ -491,7 +472,7 @@ p.logged-in-as a:hover {
 }
 
 .flex-caption h2 {
-    background-color: #ef6c00ad;
+    background-color: #ef6c00;
 	color:#000;
 }
 a:hover .flex-caption h2 {
@@ -523,10 +504,10 @@ caption{
 	color:#ef6c00;
 }
 .table-hover>tbody>tr:hover {
-    background-color: #ef6c0029;
+    background-color: #f1caab;
 }
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #ef6c0029;
+    background-color: #f1caab;
 }
 #footer-area .widget ul li:last-child{
 	border-bottom:none;
