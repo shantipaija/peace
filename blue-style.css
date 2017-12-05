@@ -439,7 +439,7 @@ span.page-numbers.current {
 
 
 .scroll-to-top {
-  background:#2962ff;
+  background-color:#2962ff;
   color: #FFF ;
   }
 .scroll-to-top:hover{
@@ -453,13 +453,13 @@ span.page-numbers.current {
 	color:#008DBC ;
 }
 .flex-caption h2 {
-    background: #2195f2;
+    background-color: #2195f2;
 }
 a:hover .flex-caption h2 {
-    background: #2195f2;
+    background-color: #2195f2;
 }
 .flex-caption .excerpt{
-	background: rgba(38, 109, 163, 0.74);
+	background-color: rgba(38, 109, 163, 0.74);
 }
 .table>thead>tr>th{
 	color:#2962ff;
@@ -484,3 +484,13 @@ a.page-numbers:hover {
 .table-hover>tbody>tr:hover {
     background-color: #2962ff;
 }
+.flex-control-paging li a{
+	background-color: rgba(38, 109, 163, 0.74);
+}
+.flex-control-paging li a.flex-active{
+	background-color:#2195f2;
+}
+.flex-control-paging li a:hover{
+	background-color:#2195f2;
+}
+
