@@ -275,7 +275,7 @@ span.page-numbers.current {
   color: #fff ;
 }
 .dropdown-menu{
-	background-color:#fffffff ;
+	background-color:#ffffff ;
 }
 
 .dropdown-menu>li>.caret {
@@ -453,7 +453,7 @@ span.page-numbers.current {
 	color:#008DBC ;
 }
 .flex-caption h2 {
-    background: #2195f29c;
+    background: #2195f2;
 }
 a:hover .flex-caption h2 {
     background: #2195f2;
@@ -465,7 +465,7 @@ a:hover .flex-caption h2 {
 	color:#2962ff;
 }
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #2962ff24;
+    background-color: #eef8ff;
 }
 .tagcloud a:hover{
 	color:#fff;
@@ -482,5 +482,5 @@ a.page-numbers:hover {
     background-color: #0039cb;
 }
 .table-hover>tbody>tr:hover {
-    background-color: #2962ff24;
+    background-color: #2962ff;
 }
