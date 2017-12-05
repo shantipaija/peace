@@ -87,7 +87,7 @@ hr.section-divider {
 
 
  .page-links a span {
-    border-color: 1px solid #bcbcbc ;
+    border: 1px solid #bcbcbc ;
     background-color: #bcbcbc ;
     color: #000 ;
 }
@@ -274,7 +274,7 @@ i.social_icon.fa:hover {
   color: #636467 ;
 }
 .dropdown-menu{
-	background-color:#fffffff ;
+	background-color:#ffffff ;
 }
 
 .dropdown-menu>li>.caret {
