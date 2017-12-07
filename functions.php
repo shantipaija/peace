@@ -355,6 +355,7 @@ $style_color = array(
 	'green-style' 	=> esc_html__( 'Green ', 'peace' ),
 	'blue-style' 	=> esc_html__( 'Blue ', 'peace' ),
 	'orange-style' 	=> esc_html__( 'Orange ', 'peace' ),
+	'white-style' 	=> esc_html__( 'white ', 'peace' ),
 	// todo
 	// translation required
 );
