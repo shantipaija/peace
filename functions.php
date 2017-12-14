@@ -280,9 +280,7 @@ function peace_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
-	// Main.js
-	wp_enqueue_script( 'main-custom-js', get_template_directory_uri() . '/assets/js/main.js', array(), '2017118', true );
+    
 }
 add_action( 'wp_enqueue_scripts', 'peace_scripts' );
 
