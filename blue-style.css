@@ -8,7 +8,7 @@ body {
 
 
 a {
-  color: #6B6B6B ;
+  color: #0085c3 ;
 }
 
 a:hover,
@@ -17,8 +17,8 @@ a:focus {
 }
 .nav-links a:hover {
     color: #008DBC ;
-}   
- 
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #000000 ;
 }
@@ -85,7 +85,7 @@ hr.section-divider {
 .page-links span {
     color: #fff;
     background-color: #0039cb;
-  
+
 }
 
 .page-links a span {
@@ -125,7 +125,7 @@ background-color:#2962ff;
 .pagination>li>span {
   border-color: #dadada ;
 }
-  
+
 #secondary .widget {
   color: #6B6B6B  ;
 }
@@ -178,7 +178,7 @@ a.more-link:hover {
 .btn.btn-default:hover{
 	background-color:#0039cb ;
 	border-color:#0039cb;
-	
+
 }
 
 
@@ -188,9 +188,9 @@ a.more-link {
   color: #fff ;
    background-color: #2962ff;
   border-color: #2962ff;
-  
+
 }
- 
+
 button, .button {
   background-color: transparent ;
   color: #fff ;
@@ -307,32 +307,32 @@ span.page-numbers.current {
   color: #fff ;
   background-color: transparent ;
 }
-  
+
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-    color: #fff ; 
+    color: #fff ;
 	background-color: transparent ;
   }
-  
-  
+
+
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .dropdown-menu > li.active > .caret,
   .navbar-default .navbar-nav .dropdown-menu > li.open > a  {
     color: #ffffff ;
   }
-  
-  
+
+
   .navbar-default .navbar-nav > li:hover > a,
   .navbar-default .navbar-nav > li:hover > .caret,
   .dropdown-menu>li>.caret {
     color: #fff ;
   }
-  
-  
+
+
   .navbar-default .navbar-nav li.open > a,
   .navbar-default .navbar-nav li.open > .caret {
     color: #ffffff ;
   }
-  
+
 
 
 .dropdown-menu > li > a {
@@ -418,7 +418,7 @@ span.page-numbers.current {
 #colophon {
   background-color: #1F1F1F ;
  }
- 
+
 .site-info a {
   color: #777 ;
 }
@@ -448,7 +448,7 @@ span.page-numbers.current {
 .woocommerce .main-content-inner{
   background-color: #fff ;
  }
- 
+
  #secondary .widget ul li{
 	color:#008DBC ;
 }
@@ -493,4 +493,3 @@ a.page-numbers:hover {
 .flex-control-paging li a:hover{
 	background-color:#2195f2;
 }
-
