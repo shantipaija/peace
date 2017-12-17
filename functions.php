@@ -362,20 +362,11 @@ $style_color = array(
 global $typography_options;
 $typography_options = array(
     'sizes' => array(
-        '6px' => '6px',
-        '10px' => '10px',
-        '12px' => '12px',
-        '14px' => '14px',
-        '15px' => '15px',
-        '16px' => '16px',
-        '18px' => '18px',
-        '20px' => '20px',
-        '24px' => '24px',
-        '28px' => '28px',
-        '32px' => '32px',
-        '36px' => '36px',
-        '42px' => '42px',
-        '48px' => '48px',
+        '6px' => '6px',         '10px' => '10px',       '12px' => '12px',
+        '14px' => '14px',       '15px' => '15px',       '16px' => '16px',
+        '18px' => '18px',       '20px' => '20px',       '24px' => '24px',
+        '28px' => '28px',       '32px' => '32px',       '36px' => '36px',
+        '42px' => '42px',       '48px' => '48px',
     ),
     'faces' => array(
         'arial'          => 'Arial',
@@ -519,11 +510,11 @@ if (! function_exists('get_layout_class')) :
 endif;
 
 /**
-* get_style_color - Returns  stylesheet name (eg: white-style.css) with html tag
+* get_color_scheme - Returns  stylesheet name (eg: white-style.css) with html tag
 */
-if (! function_exists('get_style_color')) :
+if (! function_exists('get_color_scheme')) :
 
-    function get_style_color()
+    function get_color_scheme()
     {
         $color_scheme = of_get_option('style_color', 'white-style');
 
@@ -542,8 +533,8 @@ if (! function_exists('get_style_color')) :
         
     }
 
-     add_action('wp_head', 'get_style_color', 8);
-    // add_action('wp_head','get_style_color');
+     add_action('wp_head', 'get_color_scheme', 8);
+    // add_action('wp_head','get_color_scheme');
     // hook the colorful stylesheet in wp_head
 
 endif;
