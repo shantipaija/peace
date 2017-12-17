@@ -531,6 +531,8 @@ if (! function_exists('get_color_scheme')) :
         
         $the_styles =  $color_scheme . $bgcolor;
         
+        echo  $the_styles;
+        
     }
 
      add_action('wp_head', 'get_color_scheme', 8);
