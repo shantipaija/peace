@@ -268,7 +268,8 @@ function peace_scripts()
     }
 
     // Main theme related functions
-    wp_enqueue_script('peace-functions', get_template_directory_uri() . '/assets/js/functions.min.js', array( 'jquery' ));
+    // wp_enqueue_script('peace-functions', get_template_directory_uri() . '/assets/js/functions.min.js', array( 'jquery' ));
+    wp_enqueue_script('peace-functions', get_template_directory_uri() . '/assets/js/functions.js', array( 'jquery' ));
 
 
     // This one is for accessibility
