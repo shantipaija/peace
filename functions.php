@@ -522,14 +522,13 @@ if (! function_exists('get_color_scheme')) :
 <link rel='stylesheet' id='peace-color-template'  href='"
         .get_template_directory_uri(). '/'. $color_scheme . '.css'
         ."' type='text/css' media='all' />
-        
-        
 		";
         
         $background_color = of_get_option('background_color');
         $bgcolor = (strlen($background_color)>3)?"<style>body{background-color:$background_color;}</style>":"";
         
-        $the_styles =  $color_scheme . $bgcolor;
+        $the_styles =  $color_scheme . $bgcolor ."
+        ";
         
         echo  $the_styles;
         
