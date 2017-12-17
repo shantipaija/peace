@@ -531,10 +531,15 @@ if (! function_exists('get_style_color')) :
 <link rel='stylesheet' id='peace-color-template'  href='"
         .get_template_directory_uri(). '/'. $color_scheme . '.css'
         ."' type='text/css' media='all' />
+        
+        
 		";
-
-        // return $color_scheme;
-        echo $color_scheme;
+        
+        $background_color = of_get_option('background_color');
+        $bgcolor = (strlen($background_color)>3)?"<style>body{background-color:$background_color;}</style>":"";
+        
+        $the_styles =  $color_scheme . $bgcolor;
+        
     }
 
      add_action('wp_head', 'get_style_color', 8);
