@@ -149,14 +149,26 @@ if ( ! function_exists( 'peace_call_for_action' ) ) :
 	/**
  * Call for action text and button displayed above content
  */
-	function peace_call_for_action() {
+	function peace_call_for_action($width="") {
 		if ( is_front_page() && of_get_option( 'w2f_cfa_text' ) != '' ) {
 			echo '<div class="cfa">';
 			echo '<div class="container">';
-			echo '<div class="col-sm-8">';
+
+			if($width=="fullwidth"){
+				echo '<div class="col-sm-12">';
+			}else{
+					echo '<div class="col-sm-8">';
+			}
+
 			  echo '<span class="cfa-text">' . of_get_option( 'w2f_cfa_text' ) . '</span>';
 			  echo '</div>';
-			  echo '<div class="col-sm-4">';
+
+				if($width=="fullwidth"){
+					echo '<div class="col-sm-4 offset-sm-4">';
+				}else{
+						echo '<div class="col-sm-4">';
+				}
+
 			  echo '<a class="btn btn-lg cfa-button" href="' . of_get_option( 'w2f_cfa_link' ) . '">' . of_get_option( 'w2f_cfa_button' ) . '</a>';
 			  echo '</div>';
 			echo '</div>';
@@ -195,7 +207,7 @@ if ( ! function_exists( 'peace_featured_slider' ) ) :
 					} else {
 						echo '<li>';
 					}
-					
+
 					if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
 						if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'photon' ) ) {
 							$feat_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
@@ -266,14 +278,14 @@ if ( ! function_exists( 'get_peace_theme_options' ) ) {
 			// echo '.btn-default:hover, .label-default[href]:hover, .tagcloud a:hover,button, .main-content [class*="navigation"] a:hover,.label-default[href]:focus, #infinite-handle span:hover,.btn.btn-default.read-more:hover, .btn-default:hover, .scroll-to-top:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .more-link:hover, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover, .cfa-button:hover,.woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, a:hover .flex-caption h2 { background-color: ' . of_get_option( 'element_color_hover' ) . '; border-color: ' . of_get_option( 'element_color_hover' ) . '; }';
 			echo '.btn.btn-lg.cfa-button:hover { background-color: ' . of_get_option( 'element_color_hover' ) . '; border-color: ' . of_get_option( 'element_color_hover' ) . '; }';
 		}
-		
-		
-		
-		
+
+
+
+
 		if ( of_get_option( 'background_color' ) ) {
 			echo 'body.custom-background { background-color: ' . of_get_option( 'background_color' ) . ' !important;}';
 		}
-		
+
 		if ( of_get_option( 'element_color_hover' ) ) {
 			echo '.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {color: ' . of_get_option( 'element_color_hover' ) . ';}';
 		}
