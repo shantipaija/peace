@@ -2208,3 +2208,9 @@ header.active .top-line {
     color: #fff; /* active text color */
     background-color: #a94442; /* active bg color */
 }
+
+
+span.search-post-thumb img {
+    height: 100px !important;
+    width: 100px !important;
+}
