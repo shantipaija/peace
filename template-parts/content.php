@@ -13,7 +13,7 @@
             <div class="imghov">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 				<div class="tiles">
-				    <div data-scale="1.6" data-image="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>"
+				    <div data-scale="1.3" data-image="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>"
                     class="zoom-thumbnail-tile  <?php 
                     if ( is_page_template( 'page-fullwidth.php' ) ) {
                         echo "single-featured fullwidth";
