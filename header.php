@@ -55,31 +55,21 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 												<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 											</h1>
 										<?php }
-										} else
+										} else 
 										{
 										echo is_home() ?  '<h1 class="site-name">' : '<p class="site-name">'; ?>
 											<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-
+																			
 										<?php
-											echo is_home() ?  '</h1>' : '</p>';
+											echo is_home() ?  '</h1>' : '</p>'; 
 										?>
 										<!--- ?php bloginfo( 'description' ); ? --->
 										<?php
-										}
+										} 
 										?>
 								</div><!-- end of #logo -->
 							</div>
 							<?php peace_header_menu(); // main navigation ?>
-							<?php if( get_theme_mod( 'peace_header_search', '' ) !=  '1' ) : ?>
-							<div class="search-wrap">
-								<div class="search-icon">
-									<i class="fa fa-search"></i>
-								</div>
-								<div class="search-box">
-									<?php get_search_form(); ?>
-								</div>
-							</div>
-							<?php endif; ?>
 						</div>
 					</div>
 				</div>
@@ -92,16 +82,16 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 			<?php peace_call_for_action(); ?>
 		</div>
 		<div class="container main-content-area">
-			<?php
-			$layout_class = get_layout_class();
+			<?php 
+			$layout_class = get_layout_class(); 
 			?>
-			<div class="row <?php
+			<div class="row <?php 
 			// what is this line doing here?
-			echo $layout_class;
-
-			?>">
+			echo $layout_class; 
+			
+			?>"> 
 			<?php
-
+				
 				if($layout_class=="dbar"){
 					get_sidebar("left");
 				}
