@@ -290,10 +290,7 @@ textarea {
 .hentry {
   margin: 0;
 }
-.byline,
-.updated {
-  display: none;
-}
+
 .single .byline,
 .group-blog .byline {
   display: inline;

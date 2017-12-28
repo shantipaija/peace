@@ -39,7 +39,7 @@
 					?>
 					<?php
 						if(get_theme_mod('peace_post_modified') == 1): ?>
-							<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Last updated on: <?php the_modified_date('F j, Y'); ?> &nbsp;
+						
 						<?php endif;
 					?>
 					

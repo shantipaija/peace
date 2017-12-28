@@ -848,7 +848,7 @@ add_action( 'customize_controls_print_footer_scripts', 'customizer_custom_script
 
 function customizer_custom_scripts() {
 	?>
-<script type="text/javascript">
+<script>
 	jQuery(document).ready(function() {
 		/* This one shows/hides the an option when a checkbox is clicked. */
 		jQuery('#customize-control-peace-peace_slide_categories, #customize-control-peace-peace_slide_number').hide();

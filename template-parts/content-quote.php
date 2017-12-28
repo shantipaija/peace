@@ -16,7 +16,7 @@
 	<div class="post-inner-content">
 		<header class="entry-header page-header">
 
-			<h1 class="entry-title "><?php the_title(); ?> ...quote ......</h1>
+			<h1 class="entry-title "><?php the_title(); ?> </h1>
 
 			<div class="entry-meta">
 				<?php peace_posted_on(); ?>
