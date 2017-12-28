@@ -32,8 +32,8 @@
                     ?> <?php // the_modified_date('F j, Y'); ?>  <?php 
                     endif;
 				?>
-				<?php  peace_author_name(); ?>
-				<?php //peace_posted_on(); ?>
+				<?php  //peace_author_name(); ?>
+				<?php peace_posted_on(); ?>
 				<?php
 					/* translators: used between list items, there is a space after the comma */
 					$categories_list = get_the_category_list( esc_html__( ', ', 'peace' ) );
