@@ -103,7 +103,7 @@ jQuery( document ).ready(function() {
         // some text just to show zoom level on current item in this example
         // .append('<div class="txt"><div class="x">'+ jQuery(this).attr('data-scale') +'x</div>ZOOM ON<br>HOVER</div>')
         // set up a background image for each tile based on data-image attribute
-        .children('.zoom-thumbnail-tile').css({'background-image': 'url('+ jQuery(this).attr('data-image') +')'});
+        .children('.zoom-thumbnail-tile').css({'background-image': 'url('+ jQuery(this).attr('data-image') +')', 'background-repeat':'no-repeat'});
     });
 });
 
