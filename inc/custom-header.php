@@ -47,7 +47,7 @@ if ( ! function_exists( 'peace_admin_header_style' ) ) :
  */
 	function peace_admin_header_style() {
 		?>
-		<style type="text/css">
+		<style>
 		.appearance_page_custom-header #headimg {
 			border: none;
 		}

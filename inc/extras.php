@@ -252,7 +252,7 @@ if ( ! function_exists( 'get_peace_theme_options' ) ) {
  */
 	function get_peace_theme_options() {
 
-		echo '<style type="text/css">';
+		echo '<style>';
 
 		if ( of_get_option( 'link_color' ) ) {
 			echo 'a, #infinite-handle span, #secondary .widget .post-content a, .entry-meta a {color:' . of_get_option( 'link_color' ) . '}';
@@ -516,7 +516,7 @@ add_filter( 'nav_menu_link_attributes', 'peace_add_top_level_menu_url', 99, 3 );
  */
 function peace_make_top_level_menu_clickable() {
 	if ( ! wp_is_mobile() ) { ?>
-		  <script type="text/javascript">
+		  <script>
 			jQuery( document ).ready( function( $ ){
 			  if ( $( window ).width() >= 767 ){
 				$( '.navbar-nav > li.menu-item > a' ).click( function(){

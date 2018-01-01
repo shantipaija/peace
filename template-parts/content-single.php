@@ -27,12 +27,13 @@
 			<h1 class="entry-title "><?php the_title(); ?></h1>
 
 			<div class="entry-meta">
-				<?php peace_posted_on(); ?>
 				<?php
-					if(get_theme_mod('peace_post_modified') == 1): ?>
-						<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Last updated on: <?php the_modified_date('F j, Y'); ?> &nbsp;
-					<?php endif;
+					if(get_theme_mod('peace_post_modified') == 1): 
+                    ?> <?php // the_modified_date('F j, Y'); ?>  <?php 
+                    endif;
 				?>
+				<?php  //peace_author_name(); ?>
+				<?php peace_posted_on(); ?>
 				<?php
 					/* translators: used between list items, there is a space after the comma */
 					$categories_list = get_the_category_list( esc_html__( ', ', 'peace' ) );

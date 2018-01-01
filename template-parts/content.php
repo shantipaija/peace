@@ -28,7 +28,7 @@
 		<div class="post-inner-content">
 			<header class="entry-header page-header">
 
-				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?> ... </a></h2>
+				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
@@ -39,7 +39,7 @@
 					?>
 					<?php
 						if(get_theme_mod('peace_post_modified') == 1): ?>
-							<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Last updated on: <?php the_modified_date('F j, Y'); ?> &nbsp;
+
 						<?php endif;
 					?>
 
