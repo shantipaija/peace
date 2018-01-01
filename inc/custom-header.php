@@ -86,3 +86,38 @@ if ( ! function_exists( 'peace_admin_header_image' ) ) :
 	<?php
 	}
 endif; // peace_admin_header_image
+
+
+
+if ( ! function_exists( 'peace_top_header_bar_display' ) ) :
+
+	/**
+	 * Function to display the top header bar
+	 **/
+	function peace_top_header_bar_display() {
+		if ( get_theme_mod( 'peace_breaking_news', 0 ) == 1 || get_theme_mod( 'peace_date_display', 0 ) == 1 || get_theme_mod( 'peace_social_link_activate', 0 ) == 1 ) :
+			?>
+			<div class="news-bar">
+				<div class="inner-wrap clearfix">
+					<?php
+					if ( get_theme_mod( 'peace_date_display', 0 ) == 1 )
+						peace_date_display();
+					?>
+
+					<?php
+					if ( get_theme_mod( 'peace_breaking_news', 0 ) == 1 )
+						peace_breaking_news();
+					?>
+
+					<?php
+					if ( get_theme_mod( 'peace_social_link_activate', 0 ) == 1 ) {
+						peace_social_icon();
+					}
+					?>
+				</div>
+			</div>
+			<?php
+		endif;
+	}
+
+endif;

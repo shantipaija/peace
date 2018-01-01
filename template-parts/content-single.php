@@ -1,26 +1,26 @@
 <?php
 
 
- 
+
  ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <?php if ( has_post_thumbnail(  $post->ID ) ) : ?>
-	<div class="imghov">
-		<div class="tiles">
-			<div 
-			 data-scale="1.3" 
-			 data-image="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>" 
-			 class="zoom-thumbnail-tile <?php 
-			if ( is_page_template( 'page-fullwidth.php' ) ) {
-				echo "single-featured fullwidth";
-			} else {
-				echo "single-featured sidebars";
-			} 
-			?>"></div>
-		</div>
+  <?php if ( has_post_thumbnail(  $post->ID ) ) : ?>
+  	<div class="imghov">
+  		<div class="tiles">
+  			<div
+  			 data-scale="1.3"
+  			 data-image="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>"
+  			 class="zoom-thumbnail-tile <?php
+  			if ( is_page_template( 'page-fullwidth.php' ) ) {
+  				echo "single-featured fullwidth";
+  			} else {
+  				echo "single-featured sidebars";
+  			}
+  			?>"></div>
+  		</div>
 	</div>
-    <?php endif; ?>
+  <?php endif; ?>
 	<div class="post-inner-content">
 		<header class="entry-header page-header">
 
@@ -106,10 +106,10 @@
 				<div class="author-bio-content">
 		  			<h4 class="author-name"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_the_author_meta( 'display_name' ); ?></a></h4>
 				  	<p class="author-description">
-				  		<?php 
+				  		<?php
 					  		if ( get_the_author_meta( 'description' ) ) :
 								echo get_the_author_meta( 'description' );
-							endif; 
+							endif;
 						?>
 				  	</p>
 				</div><!-- end .author-bio-content -->

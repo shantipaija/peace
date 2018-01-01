@@ -2,24 +2,24 @@
 /**
  * @package Peace
  */
- 
+
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="blog-item-wrap">
-        <?php if ( has_post_thumbnail( $post->ID 
+        <?php if ( has_post_thumbnail( $post->ID
 		) ) : ?>
             <div class="imghov">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 				<div class="tiles">
 				    <div data-scale="1.3" data-image="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>"
-                    class="zoom-thumbnail-tile  <?php 
+                    class="zoom-thumbnail-tile  <?php
                     if ( is_page_template( 'page-fullwidth.php' ) ) {
                         echo "single-featured fullwidth";
                     } else {
                         echo "single-featured sidebars";
-                    } 
+                    }
                     ?>" ></div>
 				</div>
                 </a>
@@ -28,7 +28,7 @@
 		<div class="post-inner-content">
 			<header class="entry-header page-header">
 
-				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?> ... </a></h2>
 
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
@@ -42,8 +42,8 @@
 							<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Last updated on: <?php the_modified_date('F j, Y'); ?> &nbsp;
 						<?php endif;
 					?>
-					
-					<?php 
+
+					<?php
 						if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 				<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'peace' ), esc_html__( '1 Comment', 'peace' ), esc_html__( '% Comments', 'peace' ) ); ?></span>
 				<?php endif; ?>
