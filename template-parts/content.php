@@ -73,7 +73,7 @@
 			</div><!-- .entry-summary -->
 			<?php else : ?>
 			<div class="entry-content">
-                <?php the_content(); ?>
+                <?php the_content( esc_html__( 'Read More', 'peace' ) ); ?>
 				<?php
                 /*
 				if ( get_theme_mod( 'peace_excerpts' ) == 1 ) :
