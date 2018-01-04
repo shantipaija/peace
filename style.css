@@ -529,7 +529,7 @@ object {
 }
 .widget ul li {
   list-style: none;
-  border-bottom: 1px solid #F2F2F2;
+  /*border-bottom: 1px solid #F2F2F2;*/
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
@@ -2211,9 +2211,14 @@ article.format-aside .aside {
     padding: 1.714285714rem;
     background: #d2e0f9;
     border-left: 22px solid #a8bfe8;
+    margin-bottom: 40px;
 }
 body.single-format-aside .post-inner-content, article.format-aside .aside .post-inner-content {
         background-color: transparent !important;
+}
+
+article.format-quote .post-inner-content {
+    margin-bottom: 40px;
 }
 
 article.format-quote .post-inner-content .entry-content blockquote {
@@ -2226,4 +2231,8 @@ article.format-quote .post-inner-content .entry-content blockquote {
     color: #6a6a6a;
     background: #efefef;
     padding:25px;
+
+}
+section.widget_mega_title h3.section-subheading.text-muted {
+    margin-bottom: 0px;
 }
