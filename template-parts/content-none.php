@@ -28,7 +28,7 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php esc_html_e( 'hehe Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'peace' ); ?></p>
+			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'peace' ); ?></p>
 			<?php
 			get_search_form();
 		else : ?>
@@ -37,7 +37,7 @@
 			<?php
 			get_search_form();
 		endif;
-		
+
 		?>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->
