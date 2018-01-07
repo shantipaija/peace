@@ -49,7 +49,18 @@ function peace_customizer( $wp_customize ) {
 		'priority'   => 50,
 		'panel' => 'peace_main_options',
 	) );
-
+	// add setting for excerpts/full posts toggle
+	$wp_customize->add_setting( 'peace_excerpts', array(
+		'default'           => 0,
+		'sanitize_callback' => 'peace_sanitize_checkbox',
+	) );
+	// add checkbox control for excerpts/full posts toggle
+	$wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'peace_excerpts', array(
+		'label'     => esc_html__( 'Show post excerpts in Home, Archive, and Category pages', 'peace' ),
+		'section'   => 'peace_content_section',
+		'priority'  => 10,
+		'type'      => 'epsilon-toggle',
+	) ) );
 
 	$wp_customize->add_setting( 'peace_page_comments', array(
 		'default' => 1,

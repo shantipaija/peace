@@ -66,18 +66,18 @@
 			</div><!-- .entry-summary -->
 			<?php else : ?>
 			<div class="entry-content">
-                <?php the_content(); ?>
+               
+			<?php 
                 
-				<?php
-                /*
-				if ( get_theme_mod( 'peace_excerpts' ) == 1 ) :
+                if ( (get_theme_mod( 'peace_excerpts' ) == 1 ) && (! is_single()) ) {
 					the_excerpt();?>
 					<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'peace' ); ?></a></p>
-				<?php elseif ( empty( $video ) ) :
-					the_content( esc_html__( 'Read More', 'peace' ) );
-				endif;
-                */
-					?>
+                    <?php
+                }else{
+                    the_content( esc_html__( 'Read More', 'peace' ) ); 
+                }
+            
+            ?>
 
 				<?php
 					wp_link_pages( array(

@@ -6,7 +6,10 @@
  */
 ?>
 
-<?php if ( has_post_thumbnail(  $post->ID ) ) : ?>
+<?php
+$featured_image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
+
+if  ( ! empty( $featured_image_url ) ) : ?>
 	<div class="imghov">
 		<?php
 		if ( is_page_template( 'page-fullwidth.php' ) ) {

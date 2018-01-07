@@ -3,13 +3,14 @@
  * @package Peace
  */
 
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="blog-item-wrap">
-        <?php if ( has_post_thumbnail( $post->ID
-		) ) : ?>
+        <?php
+        $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
+        
+        if  ( ! empty( $featured_image_url ) ) : ?>
             <div class="imghov">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 				<div class="tiles">
@@ -18,9 +19,11 @@
                     if ( is_page_template( 'page-fullwidth.php' ) ) {
                         echo "single-featured fullwidth";
                     } else {
-                        echo "single-featured sidebars";
+                        echo "single-featured sidebars ";
                     }
-                    ?>" ></div>
+                    
+                    echo get_the_ID()
+                    ?> " ></div>
 				</div>
                 </a>
             </div>
@@ -73,7 +76,20 @@
 			</div><!-- .entry-summary -->
 			<?php else : ?>
 			<div class="entry-content">
-                <?php the_content(); ?>
+                <?php // the_content(); ?>
+                <?php //the_content( esc_html__( 'Read More...', 'peace' ) ); ?>
+
+			<?php 
+                
+                if ( (get_theme_mod( 'peace_excerpts' ) == 1 ) && (! is_single()) ) {
+					the_excerpt();?>
+					<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'peace' ); ?></a></p>
+                    <?php
+                }else{
+                    the_content( esc_html__( 'Read More', 'peace' ) ); 
+                }
+            
+            ?>
 				<?php
                 /*
 				if ( get_theme_mod( 'peace_excerpts' ) == 1 ) :

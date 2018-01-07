@@ -7,7 +7,10 @@
 ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	        <?php if ( has_post_thumbnail(  $post->ID ) ) : ?>
+        <?php
+        $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
+        
+        if  ( ! empty( $featured_image_url ) ) : ?>
 	      <div class="imghov">
 	        <div class="tiles">
 	          <div data-scale="1.3"
@@ -62,7 +65,18 @@
 			</header><!-- .entry-header -->
 
 			<div class="entry-content">
-				<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>', 'peace' ); ?>
+            
+			<?php 
+                
+                if ( (get_theme_mod( 'peace_excerpts' ) == 1 ) && (! is_single()) ) {
+					the_excerpt();?>
+					<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'peace' ); ?></a></p>
+                    <?php
+                }else{
+                    the_content( esc_html__( 'Read More', 'peace' ) ); 
+                }
+            
+            ?>
 				<?php
 					wp_link_pages( array(
 						'before'            => '<div class="page-links">' . esc_html__( 'Pages:', 'peace' ),
