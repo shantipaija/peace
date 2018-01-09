@@ -77,39 +77,9 @@ pre {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  /* font-weight: 700; */
   font-family: 'Roboto Slab', serif;
 }
 
-h1,
-.h1 {
-  font-size: 28px;
-}
-
-h2,
-.h2 {
-  font-size: 24px;
-}
-
-h3,
-.h3 {
-  font-size: 20px;
-}
-
-h4,
-.h4 {
-  font-size: 16px;
-}
-
-h5,
-.h5 {
-  font-size: 14px;
-}
-
-h6,
-.h6 {
-  font-size: 13px;
-}
 body.search {
 	background-color:#ffffff;
 }
@@ -186,6 +156,14 @@ textarea {
   width: 100%;
 }
 
+/* Table */
+table thead tr {
+    background-color: #f7f7f7;
+}
+
+table tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
 
 /* Alignment */
 .alignleft {
