@@ -158,12 +158,17 @@ textarea {
 
 /* Table */
 table thead tr {
-    background-color: #f7f7f7;
+    background-color: #fbfbfb;
 }
 
 table tr:nth-child(even) {
-    background-color: #f7f7f7;
+    background-color: #fbfbfb;
 }
+
+table, td, th {
+    border: 1px solid #ddd;
+}
+
 
 /* Alignment */
 .alignleft {
