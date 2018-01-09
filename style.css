@@ -170,6 +170,10 @@ table, td, th {
 }
 
 
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
 /* Alignment */
 .alignleft {
   display: inline;
