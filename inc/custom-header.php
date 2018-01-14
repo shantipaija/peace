@@ -27,12 +27,13 @@
 function peace_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'peace_custom_header_args', array(
 		'default-image'          => '',
-		'default-text-color'     => 'dadada',
-		'width'                  => 300,
-		'height'                 => 76,
+		'default-text-color'     => '3d3d3d',
+		'width'                  => 1400,
+		'height'                 => 400,
 		'flex-height'                        => true,
 		'flex-width'                         => true,
 		'wp-head-callback'       => '',
+		'video'						=> true,
 		'admin-head-callback'    => 'peace_admin_header_style',
 		'admin-preview-callback' => 'peace_admin_header_image',
 	) ) );
@@ -86,38 +87,3 @@ if ( ! function_exists( 'peace_admin_header_image' ) ) :
 	<?php
 	}
 endif; // peace_admin_header_image
-
-
-
-if ( ! function_exists( 'peace_top_header_bar_display' ) ) :
-
-	/**
-	 * Function to display the top header bar
-	 **/
-	function peace_top_header_bar_display() {
-		if ( get_theme_mod( 'peace_breaking_news', 0 ) == 1 || get_theme_mod( 'peace_date_display', 0 ) == 1 || get_theme_mod( 'peace_social_link_activate', 0 ) == 1 ) :
-			?>
-			<div class="news-bar">
-				<div class="inner-wrap clearfix">
-					<?php
-					if ( get_theme_mod( 'peace_date_display', 0 ) == 1 )
-						peace_date_display();
-					?>
-
-					<?php
-					if ( get_theme_mod( 'peace_breaking_news', 0 ) == 1 )
-						peace_breaking_news();
-					?>
-
-					<?php
-					if ( get_theme_mod( 'peace_social_link_activate', 0 ) == 1 ) {
-						peace_social_icon();
-					}
-					?>
-				</div>
-			</div>
-			<?php
-		endif;
-	}
-
-endif;

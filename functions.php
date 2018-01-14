@@ -60,6 +60,44 @@ if (! function_exists('peace_setup')) :
         // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
 
+          add_theme_support( 'custom-logo' );
+
+          add_theme_support( 'custom-header', array(
+  	'wp-head-callback' => 'theme_slug_header_style',
+  ) );
+
+
+function theme_slug_header_style() {
+	/*
+	 * If header text is set to display, let's bail.
+	 */
+	if ( display_header_text() ) {
+		return;
+	}
+	// If we get this far, we have custom styles. Let's do this.
+	?>
+	<style type="text/css">
+		.site-title,
+		.site-description {
+			position: absolute;
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+	</style>
+	<?php
+}
+
+          /*
+           * Creating responsive video for posts/pages
+           */
+          if ( ! function_exists( 'peace_responsive_video' ) ) :
+          	function peace_responsive_video( $html, $url, $attr, $post_ID ) {
+          		return '<div class="fitvids-video">' . $html . '</div>';
+          	}
+
+          	add_filter( 'embed_oembed_html', 'peace_responsive_video', 10, 4 );
+          endif;
+
+          /**************************************************************************************/
         /**
    * Enable support for Post Thumbnails on posts and pages.
    *
@@ -273,7 +311,7 @@ function peace_scripts()
 
 
     // This one is for accessibility
-    wp_enqueue_script('peace-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.min.js', array(), '20140222', true);
+    wp_enqueue_script('peace-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20140222', true);
 
     // Treaded comments
     if (is_singular() && comments_open() && get_option('thread_comments')) {
@@ -523,15 +561,15 @@ if (! function_exists('get_color_scheme')) :
         .get_template_directory_uri(). '/'. $color_scheme . '.css'
         ."' type='text/css' media='all' />
 		";
-        
+
         $background_color = of_get_option('background_color');
         $bgcolor = (strlen($background_color)>3)?"<style>body{background-color:$background_color;}</style>":"";
-        
+
         $the_styles =  $color_scheme . $bgcolor ."
         ";
-        
+
         echo  $the_styles;
-        
+
     }
 
      add_action('wp_head', 'get_color_scheme', 8);
@@ -576,3 +614,13 @@ function peace_excerpt($limit)
     $excerpt = preg_replace('`\[[^\]]*\]`', '', $excerpt);
     return $excerpt;
 }
+
+
+
+/**
+ * Registers an editor stylesheet for the theme.
+ */
+function peace_add_editor_styles() {
+    add_editor_style( 'custom-editor-style.css' );
+}
+add_action( 'admin_init', 'peace_add_editor_styles' );

@@ -128,3 +128,25 @@ jQuery( document ).ready(function() {
 		}, false );
 	}
 })();
+
+
+/* navbar fix on scroll */
+
+jQuery( document ).ready(function() {
+    jQuery(window).scroll(function() {
+
+      	var header = jQuery(document).scrollTop();
+      	var headerHeight = jQuery(".custom-header-media").height();
+
+      	if (header > headerHeight) {
+            jQuery('.enable-navbar-fixed-top').addClass('navbar-fixed-top');
+
+        		jQuery('.enable-navbar-fixed-top').fadeIn();
+
+
+      	} else {
+            jQuery('.enable-navbar-fixed-top').removeClass('navbar-fixed-top');
+      	}
+
+    });
+});

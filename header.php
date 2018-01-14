@@ -34,10 +34,14 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 	<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
-			<nav class="navbar navbar-default <?php if ( of_get_option( 'sticky_menu' ) ) { echo 'navbar-fixed-top'; } ?>" role="navigation">
+			<div class="custom-header-media">
+				<?php the_custom_header_markup(); ?>
+			</div>
+			<nav class="navbar navbar-default <?php if ( of_get_option( 'sticky_menu' ) ) { echo 'enable-navbar-fixed-top'; } ?>" role="navigation">
 				<div class="container">
 					<div class="row">
-						<div class="site-navigation-inner col-sm-12">
+
+						<div class="site-navigation-inner col-md-12">
 							<div class="navbar-header">
 								<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 									<span class="sr-only">Toggle navigation</span>
@@ -46,28 +50,21 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 									<span class="icon-bar"></span>
 								</button>
 
-								<div id="logo">
-									<?php if ( get_header_image() != '' ) { ?>
-										<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-											<img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
-										<?php if ( is_home() ) { ?>
-											<h1 class="site-name hide-site-name">
-												<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-											</h1>
-										<?php }
-										} else 
-										{
-										echo is_home() ?  '<h1 class="site-name">' : '<p class="site-name">'; ?>
-											<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-																			
-										<?php
-											echo is_home() ?  '</h1>' : '</p>'; 
-										?>
-										<!--- ?php bloginfo( 'description' ); ? --->
-										<?php
-										} 
-										?>
-								</div><!-- end of #logo -->
+
+									<?php the_custom_logo(); ?>
+
+									<div class="brand-name">
+										<?php if ( is_front_page() && is_home() ) : ?>
+											<h1 class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+										<?php else : ?>
+											<p class=" site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+										<?php endif;
+
+										$description = get_bloginfo( 'description', 'display' );
+										if ( $description || is_customize_preview() ) : ?>
+											<p class="site-description"><?php echo $description; ?></p>
+										<?php endif; ?>
+								 </div><!-- end of #logo -->
 							</div>
 							<?php peace_header_menu(); // main navigation ?>
 						</div>
@@ -82,16 +79,16 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 			<?php peace_call_for_action(); ?>
 		</div>
 		<div class="container main-content-area">
-			<?php 
-			$layout_class = get_layout_class(); 
-			?>
-			<div class="row <?php 
-			// what is this line doing here?
-			echo $layout_class; 
-			
-			?>"> 
 			<?php
-				
+			$layout_class = get_layout_class();
+			?>
+			<div class="row <?php
+			// what is this line doing here?
+			echo $layout_class;
+
+			?>">
+			<?php
+
 				if($layout_class=="dbar"){
 					get_sidebar("left");
 				}

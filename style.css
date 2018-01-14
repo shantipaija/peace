@@ -764,13 +764,22 @@ button:hover, .button:hover {
 }
 /* =Custom Styles
 ----------------------------------------------- */
-#logo .site-name {
-  font-weight: bold;
-  margin: 0;
+
+img.custom-logo {
+    max-height: 50px;
+    max-width: 200px;
+    float:left;
+    margin-top:10px;
 }
-#logo .site-name.hide-site-name {
-  display: none;
+
+.brand-name {
+    float: left;
+    margin-left: 10px;
+    max-height: 50px;
+    margin-top:10px;
+
 }
+
 .site-branding {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -779,6 +788,8 @@ button:hover, .button:hover {
   color: #777;
   font-weight: 200;
   font-size: 16px;
+  line-height: 40px;
+  text-align: center;
 }
 .page-template-page-homepage-php .carousel {
   margin-top: -20px;
@@ -796,7 +807,12 @@ button:hover, .button:hover {
     display: none;
   }
 }
+@media (max-width: 768px) {
+img.custom-logo, .brand-name{
+    margin-top:0;
+}
 
+}
 /* =Navigation
 ----------------------------------------------- */
 
@@ -858,10 +874,12 @@ button:hover, .button:hover {
   font-size: 12px;
 }
 .navbar > .container .navbar-brand {
-  color: #DADADA;
   font-size: 20px;
-  margin: 10px 0;
+  margin-left:0;
   font-family: 'Roboto Slab', serif;
+  height:0;
+  padding: 0;
+  line-height: 0;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -946,6 +964,8 @@ button:hover, .button:hover {
     display: inline-block;
   }
 }
+
+
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
   .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,
@@ -1054,6 +1074,9 @@ button:hover, .button:hover {
   }
   .navbar > .container .navbar-brand {
     margin: 0;
+    padding: 0;
+    padding-left: 15px;
+
   }
   .navbar-default .navbar-nav > li > a {
     line-height: 20px;
