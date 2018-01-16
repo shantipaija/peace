@@ -193,39 +193,37 @@ function peace_widgets_init()
         'after_title'   => '</h3>',
     ));
 
-    register_sidebar(array(
-        'id'            => 'home-widget-1',
-        'name'          => esc_html__('Homepage Widget 1', 'peace'),
-        'description'   => esc_html__('Displays on the Home Page', 'peace'),
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="widgettitle">',
-        'after_title'   => '</h3>',
-    ));
-
-    register_sidebar(array(
-        'id'            => 'home-widget-2',
-        'name'          => esc_html__('Homepage Widget 2', 'peace'),
-        'description'   => esc_html__('Displays on the Home Page', 'peace'),
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="widgettitle">',
-        'after_title'   => '</h3>',
-    ));
-
-    register_sidebar(array(
-        'id'            => 'home-widget-3',
-        'name'          => esc_html__('Homepage Widget 3', 'peace'),
-        'description'   => esc_html__('Displays on the Home Page', 'peace'),
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="widgettitle">',
-        'after_title'   => '</h3>',
-    ));
 
     register_sidebar(array(
         'id'            => 'footer-widget-1',
-        'name'          => esc_html__('Footer Widgets', 'peace'),
+        'name'          => esc_html__('Footer Widgets 1', 'peace'),
+        'description'   => esc_html__('Used for footer widget area', 'peace'),
+        'before_widget' => '<div id="%1$s" class="widget col-sm-3 %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widgettitle">',
+        'after_title'   => '</h3>',
+    ));
+    register_sidebar(array(
+        'id'            => 'footer-widget-2',
+        'name'          => esc_html__('Footer Widgets 2', 'peace'),
+        'description'   => esc_html__('Used for footer widget area', 'peace'),
+        'before_widget' => '<div id="%1$s" class="widget col-sm-3 %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widgettitle">',
+        'after_title'   => '</h3>',
+    ));
+    register_sidebar(array(
+        'id'            => 'footer-widget-3',
+        'name'          => esc_html__('Footer Widgets 3', 'peace'),
+        'description'   => esc_html__('Used for footer widget area', 'peace'),
+        'before_widget' => '<div id="%1$s" class="widget col-sm-3 %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widgettitle">',
+        'after_title'   => '</h3>',
+    ));
+    register_sidebar(array(
+        'id'            => 'footer-widget-4',
+        'name'          => esc_html__('Footer Widgets 4', 'peace'),
         'description'   => esc_html__('Used for footer widget area', 'peace'),
         'before_widget' => '<div id="%1$s" class="widget col-sm-3 %2$s">',
         'after_widget'  => '</div>',

@@ -2228,17 +2228,40 @@ article.format-quote .post-inner-content {
 }
 
 article.format-quote .post-inner-content .entry-content blockquote {
+    margin: 0 0 20px;
+    border-left: 10px solid #aaa;
     display: block;
-    padding: 1.714285714rem 1.714285714rem 0;
-    font-size: 15px;
-    font-size: 1.071428571rem;
+    font-size: 20px;
     line-height: 1.6;
     font-style: normal;
     color: #6a6a6a;
     background: #efefef;
-    padding:25px;
+    padding:25px 45px;
+    position: relative;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-weight: bold;
+    font-size:85px;
+    color:#3d3d3d;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    font-family: 'Georgia';
+}
+blockquote:after {
+  content: "\201D";
+  font-weight: bold;
+  font-size: 85px;
+  color: #3d3d3d;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  font-family: 'Georgia';
 
 }
+
 section.widget_mega_title h3.section-subheading.text-muted {
     margin-bottom: 0px;
 }
