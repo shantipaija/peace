@@ -87,19 +87,6 @@ function peace_customizer( $wp_customize ) {
 		'type'      => 'epsilon-toggle',
 	) ) );
 
-	// add setting for Show/Hide posts modified date toggle
-	$wp_customize->add_setting( 'peace_post_modified', array(
-		'default'           => 1,
-		'sanitize_callback' => 'peace_sanitize_checkbox',
-	) );
-	// add checkbox control for Show/Hide posts modified date toggle
-	$wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'peace_post_modified', array(
-		'label'     => esc_html__( 'Show Modified date?', 'peace' ),
-		'section'   => 'peace_content_section',
-		'priority'  => 40,
-		'type'      => 'epsilon-toggle',
-	) ) );
-
 	// add setting for Show/Hide posts Author Bio toggle
 	$wp_customize->add_setting( 'peace_post_author_bio', array(
 		'default'           => 1,

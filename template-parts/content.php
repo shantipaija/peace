@@ -36,15 +36,11 @@
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
 					<?php
-						if ( get_theme_mod( 'peace_post_date' ) == 1 ) :
+						//if ( get_theme_mod( 'peace_post_date' ) == 1 ) :
 							peace_posted_on();
-						endif;
+						//endif;
 					?>
-					<?php
-						if(get_theme_mod('peace_post_modified') == 1): ?>
-
-						<?php endif;
-					?>
+					
 
 					<?php
 						if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
