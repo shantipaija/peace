@@ -2229,8 +2229,11 @@ body.single-format-aside .post-inner-content, article.format-aside .aside .post-
 article.format-quote .post-inner-content {
     margin-bottom: 40px;
 }
+article.post_format-post-format-aside .post-inner-content {
+    border: none;
+}
 
-article.format-quote .post-inner-content .entry-content blockquote {
+.entry-content blockquote, .elementor.elementor-2 blockquote, article.format-quote .post-inner-content .entry-content blockquote {
     margin: 0 0 20px;
     border-left: 10px solid #aaa;
     display: block;
