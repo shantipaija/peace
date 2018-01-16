@@ -9,7 +9,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: peace
 Domain Path: /languages/
-Tags:  blog, e-commerce, food-and-drink, news, photography, custom-background, custom-colors, sticky-post, theme-options, right-sidebar, left-sidebar, threaded-comments
+Tags:  blog, e-commerce, food-and-drink, news, photography, flexible-header, custom-header, custom-background, custom-colors, custom-menu, custom-logo, editor-style, featured-image-header, featured-image, sticky-post, theme-options, right-sidebar, left-sidebar, threaded-comments, full-width-template, post-formats
 
 This theme, like WordPress, is licensed under the GPL.
 
@@ -778,6 +778,9 @@ img.custom-logo {
     margin-top:10px;
 
 }
+.brand-name p.site-name {
+    margin-top: 10px;
+}
 
 .site-branding {
   margin-top: 20px;
@@ -1396,7 +1399,7 @@ p.logged-in-as {
   list-style: none;
 }
 .footer-widget {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .copyright {
   margin-top: 10px;
