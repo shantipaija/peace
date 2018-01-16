@@ -137,6 +137,7 @@ jQuery( document ).ready(function() {
 
       	var header = jQuery(document).scrollTop();
       	var headerHeight = jQuery(".custom-header-media").height();
+        
 
       	if (header > headerHeight) {
             jQuery('.enable-navbar-fixed-top').addClass('navbar-fixed-top');
