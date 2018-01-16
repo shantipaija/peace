@@ -30,11 +30,7 @@
 			<h1 class="entry-title "><?php the_title(); ?></h1>
 
 			<div class="entry-meta">
-				<?php
-					if(get_theme_mod('peace_post_modified') == 1): 
-                    ?> <?php // the_modified_date('F j, Y'); ?>  <?php 
-                    endif;
-				?>
+			
 				<?php  //peace_author_name(); ?>
 				<?php peace_posted_on(); ?>
 				<?php
