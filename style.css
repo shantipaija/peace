@@ -2271,3 +2271,7 @@ blockquote:after {
 section.widget_mega_title h3.section-subheading.text-muted {
     margin-bottom: 0px;
 }
+/* fix for sticky menu css transition*/
+header#masthead {
+    min-height: 70px;
+}
