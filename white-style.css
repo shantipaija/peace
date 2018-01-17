@@ -3,12 +3,12 @@
 
 body {
   color: #6B6B6B ;
-  
+
 }
 
 
 a {
-  color: #6B6B6B ;
+  color:#337ab7;
 }
 
 a:hover,
@@ -17,8 +17,8 @@ a:focus {
 }
 .nav-links a:hover {
     color: #00b9eb ;
-} 
- 
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #000000 ;
 }
@@ -55,7 +55,7 @@ textarea:focus {
 }
 
 .entry-meta a:hover {
- color: #00b9eb; 
+ color: #00b9eb;
 }
 .entry-meta .fa {
 	color: #000000  ;
@@ -124,7 +124,7 @@ hr.section-divider {
 .pagination>li>span {
   border-color: #bdbdbd ;
 }
-  
+
 #secondary .widget {
   color: #6B6B6B  ;
 }
@@ -186,7 +186,7 @@ a.more-link {
     background-color: #fff ;
     border-color: #bdbdbd ;
 }
- 
+
 button, .button {
   background-color: transparent ;
   color: #000 ;
@@ -195,13 +195,13 @@ button, .button {
 
 button:hover, .button:hover {
   background-color:transparent ;
-  
+
 }
 
 #infinite-handle span {
   border: 1px solid #bcbcbc;
   background: #bcbcbc ;
-  
+
 }
 
 #infinite-handle span:hover {
@@ -220,7 +220,7 @@ button:hover, .button:hover {
   border: 1px solid #c7c7c7;
   background-color: #fff;
   color:#000;
-  
+
 }
 .page-numbers:hover{
 	background-color:#c7c7c7;
@@ -312,32 +312,32 @@ i.social_icon.fa:hover {
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a {
   color: #000 ;
 }
-  
+
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
     color:#636467 ;
 	background-color: transparent;
   }
-  
-  
+
+
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .dropdown-menu > li.active > .caret,
   .navbar-default .navbar-nav .dropdown-menu > li.open > a  {
-    color: #636467 
+    color: #636467
   }
-  
-  
+
+
   .navbar-default .navbar-nav > li:hover > a,
   .navbar-default .navbar-nav > li:hover > .caret,
   .dropdown-menu>li>.caret {
-    color:#6B6B6B ; 
+    color:#6B6B6B ;
   }
-  
-  
+
+
   .navbar-default .navbar-nav li.open > a,
   .navbar-default .navbar-nav li.open > .caret {
   color:#6B6B6B ;
   }
-  
+
 .social_icon fa:hover{
 	color:#ffffff ;
 }
@@ -427,7 +427,7 @@ i.social_icon.fa:hover {
 #colophon {
   background-color: #1F1F1F ;
  }
- 
+
 .site-info a {
   color: #777 ;
 }
@@ -447,7 +447,7 @@ i.social_icon.fa:hover {
 
 
 .scroll-to-top {
- 
+
   background: #bcbcbc;
   color: #000000 ;
   }
@@ -459,7 +459,7 @@ i.social_icon.fa:hover {
 .woocommerce .main-content-inner{
   background-color: #000 ;
  }
- 
+
 .form-control:focus {
     border-color: #bdbdbd ;
     outline: 0;
