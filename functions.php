@@ -251,7 +251,7 @@ require_once(get_template_directory() . '/inc/widgets/class-peace-social-widget.
  */
 function peace_remove_gallery_css($css)
 {
-    return preg_replace("#<style type='text/css'>(.*?)</style>#s", '', $css);
+    return preg_replace("#<style abc >(.*?)</style>#s", '', $css);
 }
 
 add_filter('gallery_style', 'peace_remove_gallery_css');
