@@ -317,7 +317,9 @@ function peace_scripts()
     }
     
         $color_scheme = of_get_option('style_color', 'white-style');
-        wp_enqueue_style('color-scheme-css', get_template_directory_uri() . '/'. $color_scheme . '.css');
+        if(!empty($color_scheme)){
+            wp_enqueue_style('color-scheme-css', get_template_directory_uri() . '/'. $color_scheme . '.css');
+        }
         
 }
 add_action('wp_enqueue_scripts', 'peace_scripts');
