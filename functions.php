@@ -325,37 +325,23 @@ function peace_scripts()
 add_action('wp_enqueue_scripts', 'peace_scripts');
 
 /**
-* get_color_scheme - Returns  stylesheet name (eg: white-style.css) with html tag
+* get_bgcolor - Returns  background color
 */
-/*
-if (! function_exists('get_color_scheme')) :
 
-    function get_color_scheme()
+if (! function_exists('get_bgcolor')) :
+
+    function get_bgcolor()
     {
-        $color_scheme = of_get_option('style_color', 'white-style');
-
-        $color_scheme = "
-<link rel='stylesheet' id='peace-color-template'  href='"
-        .get_template_directory_uri(). '/'. $color_scheme . '.css'
-        ."' type='text/css' media='all' />
-		";
-
         $background_color = of_get_option('background_color');
         $bgcolor = (strlen($background_color)>3)?"<style>body{background-color:$background_color;}</style>":"";
-
-        $the_styles =  $color_scheme . $bgcolor ."
-        ";
-
-        echo  $the_styles;
+        echo  $bgcolor;
 
     }
 
-     add_action('wp_head', 'get_color_scheme', 8);
-    // add_action('wp_head','get_color_scheme');
-    // hook the colorful stylesheet in wp_head
+     add_action('wp_head', 'get_bgcolor', 8);
 
 endif;
-*/
+
 
 /**
  * Implement the Custom Header feature.
