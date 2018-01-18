@@ -315,9 +315,45 @@ function peace_scripts()
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
-
+    
+        $color_scheme = of_get_option('style_color', 'white-style');
+        wp_enqueue_style('color-scheme-css', get_template_directory_uri() . '/'. $color_scheme . '.css');
+        
 }
 add_action('wp_enqueue_scripts', 'peace_scripts');
+
+/**
+* get_color_scheme - Returns  stylesheet name (eg: white-style.css) with html tag
+*/
+/*
+if (! function_exists('get_color_scheme')) :
+
+    function get_color_scheme()
+    {
+        $color_scheme = of_get_option('style_color', 'white-style');
+
+        $color_scheme = "
+<link rel='stylesheet' id='peace-color-template'  href='"
+        .get_template_directory_uri(). '/'. $color_scheme . '.css'
+        ."' type='text/css' media='all' />
+		";
+
+        $background_color = of_get_option('background_color');
+        $bgcolor = (strlen($background_color)>3)?"<style>body{background-color:$background_color;}</style>":"";
+
+        $the_styles =  $color_scheme . $bgcolor ."
+        ";
+
+        echo  $the_styles;
+
+    }
+
+     add_action('wp_head', 'get_color_scheme', 8);
+    // add_action('wp_head','get_color_scheme');
+    // hook the colorful stylesheet in wp_head
+
+endif;
+*/
 
 /**
  * Implement the Custom Header feature.
@@ -545,36 +581,6 @@ if (! function_exists('get_layout_class')) :
 
 endif;
 
-/**
-* get_color_scheme - Returns  stylesheet name (eg: white-style.css) with html tag
-*/
-if (! function_exists('get_color_scheme')) :
-
-    function get_color_scheme()
-    {
-        $color_scheme = of_get_option('style_color', 'white-style');
-
-        $color_scheme = "
-<link rel='stylesheet' id='peace-color-template'  href='"
-        .get_template_directory_uri(). '/'. $color_scheme . '.css'
-        ."' type='text/css' media='all' />
-		";
-
-        $background_color = of_get_option('background_color');
-        $bgcolor = (strlen($background_color)>3)?"<style>body{background-color:$background_color;}</style>":"";
-
-        $the_styles =  $color_scheme . $bgcolor ."
-        ";
-
-        echo  $the_styles;
-
-    }
-
-     add_action('wp_head', 'get_color_scheme', 8);
-    // add_action('wp_head','get_color_scheme');
-    // hook the colorful stylesheet in wp_head
-
-endif;
 
 add_action('wp_ajax_peace_get_attachment_media', 'peace_get_attachment_image');
 function peace_get_attachment_image()
