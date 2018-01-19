@@ -18,8 +18,6 @@
 /**
  * Setup the WordPress core custom header feature.
  *
- * @uses peace_header_style()
- * @uses peace_admin_header_style()
  * @uses peace_admin_header_image()
  *
  */
@@ -34,39 +32,12 @@ function peace_custom_header_setup() {
 		'flex-width'                         => true,
 		'wp-head-callback'       => '',
 		'video'						=> true,
-		'admin-head-callback'    => 'peace_admin_header_style',
+		'admin-head-callback'    => '',
 		'admin-preview-callback' => 'peace_admin_header_image',
 	) ) );
 }
 add_action( 'after_setup_theme', 'peace_custom_header_setup' );
 
-if ( ! function_exists( 'peace_admin_header_style' ) ) :
-	/**
- * Styles the header image displayed on the Appearance > Header admin panel.
- *
- * @see peace_custom_header_setup().
- */
-	function peace_admin_header_style() {
-		?>
-		<style>
-		.appearance_page_custom-header #headimg {
-			border: none;
-		}
-		#headimg h1,
-		#desc {
-		}
-		#headimg h1 {
-		}
-		#headimg h1 a {
-		}
-		#desc {
-		}
-		#headimg img {
-		}
-		</style>
-		<?php
-	}
-endif; // peace_admin_header_style
 
 if ( ! function_exists( 'peace_admin_header_image' ) ) :
 	/**
@@ -83,7 +54,7 @@ if ( ! function_exists( 'peace_admin_header_image' ) ) :
 		<?php if ( get_header_image() ) : ?>
 		<img src="<?php header_image(); ?>" alt="">
 		<?php endif; ?>
-	</div>
-	<?php
+		</div>
+		<?php
 	}
 endif; // peace_admin_header_image
