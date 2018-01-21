@@ -57,23 +57,11 @@ if ( ! function_exists( 'peace_posted_on' ) ) :
             //sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
             //    esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
               
-            sprintf( '<span class="author vcard"><a class="url fn n">%1$s</a></span>',
+            sprintf( '<span class="author vcard"><span class="url fn n">%1$s</span></span>',
                 esc_html( get_the_author() )
             )
         );
-        /*    
-        printf( '<span class="posted-on"><i class="fa fa-calendar"></i> %1$s</span>
-        <span class="byline"> <i class="fa fa-user-circle"></i> %2$s</span>',
-            sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
-                esc_url( get_permalink() ),
-                $time_string
-            ),
-            sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
-                esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-                esc_html( get_the_author() )
-            )
-        );
-          */  
+       
 	}
 endif;
 if ( ! function_exists( 'peace_author_name' ) ) :

@@ -308,10 +308,7 @@ footer.entry-meta {
   border-bottom: 0;
   padding-bottom: 0;
 }
-.entry-meta .fa {
-  font-size: 14px;
-  margin-right: 3px;
-}
+
 .entry-meta span {
   margin-right: 10px;
 }
@@ -457,6 +454,12 @@ body.blog .post-inner-content,
 /* =Media
 ----------------------------------------------- */
 
+
+
+.entry-content img{
+    margin-top:10px;
+    margin-bottom:20px;
+}
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
@@ -2272,8 +2275,7 @@ section.widget_mega_title h3.section-subheading.text-muted {
 header#masthead {
     min-height: 70px;
 }
-<<<<<<< HEAD
-=======
+
 button#wp-custom-header-video-button {
     position: absolute;
     left: 100px;
@@ -2296,4 +2298,8 @@ iframe#wp-custom-header-video {
     display: block;
     margin: 0 auto;
 }
->>>>>>> c41905df874e7b0fa7749e69f7f838451ec384d9
+
+.entry-content ol li,
+.entry-content ul li{
+	margin-bottom:10px;
+}

@@ -44,10 +44,10 @@
 
 					<?php
 						if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-				<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'peace' ), esc_html__( '1 Comment', 'peace' ), esc_html__( '% Comments', 'peace' ) ); ?></span>
-				<?php endif; ?>
+                            <span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'peace' ), esc_html__( '1 Comment', 'peace' ), esc_html__( '% Comments', 'peace' ) ); ?></span>
+                        <?php endif; ?>
 
-				<?php if ( get_edit_post_link() ) : ?>
+                    <?php if ( get_edit_post_link() ) : ?>
 					<?php
 						edit_post_link(
 							sprintf(
@@ -59,7 +59,7 @@
 							'</span>'
 						);
 					?>
-				<?php endif; ?>
+                    <?php endif; ?>
 
 				</div><!-- .entry-meta -->
 				<?php endif; ?>
