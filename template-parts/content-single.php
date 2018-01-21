@@ -29,7 +29,7 @@
 
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 
-			<div class="entry-meta">
+			<div class="entry-meta  nomargin">
 
 				<?php  //peace_author_name(); ?>
 				<?php peace_posted_on(); ?>
@@ -38,11 +38,13 @@
 					$categories_list = get_the_category_list( esc_html__( ', ', 'peace' ) );
 				if ( $categories_list && peace_categorized_blog() ) :
 				?>
-				<span class="cat-links"><i class="fa fa-folder-open-o"></i>
+				<span class="cat-links meta-blocks"><i class="fa fa-folder-open-o fa-lg"></i> Category<br />
 				<?php printf( esc_html__( ' %1$s', 'peace' ), $categories_list ); ?>
 				</span>
 				<?php endif; // End if categories ?>
-				<?php if ( get_edit_post_link() ) : ?>
+			</div><!-- .entry-meta -->
+            <div>
+            <?php if ( get_edit_post_link() ) : ?>
 					<?php
 						edit_post_link(
 							sprintf(
@@ -55,8 +57,7 @@
 						);
 					?>
 				<?php endif; ?>
-
-			</div><!-- .entry-meta -->
+            </div>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">

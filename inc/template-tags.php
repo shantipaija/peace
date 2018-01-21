@@ -34,10 +34,10 @@ if ( ! function_exists( 'peace_posted_on' ) ) :
  */
 	function peace_posted_on() {
         
-		$time_string = 'Published <time class="entry-date published" datetime="%1$s">%2$s</time> ';
+		$time_string = '<span class="meta-blocks"> <i class="fa fa-calendar fa-lg"></i> Published <br /> <time class="entry-date published" datetime="%1$s">  %2$s</time>  </span>';
         
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-			$time_string .= '<i class="fa fa-calendar-check-o" aria-hidden="true"></i>   Updated <time class="updated" datetime="%3$s">%4$s</time>';
+			$time_string .= '<span class="meta-blocks"><i class="fa fa-calendar-check-o fa-lg" aria-hidden="true"></i>   Updated <br /><time class="updated" datetime="%3$s">%4$s</time></span>';
 		}
         
 		$time_string =  sprintf( $time_string,
@@ -47,15 +47,11 @@ if ( ! function_exists( 'peace_posted_on' ) ) :
                                 esc_html( get_the_modified_date() )
                                 );
         
-        printf( '<span class="posted-on"><i class="fa fa-calendar"></i> %1$s</span>
-        <span class="byline"> <i class="fa fa-user-circle"></i> %2$s</span>',
-            //sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
-            //    esc_url( get_permalink() ),
+        printf( '<span class="posted-on"> %1$s</span>
+                <span class="byline meta-blocks"> <i class="fa fa-user-circle fa-lg"></i> Author <br /> %2$s</span>',
             sprintf( '%1$s',
                 $time_string
             ),
-            //sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
-            //    esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
               
             sprintf( '<span class="author vcard"><span class="url fn n">%1$s</span></span>',
                 esc_html( get_the_author() )
@@ -81,19 +77,6 @@ if ( ! function_exists( 'peace_author_name' ) ) :
 			esc_html( get_the_modified_date() )
 		);
 
-        // printf( '
-                // <span class="posted-on"><i class="fa fa-calendar"></i> %1$s</span>
-                // <span class="byline"> <i class="fa fa-user"></i> %2$s</span>',
-            // sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
-                // esc_url( get_permalink() ),
-                // $time_string
-            // )
-            // ,
-            // sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
-                // esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-                // esc_html( get_the_author() )
-            // )
-        // );
         printf( '
                
                 <span class="byline"> <i class="fa fa-user"></i> %2$s</span>',

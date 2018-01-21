@@ -2303,3 +2303,38 @@ iframe#wp-custom-header-video {
 .entry-content ul li{
 	margin-bottom:10px;
 }
+
+.entry-meta.nomargin { white-space: nowrap; margin: 0px 0px 30px 0px;}
+
+.meta-blocks {
+    float: left;
+    background: #fbfbfb;
+    display: inline-block;
+    line-height: 20px;
+    margin:0 2px 0 0px !important;
+    padding: 5px 10px;
+    position: relative;
+    
+    border-right: 2px solid #eaeaea;
+}
+
+.entry-meta.nomargin { white-space: nowrap; }
+.meta-blocks::before,
+.meta-blocks::after {
+  background:#dadada;  
+  border-right: 3px solid #666666;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transform: skewX(30deg);   
+}
+/* Nouns starts with Capital letter else override the CSS property */
+.entry-meta .author {
+    text-transform: capitalize;
+}
+
