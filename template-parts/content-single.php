@@ -27,10 +27,10 @@
 	<div class="post-inner-content">
 		<header class="entry-header page-header">
 
-			<h1 class="entry-title "><?php the_title(); ?></h1>
+			<h1 class="entry-title"><?php the_title(); ?></h1>
 
 			<div class="entry-meta">
-			
+
 				<?php  //peace_author_name(); ?>
 				<?php peace_posted_on(); ?>
 				<?php
@@ -62,16 +62,16 @@
 		<div class="entry-content">
             <?php //the_content( esc_html__( 'Read More...', 'peace' ) ); ?>
 
-			<?php 
-                
+			<?php
+
                 if ( (get_theme_mod( 'peace_excerpts' ) == 1 ) && (! is_single()) ) {
 					the_excerpt();?>
 					<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'peace' ); ?></a></p>
                     <?php
                 }else{
-                    the_content( esc_html__( 'Read More', 'peace' ) ); 
+                    the_content( esc_html__( 'Read More', 'peace' ) );
                 }
-            
+
             ?>
 			<?php
 				wp_link_pages( array(

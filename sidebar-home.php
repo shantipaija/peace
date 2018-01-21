@@ -33,4 +33,5 @@
 			<?php dynamic_sidebar( 'home-widget-3' ); ?>
 		</div><!-- .widget-area .third -->
 		<?php endif; ?>
+
 	</div>

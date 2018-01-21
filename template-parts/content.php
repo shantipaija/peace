@@ -9,7 +9,7 @@
 	<div class="blog-item-wrap">
         <?php
         $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
-        
+
         if  ( ! empty( $featured_image_url ) ) : ?>
             <div class="imghov">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
@@ -21,7 +21,7 @@
                     } else {
                         echo "single-featured sidebars ";
                     }
-                    
+
                     echo get_the_ID()
                     ?> " ></div>
 				</div>
@@ -40,7 +40,7 @@
 							peace_posted_on();
 						//endif;
 					?>
-					
+
 
 					<?php
 						if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
@@ -75,16 +75,16 @@
                 <?php // the_content(); ?>
                 <?php //the_content( esc_html__( 'Read More...', 'peace' ) ); ?>
 
-			<?php 
-                
+			<?php
+
                 if ( (get_theme_mod( 'peace_excerpts' ) == 1 ) && (! is_single()) ) {
 					the_excerpt();?>
 					<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'peace' ); ?></a></p>
                     <?php
                 }else{
-                    the_content( esc_html__( 'Read More', 'peace' ) ); 
+                    the_content( esc_html__( 'Read More', 'peace' ) );
                 }
-            
+
             ?>
 				<?php
                 /*

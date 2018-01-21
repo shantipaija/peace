@@ -35,8 +35,8 @@ get_header(); ?>
 				 // echo "<h1>" . get_post_format() ."</h1>";
 				 //echo "<br />";
 
-				 get_template_part( 'template-parts/content', get_post_format() );
-				//get_template_part( 'template-parts/content'); 
+				// get_template_part( 'template-parts/content', get_post_format() );
+				get_template_part( 'template-parts/content');
 
 
 			endwhile;
