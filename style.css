@@ -9,8 +9,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: peace
 Domain Path: /languages/
-Tags:  blog, e-commerce, food-and-drink, news, photography, flexible-header, custom-header, custom-background, custom-colors, custom-menu, custom-logo, editor-style, featured-image-header, featured-image, sticky-post, theme-options, right-sidebar, left-sidebar, threaded-comments, full-width-template, post-formats
-
+Tags:  blog, e-commerce, food-and-drink, news, photography, flexible-header, custom-header, custom-background, custom-colors, custom-menu, custom-logo, editor-style, featured-image-header, sticky-post, theme-options, right-sidebar, left-sidebar, threaded-comments, full-width-template, post-formats
 This theme, like WordPress, is licensed under the GPL.
 
 Peace is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
@@ -766,9 +765,9 @@ button:hover, .button:hover {
 
 img.custom-logo {
     max-height: 50px;
-    max-width: 200px;
-    float:left;
-    margin-top:10px;
+    float: left;
+    margin-top: 10px;
+    width: auto;
 }
 
 .brand-name {
@@ -2273,3 +2272,28 @@ section.widget_mega_title h3.section-subheading.text-muted {
 header#masthead {
     min-height: 70px;
 }
+<<<<<<< HEAD
+=======
+button#wp-custom-header-video-button {
+    position: absolute;
+    left: 100px;
+    color: grey;
+    border: 1px solid #4a4a4a;
+    top: 50px;
+}
+div#wp-custom-header {
+    padding: 0;
+    margin: 0;
+}
+
+iframe#wp-custom-header-video {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.wp-custom-header img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+>>>>>>> c41905df874e7b0fa7749e69f7f838451ec384d9

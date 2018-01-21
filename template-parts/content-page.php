@@ -36,7 +36,7 @@ if  ( ! empty( $featured_image_url ) ) : ?>
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'peace' ),
 				'after'  => '</div>',
-			) ); 
+			) );
 		?>
 
 	<?php
