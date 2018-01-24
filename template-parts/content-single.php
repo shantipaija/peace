@@ -44,6 +44,8 @@
 				<?php endif; // End if categories ?>
 			</div><!-- .entry-meta -->
             <div>
+            <?php socialmedia_share_button(); ?>
+            
             <?php if ( get_edit_post_link() ) : ?>
 					<?php
 						edit_post_link(

@@ -37,7 +37,7 @@
 				<div class="entry-meta">
 					<?php
 						//if ( get_theme_mod( 'peace_post_date' ) == 1 ) :
-							peace_posted_on();
+							peace_posted_on(); 
 						//endif;
 					?>
 
@@ -50,6 +50,7 @@
 
 				</div><!-- .entry-meta -->
                 <div>
+                <?php socialmedia_share_button(); ?>
                     <?php if ( get_edit_post_link() ) : ?>
 					<?php
 						edit_post_link(

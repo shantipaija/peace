@@ -46,6 +46,10 @@
 					<?php printf( esc_html__( ' %1$s', 'peace' ), $categories_list ); ?>
 					</span>
 					<?php endif; // End if categories ?>
+
+				</div><!-- .entry-meta -->
+                
+                <?php socialmedia_share_button(); ?>
 					<?php if ( get_edit_post_link() ) : ?>
 						<?php
 							edit_post_link(
@@ -59,9 +63,8 @@
 							);
 						?>
 					<?php endif; ?>
-
-				</div><!-- .entry-meta -->
-
+            
+            
 			</header><!-- .entry-header -->
 
 			<div class="entry-content">

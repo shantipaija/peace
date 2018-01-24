@@ -269,7 +269,7 @@ function peace_options_display_sidebar() {
 			<p><?php _e( 'The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','peace' ) ?> <a href="<?php echo esc_url( 'https://community.login.plus/forum/peacefulness/' ); ?>"><?php esc_html_e( 'Login.Plus support forum','peace' ) ?></a>.</p>
 			<p><?php esc_html_e( 'If you like this theme, I\'d appreciate any of the following:','peace' ) ?></p>
 			<ul>
-			  <li><a class="button" href="<?php echo esc_url( 'http://wordpress.org/support/view/theme-reviews/Peace?filter=5' ); ?>" title="<?php esc_attr_e( 'Rate this Theme', 'peace' ); ?>" target="_blank"><?php printf( esc_html__( 'Rate this Theme','peace' ) ); ?></a></li>
+			  <li><a class="button" href="<?php echo esc_url( 'https://wordpress.org/support/theme/peace/reviews/?filter=5' ); ?>" title="<?php esc_attr_e( 'Rate this Theme', 'peace' ); ?>" target="_blank"><?php printf( esc_html__( 'Rate this Theme','peace' ) ); ?></a></li>
 			  <li><a class="button" href="<?php echo esc_url( 'https://www.facebook.com/LogHQ' ); ?>" title="Like Login.Plus on Facebook" target="_blank"><?php printf( esc_html__( 'Like on Facebook','peace' ) ); ?></a></li>
 			  <li><a class="button" href="<?php echo esc_url( 'https://twitter.com/LogHQ' ); ?>" title="Follow Colrolib on Twitter" target="_blank"><?php printf( esc_html__( 'Follow on Twitter','peace' ) ); ?></a></li>
 			</ul>

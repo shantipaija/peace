@@ -37,10 +37,16 @@
 
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
-					<?php peace_posted_on(); ?><?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+					<?php peace_posted_on(); ?>
+                    
+                    <?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 				<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'peace' ), esc_html__( '1 Comment', 'peace' ), esc_html__( '% Comments', 'peace' ) ); ?></span>
 				<?php endif; ?>
 
+
+				</div><!-- .entry-meta -->
+                
+                <?php socialmedia_share_button(); ?>
 				<?php if ( get_edit_post_link() ) : ?>
 					<?php
 						edit_post_link(
@@ -54,8 +60,6 @@
 						);
 					?>
 				<?php endif; ?>
-
-				</div><!-- .entry-meta -->
 				<?php endif; ?>
 			</header><!-- .entry-header -->
 
