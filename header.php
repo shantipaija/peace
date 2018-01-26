@@ -51,11 +51,10 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 								</button>
 
                                 <?php
-                                    the_custom_logo(); 
-									
-									$display_header_text = of_get_option('display_header_text');
-                                    if ( $display_header_text || is_customize_preview() ) :
-                                        ?>
+                                the_custom_logo(); 
+                                
+                                if ( display_header_text() || is_customize_preview() ) :
+                                    ?>
 
 									<div class="brand-name">
 										<?php if ( is_front_page() || is_home() ) : ?>
