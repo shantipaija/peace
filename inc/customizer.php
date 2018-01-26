@@ -200,7 +200,7 @@ function peace_customizer( $wp_customize ) {
 	// Colorful Template Styles options
 	global $style_color;
 	$wp_customize->add_setting('peace[style_color]', array(
-		'default' => 'white-style',
+		'default' => 'white',
 		'type' => 'option',
 		'sanitize_callback' => 'peace_sanitize_template',
 	));

@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package Peace
+ * @package peace
  */
 
 if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE' ) !== false) ) { header( 'X-UA-Compatible: IE=edge,chrome=1' );
@@ -23,7 +23,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="<?php echo of_get_option( 'nav_bg_color' ); ?>">
+<meta name="theme-color" content="<?php echo ((!empty (of_get_option( 'nav_bg_color' )))?of_get_option( 'nav_bg_color' ):(of_get_option('style_color','white'))); ?>">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
@@ -50,21 +50,23 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 									<span class="icon-bar"></span>
 								</button>
 
-
-									<?php the_custom_logo(); ?>
+                                <?php
+                                    the_custom_logo(); 
+									
+									$display_header_text = of_get_option('display_header_text');
+                                    if ( $display_header_text || is_customize_preview() ) :
+                                        ?>
 
 									<div class="brand-name">
-										<?php if ( is_front_page() && is_home() ) : ?>
+										<?php if ( is_front_page() || is_home() ) : ?>
 											<h1 class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 										<?php else : ?>
 											<p class=" site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 										<?php endif;
-
-										$description = get_bloginfo( 'description', 'display' );
-										if ( $description || is_customize_preview() ) : ?>
-											<p class="site-description"><?php echo $description; ?></p>
-										<?php endif; ?>
-								 </div><!-- end of #logo -->
+ ?>
+										<p class="site-description"><?php echo get_bloginfo('description'); ?></p>
+                                    </div><!-- end of #logo -->
+                                <?php endif; ?>
 							</div>
 							<?php peace_header_menu(); // main navigation ?>
 						</div>

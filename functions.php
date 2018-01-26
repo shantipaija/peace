@@ -442,12 +442,12 @@ function peace_scripts()
 		
 		// echo "<style>".$custom_css."</style>";
 		
-        $color_scheme = of_get_option('style_color', 'white-style');
+        $color_scheme = of_get_option('style_color', 'white');
 		
         if(!empty($color_scheme)){
             wp_enqueue_style('custom_css_scheme', get_template_directory_uri() . '/'. $color_scheme . '.css');
         }else{
-			wp_enqueue_style( 'custom_css_scheme', get_template_directory_uri() . '/white-style.css');
+			wp_enqueue_style( 'custom_css_scheme', get_template_directory_uri() . '/white.css');
 		}
 		
 		wp_add_inline_style( 'custom_css_scheme', $custom_css );
@@ -539,13 +539,13 @@ $site_layout = array(
 
 global $style_color;
 $style_color = array(
-    'graylight-style' 	=> esc_html__('Gray Light ', 'peace'),
-    'graydark-style' 	=> esc_html__('Gray Dark ', 'peace'),
-    'red-style' 	=> esc_html__('Red ', 'peace'),
-    'green-style' 	=> esc_html__('Green ', 'peace'),
-    'blue-style' 	=> esc_html__('Blue ', 'peace'),
-    'orange-style' 	=> esc_html__('Orange ', 'peace'),
-    'white-style' 	=> esc_html__('White ', 'peace'),
+    'lightgray' 	=> esc_html__('Light Gray', 'peace'),
+    'darkgray' 	=> esc_html__('Dark Gray ', 'peace'),
+    'red' 	=> esc_html__('Red ', 'peace'),
+    'green' 	=> esc_html__('Green ', 'peace'),
+    'blue' 	=> esc_html__('Blue ', 'peace'),
+    'orange' 	=> esc_html__('Orange ', 'peace'),
+    'white' 	=> esc_html__('White ', 'peace'),
     // todo
     // translation required
 );
