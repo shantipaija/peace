@@ -52,7 +52,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 
                                 <?php
                                 the_custom_logo(); 
-                                
+                                 
                                 if ( display_header_text() || is_customize_preview() ) :
                                     ?>
 
