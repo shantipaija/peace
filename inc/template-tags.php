@@ -33,31 +33,31 @@ if ( ! function_exists( 'peace_posted_on' ) ) :
  * Prints HTML with meta information for the current post-date/time and author.
  */
 	function peace_posted_on() {
-        
+
 		$time_string = '<span class="meta-blocks"> <i class="fa fa-calendar fa-lg"></i> Published <br /> <time class="entry-date published" datetime="%1$s">  %2$s</time>  </span>';
-        
+
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 			$time_string .= '<span class="meta-blocks"><i class="fa fa-calendar-check-o fa-lg" aria-hidden="true"></i>   Updated <br /><time class="updated" datetime="%3$s">%4$s</time></span>';
 		}
-        
+
 		$time_string =  sprintf( $time_string,
                                 esc_attr( get_the_date( 'c' ) ),
                                 esc_html( get_the_date() ),
                                 esc_attr( get_the_modified_date( 'c' ) ),
                                 esc_html( get_the_modified_date() )
                                 );
-        
+
         printf( '<span class="posted-on"> %1$s</span>
                 <span class="byline meta-blocks"> <i class="fa fa-user-circle fa-lg"></i> Author <br /> %2$s</span>',
             sprintf( '%1$s',
                 $time_string
             ),
-              
-            sprintf( '<span class="author vcard"><span class="url fn n">%1$s</span></span>',
+
+            sprintf( '<span class="author vcard" itemprop="author" itemscope itemtype="https://schema.org/Person"><span class="url fn n" itemprop="name">%1$s</span></span>',
                 esc_html( get_the_author() )
             )
         );
-       
+
 	}
 endif;
 if ( ! function_exists( 'peace_author_name' ) ) :
@@ -78,7 +78,7 @@ if ( ! function_exists( 'peace_author_name' ) ) :
 		);
 
         printf( '
-               
+
                 <span class="byline"> <i class="fa fa-user"></i> %2$s</span>',
             sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
                 esc_url( get_permalink() ),
