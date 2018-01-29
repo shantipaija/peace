@@ -160,7 +160,7 @@ if ( ! function_exists( 'peace_call_for_action' ) ) :
 					echo '<div class="col-sm-8">';
 			}
 
-			  echo '<span class="cfa-text">' . of_get_option( 'w2f_cfa_text' ) . '</span>';
+			  echo '<div class="cfa-text">' . of_get_option( 'w2f_cfa_text' ) . '</div>';
 			  echo '</div>';
 
 				if($width=="fullwidth"){
