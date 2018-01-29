@@ -51,7 +51,7 @@
 						edit_post_link(
 							sprintf(
 								/* translators: %s: Name of current post */
-								esc_https://www.freeformatter.com/html-formatter.htmlhtml__( 'Edit %s', 'peace' ),
+								esc_html__( 'Edit %s', 'peace' ),
 								the_title( '<span class="screen-reader-text">"', '"</span>', false )
 							),
 							'<i class="fa fa-pencil-square-o"></i><span class="edit-link">',
