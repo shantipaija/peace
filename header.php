@@ -20,7 +20,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 <html class="no-js ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 9]><!-->
 <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
-<head>
+<head itemscope itemtype="https://schema.org/WebSite">
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="<?php echo ((!empty (of_get_option( 'nav_bg_color' )))?of_get_option( 'nav_bg_color' ):(of_get_option('style_color','white'))); ?>">
@@ -30,14 +30,14 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebPage">
 	<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
+		<header id="masthead" class="site-header"  itemscope itemtype="https://schema.org/WPHeader" role="banner">
 			<div class="custom-header-media">
 				<?php the_custom_header_markup(); ?>
 			</div>
-			<nav class="navbar navbar-default <?php if ( of_get_option( 'sticky_menu' ) ) { echo 'enable-navbar-fixed-top'; } ?>" role="navigation">
+			<nav class="navbar navbar-default" itemscope itemtype="https://schema.org/SiteNavigationElement"  <?php if ( of_get_option( 'sticky_menu' ) ) { echo 'enable-navbar-fixed-top'; } ?>" role="navigation">
 				<div class="container">
 					<div class="row">
 
@@ -50,10 +50,10 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 									<span class="icon-bar"></span>
 								</button>
 
-                                <?php
-                                the_custom_logo(); 
-                                 
-                                if ( display_header_text() || is_customize_preview() ) :
+                    <?php
+                        the_custom_logo();
+
+                      if ( display_header_text() || is_customize_preview() ) :
                                     ?>
 
 									<div class="brand-name">
@@ -64,8 +64,8 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 										<?php endif;
  ?>
 										<p class="site-description"><?php echo get_bloginfo('description'); ?></p>
-                                    </div><!-- end of #logo -->
-                                <?php endif; ?>
+                  </div><!-- end of .brand-name -->
+                	<?php endif; ?>
 							</div>
 							<?php peace_header_menu(); // main navigation ?>
 						</div>

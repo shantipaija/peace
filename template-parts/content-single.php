@@ -4,7 +4,7 @@
 
  ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>  itemscope itemtype="https://schema.org/CreativeWork">
     <?php
     $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
 
@@ -45,13 +45,13 @@
 			</div><!-- .entry-meta -->
             <div>
             <?php socialmedia_share_button(); ?>
-            
+
             <?php if ( get_edit_post_link() ) : ?>
 					<?php
 						edit_post_link(
 							sprintf(
 								/* translators: %s: Name of current post */
-								esc_html__( 'Edit %s', 'peace' ),
+								esc_https://www.freeformatter.com/html-formatter.htmlhtml__( 'Edit %s', 'peace' ),
 								the_title( '<span class="screen-reader-text">"', '"</span>', false )
 							),
 							'<i class="fa fa-pencil-square-o"></i><span class="edit-link">',

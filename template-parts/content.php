@@ -5,7 +5,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="https://schema.org/CreativeWork">
 	<div class="blog-item-wrap">
         <?php
         $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
@@ -37,7 +37,7 @@
 				<div class="entry-meta">
 					<?php
 						//if ( get_theme_mod( 'peace_post_date' ) == 1 ) :
-							peace_posted_on(); 
+							peace_posted_on();
 						//endif;
 					?>
 
