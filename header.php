@@ -37,7 +37,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 			<div class="custom-header-media">
 				<?php the_custom_header_markup(); ?>
 			</div>
-			<nav class="navbar navbar-default" itemscope itemtype="https://schema.org/SiteNavigationElement"  <?php if ( of_get_option( 'sticky_menu' ) ) { echo 'enable-navbar-fixed-top'; } ?>" role="navigation">
+			<nav class="navbar navbar-default  <?php if ( of_get_option( 'sticky_menu' ) ) { echo 'enable-navbar-fixed-top'; } ?>" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
 				<div class="container">
 					<div class="row">
 
