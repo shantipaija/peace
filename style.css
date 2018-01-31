@@ -2416,7 +2416,7 @@ iframe#wp-custom-header-video {
 
 
 /*   fix small width */
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
 
 
 .site-branding-text{
@@ -2430,7 +2430,7 @@ iframe#wp-custom-header-video {
       padding-right: 2px;
       padding-left: 2px;
   }
-
+ 
   ul,ol{
     padding-left:20px;
   }
