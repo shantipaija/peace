@@ -598,6 +598,12 @@ object {
     #secondary {
         clear: both;
     }
+    .entry-title{
+      font-size: 20px;
+    }
+    h2{
+      font-size: 19px;
+    }
 }
 
 /* Custom Category Widget */
@@ -766,10 +772,18 @@ button:hover, .button:hover {
 /* =Custom Styles
 ----------------------------------------------- */
 
+@media screen and (min-width: 768px)
+.site-header p {
+    font-size: 26px;
+    font-size: 1.857142857rem;
+    line-height: 1.846153846;
+    margin-bottom: 0;
+    text-align:left
+}
+
 img.custom-logo {
     max-height: 50px;
     float: left;
-    margin-top: 10px;
     width: auto;
 }
 
@@ -777,13 +791,24 @@ img.custom-logo {
     float: left;
     margin-left: 10px;
     max-height: 50px;
-    margin-top:10px;
-
-}
-.brand-name p.site-name {
     margin-top: 10px;
-}
 
+}
+.brand-name p.site-title {
+    margin-top: 10px;
+    margin-bottom:21px;
+}
+h1.site-title {
+    font-size: 32px;
+    margin-top: 11px;
+    margin-bottom: 21px;
+
+}
+.site-branding-text{
+  float: left;
+  clear: none;
+  padding-left: 10px;
+}
 .site-branding {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -792,8 +817,8 @@ img.custom-logo {
   color: #777;
   font-weight: 200;
   font-size: 16px;
-  line-height: 40px;
   text-align: center;
+  line-height:15px;
 }
 .page-template-page-homepage-php .carousel {
   margin-top: -20px;
@@ -1219,7 +1244,7 @@ p.logged-in-as {
 }
 @media(max-width:767px){
   .post-inner-content {
-    padding: 20px 25px;
+    padding: 5px 5px;
   }
   .comment-list .children {
     padding-left: 10px;
@@ -1881,6 +1906,7 @@ header.search-header{
     height: 250px;
     overflow: hidden;
     background-size:cover;
+    background-size: contain;
   }
 
   .zoom-thumbnail-photo {
@@ -2315,14 +2341,14 @@ iframe#wp-custom-header-video {
     margin:0 2px 0 0px !important;
     padding: 5px 10px;
     position: relative;
-    
+
     border-right: 2px solid #eaeaea;
 }
 
 .entry-meta.nomargin { white-space: nowrap; }
 .meta-blocks::before,
 .meta-blocks::after {
-  background:#dadada;  
+  background:#dadada;
   border-right: 3px solid #666666;
     content: '';
     display: block;
@@ -2332,7 +2358,7 @@ iframe#wp-custom-header-video {
     right: 0;
     top: 0;
     z-index: -1;
-    transform: skewX(30deg);   
+    transform: skewX(30deg);
 }
 /* Nouns starts with Capital letter else override the CSS property */
 .entry-meta .author {
@@ -2387,3 +2413,37 @@ iframe#wp-custom-header-video {
 .social-telegram {background-color: #54A9EB;}
 .social-telegram:hover {background-color: #4B97D1;}
 
+
+
+/*   fix small width */
+@media screen and (min-width: 768px){
+
+
+.site-branding-text{
+    display:none;
+  }
+
+
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 2px;
+      padding-left: 2px;
+  }
+
+  ul,ol{
+    padding-left:20px;
+  }
+
+  .noticebox{
+    padding:5px;
+    margin: 2px;
+    border-radius: 3px;
+  }
+
+  .noticebox span{
+    padding-left:30px;
+  }
+
+
+}

@@ -37,7 +37,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 			<div class="custom-header-media">
 				<?php the_custom_header_markup(); ?>
 			</div>
-			<nav class="navbar navbar-default  <?php if ( of_get_option( 'sticky_menu' ) ) { echo 'enable-navbar-fixed-top'; } ?>" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+			<nav class="navbar navbar-default <?php if ( of_get_option( 'sticky_menu' ) ) { echo 'enable-navbar-fixed-top'; } ?>" role="navigation"  itemscope itemtype="https://schema.org/SiteNavigationElement">
 				<div class="container">
 					<div class="row">
 
@@ -50,27 +50,33 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 									<span class="icon-bar"></span>
 								</button>
 
-                    <?php
-                        the_custom_logo();
+									<div class="brand-name" itemscope itemtype="http://schema.org/Brand">
+										<?php
+										the_custom_logo();
 
-                      if ( display_header_text() || is_customize_preview() ) :
-                                    ?>
+										if ( display_header_text() || ( is_customize_preview() &&  display_header_text() ) ) :
+												?>
+												<div class="site-branding-text">
+													<?php
+													if ( is_front_page() || is_home() ) : ?>
+													<h1 class="site-title"  itemprop="name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" ><?php bloginfo( 'name' ); ?></a></h1>
+													<?php else : ?>
+													<p class=" site-title"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+													<?php endif;?>
 
-									<div class="brand-name">
-										<?php if ( is_front_page() || is_home() ) : ?>
-											<h1 class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-										<?php else : ?>
-											<p class=" site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-										<?php endif;
- ?>
-										<p class="site-description"><?php echo get_bloginfo('description'); ?></p>
+													<p class="site-description"  itemprop="description"><?php echo get_bloginfo('description'); ?></p>
+
+												</div>
+										<?php endif; ?>
+
                   </div><!-- end of .brand-name -->
-                	<?php endif; ?>
-							</div>
+
+						</div><!-- /.navbar-header -->
 							<?php peace_header_menu(); // main navigation ?>
-						</div>
-					</div>
-				</div>
+
+						</div><!-- /.site-navigation-inner -->
+					</div><!-- /.row -->
+				</div><!-- /.container -->
 			</nav><!-- .site-navigation -->
 		</header><!-- #masthead -->
 
