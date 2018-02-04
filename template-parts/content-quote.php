@@ -95,7 +95,8 @@
 		  </div>
 		  <!-- end tags -->
 			<?php endif; ?>
-
+            
+            <?php socialmedia_share_button('full'); ?>
 		</footer><!-- .entry-meta -->
 	</div>
 

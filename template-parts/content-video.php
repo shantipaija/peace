@@ -95,6 +95,8 @@
 				?>
 			</div><!-- .entry-content -->
 			<?php endif; ?>
+            
+            <?php socialmedia_share_button('full'); ?>
 		</div>
 	</div>
 </article><!-- #post-## -->

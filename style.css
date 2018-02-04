@@ -2365,9 +2365,9 @@ iframe#wp-custom-header-video {
 
 /* social sharing button */
 
+.social-sharing-button {border-radius: 0px;transition: 25ms ease-out;padding: 3px 7px;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;color:#ffffff;}
 .social-link,.social-icon {display: inline-block;}
 .social-link {text-decoration: none;color: #fff;}
-.social-sharing-button {border-radius: 0px;transition: 25ms ease-out;padding: 3px 7px;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;}
 .social-icon svg {width: 1em;height: 1em;margin-right: 0.4em;vertical-align: middle;}
 .social-small svg {margin: 0;vertical-align: middle;}
 /* Non solid icons get a stroke */
@@ -2408,6 +2408,18 @@ iframe#wp-custom-header-video {
 .social-whatsapp:hover,.social-whatsapp:active {background-color: #1DA851;border-color: #1DA851;}
 .social-telegram {background-color: #54A9EB;}
 .social-telegram:hover {background-color: #4B97D1;}
+
+
+.social-small {     font-size: 16px;    }
+.social-medium {    font-size: 21px;    }
+
+.social-large {
+    font-size: 27px;
+    padding: 5px 10px;
+    margin: 3px;
+    position: relative;
+    display: block;
+}
 
 
 
