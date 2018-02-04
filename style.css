@@ -598,12 +598,7 @@ object {
     #secondary {
         clear: both;
     }
-    .entry-title{
-      font-size: 20px;
-    }
-    h2{
-      font-size: 19px;
-    }
+
 }
 
 /* Custom Category Widget */
@@ -775,8 +770,8 @@ button:hover, .button:hover {
 @media screen and (min-width: 768px)
 .site-header p {
     font-size: 26px;
-    font-size: 1.857142857rem;
-    line-height: 1.846153846;
+    font-size: 1.85rem;
+    line-height: 1.84;
     margin-bottom: 0;
     text-align:left
 }
@@ -1030,7 +1025,8 @@ img.custom-logo, .brand-name{
   }
 }
 
-@media (min-width: 1024px) {
+@media (
+  : 1024px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
@@ -1906,7 +1902,7 @@ header.search-header{
     height: 250px;
     overflow: hidden;
     background-size:cover;
-    background-size: contain;
+    background-position:center;
   }
 
   .zoom-thumbnail-photo {
@@ -2430,10 +2426,8 @@ iframe#wp-custom-header-video {
       padding-right: 2px;
       padding-left: 2px;
   }
- 
-  ul,ol{
-    padding-left:20px;
-  }
+
+  ul,ol{    padding-left:20px;  }
 
   .noticebox{
     padding:5px;
@@ -2441,9 +2435,20 @@ iframe#wp-custom-header-video {
     border-radius: 3px;
   }
 
-  .noticebox span{
-    padding-left:30px;
-  }
+  .noticebox span{    padding-left:30px;  }
+
+  .entry-title, h1{    font-size: 20px;  }
+  h2{    font-size: 19px;  }
+  h3{    font-size: 18px;  }
+  .main-content-area {    margin-top: 5px;}
 
 
 }
+
+
+
+/* featured images */
+@media screen and (min-width: 480px){.zoom-thumbnail-tile {height: 268px;}}
+@media screen and (min-width: 768px){.zoom-thumbnail-tile {height: 420px;}}
+@media screen and (min-width: 992px){.zoom-thumbnail-tile {height: 405px;}}
+@media screen and (min-width: 1200px){.zoom-thumbnail-tile {height: 422px;}}

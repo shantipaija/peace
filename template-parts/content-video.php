@@ -25,7 +25,7 @@
 					'echo' => false,
 				);
 				echo '<a href="' . get_the_permalink() . '" title="' . the_title_attribute( $title_args ) . '" >';
-				the_post_thumbnail( 'peace-featured-fullwidth', $thumbnail_args);
+				the_post_thumbnail( 'peace-featured', $thumbnail_args);
 				echo '</a>';
 			}
 
@@ -38,14 +38,14 @@
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
 					<?php peace_posted_on(); ?>
-                    
+
                     <?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 				<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'peace' ), esc_html__( '1 Comment', 'peace' ), esc_html__( '% Comments', 'peace' ) ); ?></span>
 				<?php endif; ?>
 
 
 				</div><!-- .entry-meta -->
-                
+
                 <?php socialmedia_share_button(); ?>
 				<?php if ( get_edit_post_link() ) : ?>
 					<?php
@@ -70,17 +70,17 @@
 			</div><!-- .entry-summary -->
 			<?php else : ?>
 			<div class="entry-content">
-               
-			<?php 
-                
+
+			<?php
+
                 if ( (get_theme_mod( 'peace_excerpts' ) == 1 ) && (! is_single()) ) {
 					the_excerpt();?>
 					<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'peace' ); ?></a></p>
                     <?php
                 }else{
-                    the_content( esc_html__( 'Read More', 'peace' ) ); 
+                    the_content( esc_html__( 'Read More', 'peace' ) );
                 }
-            
+
             ?>
 
 				<?php

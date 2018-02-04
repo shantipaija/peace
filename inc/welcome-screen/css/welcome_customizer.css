@@ -14,7 +14,7 @@
 }
 
 .button.change-theme {
-    display: none;
+  /*  display: none; */
 }
 
 div.recomended-actions_container {

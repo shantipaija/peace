@@ -105,9 +105,11 @@ function theme_slug_header_style() {
    */
         add_theme_support('post-thumbnails');
 
-        add_image_size('peace-featured', 750, 410, true);
-        add_image_size('peace-featured-fullwidth', 1140, 624, true);
         add_image_size('tab-small', 60, 60, true); // Small Thumbnail
+
+        //16:9 ratio
+        add_image_size('peace-featured', 750, 422, true);
+        add_image_size('peace-featured-fullwidth', 1140, 641, true);
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(

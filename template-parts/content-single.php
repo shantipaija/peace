@@ -13,7 +13,7 @@
   		<div class="tiles">
   			<div
   			 data-scale="1.3"
-  			 data-image="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>"
+  			 data-image="<?php echo get_the_post_thumbnail_url(get_the_ID(),'peace-featured' ); ?>"
   			 class="zoom-thumbnail-tile <?php
   			if ( is_page_template( 'page-fullwidth.php' ) ) {
   				echo "single-featured fullwidth";
@@ -43,10 +43,10 @@
 				</span>
 				<?php endif; // End if categories ?>
 			</div><!-- .entry-meta -->
-            <div>
-            <?php socialmedia_share_button(); ?>
+      <div>
+        <?php socialmedia_share_button(); ?>
 
-            <?php if ( get_edit_post_link() ) : ?>
+        <?php if ( get_edit_post_link() ) : ?>
 					<?php
 						edit_post_link(
 							sprintf(
@@ -59,7 +59,7 @@
 						);
 					?>
 				<?php endif; ?>
-            </div>
+      </div>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
