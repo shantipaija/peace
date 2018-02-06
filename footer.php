@@ -27,11 +27,11 @@
 					</nav>
 					<div class="copyright col-md-6">
 						<?php
-							//if(of_get_option('custom_footer_text')):
-							// 	echo of_get_option('custom_footer_text','peace');
-							//endif;
-
-							get_template_part( 'template-parts/site', 'info' );
+							if( !empty( of_get_option( 'custom_footer_text' ) ) ):
+							 	echo of_get_option('custom_footer_text','peace');
+							elseif:
+								get_template_part( 'template-parts/site', 'info' );
+							endif;
 						?>
 					</div>
 				</div>
