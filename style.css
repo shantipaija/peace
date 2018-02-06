@@ -2421,7 +2421,7 @@ iframe#wp-custom-header-video {
     display: block;
 }
 
-@media screen (max-width:1199px){
+@media screen and (min-width:1199px){
     .social-sharing-button.social-facebook.social-medium:after {content: "Share on Facebook ";}
     .social-sharing-button.social-twitter.social-medium:after {content: "Tweet on Twitter";}
     .social-sharing-button.social-google.social-medium:after {content: "Share on Google+";}
