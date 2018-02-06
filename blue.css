@@ -309,7 +309,7 @@ span.page-numbers.current {
 }
 
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-    color: #fff ;
+    color: #000000 ;
 	background-color: transparent ;
   }
 
