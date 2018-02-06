@@ -112,6 +112,11 @@
 				?>
 			</div><!-- .entry-content -->
 			<?php endif; ?>
+            <?php 
+             if(  is_single() ){
+                 socialmedia_share_button('full');
+             }
+                 ?>
 		</div>
 	</div>
 </article><!-- #post-## -->

@@ -2365,9 +2365,9 @@ iframe#wp-custom-header-video {
 
 /* social sharing button */
 
+.social-sharing-button {border-radius: 0px;transition: 25ms ease-out;padding: 3px 7px;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;color:#ffffff;}
 .social-link,.social-icon {display: inline-block;}
 .social-link {text-decoration: none;color: #fff;}
-.social-sharing-button {border-radius: 0px;transition: 25ms ease-out;padding: 3px 7px;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;}
 .social-icon svg {width: 1em;height: 1em;margin-right: 0.4em;vertical-align: middle;}
 .social-small svg {margin: 0;vertical-align: middle;}
 /* Non solid icons get a stroke */
@@ -2409,6 +2409,27 @@ iframe#wp-custom-header-video {
 .social-telegram {background-color: #54A9EB;}
 .social-telegram:hover {background-color: #4B97D1;}
 
+
+.social-small {     font-size: 16px;    }
+.social-medium {    font-size: 21px;    }
+
+.social-large {
+    font-size: 27px;
+    padding: 5px 10px;
+    margin: 3px;
+    position: relative;
+    display: block;
+}
+
+@media screen and (min-width:1199px){
+    .social-sharing-button.social-facebook.social-medium:after {content: "Share on Facebook ";}
+    .social-sharing-button.social-twitter.social-medium:after {content: "Tweet on Twitter";}
+    .social-sharing-button.social-google.social-medium:after {content: "Share on Google+";}
+    .social-sharing-button.social-whatsapp.social-medium:after {content: "Share via WhatsApp";}
+    .social-sharing-button.social-telegram.social-medium:after {content: "Share via Telegram";}
+    .social-sharing-button.social-pinterest.social-medium:after {content: "Pin on Pinterest";}
+    .social-sharing-button{margin:0px 3px 3px 0px;font-size:14px;}
+}
 
 
 /*   fix small width */

@@ -104,7 +104,13 @@
 		  <!-- end tags -->
 			<?php endif; ?>
 
+            <?php 
+                
+                socialmedia_share_button('','medium'); 
+            
+            ?>
 		</footer><!-- .entry-meta -->
+        
 	</div>
 	<?php if ( get_theme_mod( 'peace_post_author_bio' ) == 1 ) : ?>
 		<div class="post-inner-content secondary-content-box">
