@@ -803,6 +803,7 @@ h1.site-title {
   float: left;
   clear: none;
   padding-left: 10px;
+  margin-top: 12px;
 }
 .site-branding {
   margin-top: 20px;
@@ -2431,6 +2432,9 @@ iframe#wp-custom-header-video {
     .social-sharing-button{margin:0px 3px 3px 0px;font-size:14px;}
 }
 
+#bbpress-forums p.bbp-topic-meta img.avatar, #bbpress-forums ul.bbp-reply-revision-log img.avatar, #bbpress-forums ul.bbp-topic-revision-log img.avatar, #bbpress-forums div.bbp-template-notice img.avatar, #bbpress-forums .widget_display_topics img.avatar, #bbpress-forums .widget_display_replies img.avatar{
+  margin-bottom: 10px;
+}
 
 /*   fix small width */
 @media screen and (max-width: 768px){

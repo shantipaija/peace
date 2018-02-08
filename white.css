@@ -278,7 +278,7 @@ i.social_icon.fa:hover {
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li:hover>a,
 .dropdown-menu>li:hover>.caret {
-  color: #00b9eb ;
+  color: #00b9eb !important ;
 }
 .dropdown-menu{
 	background-color:#ffffff ;
