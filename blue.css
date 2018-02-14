@@ -312,7 +312,9 @@ span.page-numbers.current {
     color: #000000 ;
 	background-color: transparent ;
   }
-
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
+  color: #ffffff;
+}
 
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .dropdown-menu > li.active > .caret,
@@ -492,4 +494,12 @@ a.page-numbers:hover {
 }
 .flex-control-paging li a:hover{
 	background-color:#2195f2;
+}
+
+/*   fix small width */
+@media screen and (max-width: 768px){
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #ffffff ;
+  }
+
 }
