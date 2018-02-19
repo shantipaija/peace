@@ -28,7 +28,9 @@ if  ( ! empty( $featured_image_url ) ) : ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header page-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
-		<?php peace_posted_on(); ?>
+		<div class="meta">
+			<?php peace_posted_on(); ?>
+		</div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
