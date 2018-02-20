@@ -33,11 +33,11 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 <body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebPage">
 	<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header"  itemscope itemtype="https://schema.org/WPHeader" role="banner">
+		<header id="masthead" class="site-header"  itemscope itemtype="https://schema.org/WPHeader">
 			<div class="custom-header-media">
 				<?php the_custom_header_markup(); ?>
 			</div>
-			<nav class="navbar navbar-default <?php if ( of_get_option( 'sticky_menu' ) ) { echo 'enable-navbar-fixed-top'; } ?>" role="navigation"  itemscope itemtype="https://schema.org/SiteNavigationElement">
+			<nav class="navbar navbar-default <?php if ( of_get_option( 'sticky_menu' ) ) { echo 'enable-navbar-fixed-top'; } ?>" itemscope itemtype="https://schema.org/SiteNavigationElement">
 				<div class="container">
 					<div class="row">
 
