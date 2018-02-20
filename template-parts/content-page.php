@@ -26,7 +26,7 @@ if  ( ! empty( $featured_image_url ) ) : ?>
 
 <div class="post-inner-content">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header page-header">
+	<header class="entry-header col-md-12 page-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<div class="meta">
 			<?php peace_posted_on(); ?>

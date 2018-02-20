@@ -25,7 +25,7 @@
 	</div>
   <?php endif; ?>
 	<div class="post-inner-content">
-		<header class="entry-header page-header">
+		<header class="entry-header col-md-12 page-header">
 
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 
@@ -104,13 +104,13 @@
 		  <!-- end tags -->
 			<?php endif; ?>
 
-            <?php 
-                
-                socialmedia_share_button('','medium'); 
-            
+            <?php
+
+                socialmedia_share_button('','medium');
+
             ?>
 		</footer><!-- .entry-meta -->
-        
+
 	</div>
 	<?php if ( get_theme_mod( 'peace_post_author_bio' ) == 1 ) : ?>
 		<div class="post-inner-content secondary-content-box">
