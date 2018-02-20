@@ -9,6 +9,5 @@
  */
 
 ?>
-	<a href="<?php echo esc_url( __( 'https://www.customwptheme.co/peace', 'peace' ) ); ?>" title="<?php printf( __( '%s Theme', 'peace' ), 'peace' ); ?>"><?php printf( __( '%s Theme', 'peace' ), 'Peace' ); ?></a>
-	<a href="<?php echo esc_url( __( 'https://www.customwptheme.co/', 'peace' ) ); ?>" title="<?php printf( __( ' by %s', 'peace' ), 'CustomWPTheme' ); ?>"><?php printf( __( ' by %s', 'peace' ), 'CustomWPTheme' ); ?></a>
+	<a href="<?php echo esc_url( __( 'https://login.plus/', 'peace' ) ); ?>" title="<?php printf( __( 'Theme designed by %s', 'peace' ), 'LoginPlus' ); ?>"><?php printf( __( 'Made with ❤ by %s', 'peace' ), 'LoginPlus' ); ?></a>
 	<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'peace' ) ); ?>" title="<?php printf( __( 'Powered by %s', 'peace' ), 'WordPress' ); ?>"><?php printf( __( 'Powered by %s', 'peace' ), 'WordPress' ); ?></a>
