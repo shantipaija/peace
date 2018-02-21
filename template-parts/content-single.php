@@ -43,6 +43,7 @@
 				</span>
 				<?php endif; // End if categories ?>
 			</div><!-- .entry-meta -->
+      <div class="clear"></div>
       <div>
         <?php socialmedia_share_button(); ?>
 

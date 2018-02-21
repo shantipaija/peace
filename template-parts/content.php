@@ -44,7 +44,8 @@
               <span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'peace' ), esc_html__( '1 Comment', 'peace' ), esc_html__( '% Comments', 'peace' ) ); ?></span>
           <?php endif; ?>
 				</div><!-- .entry-meta -->
-        <div class="social-title-area col-md-12">
+				<div class="clear"></div>
+        <div>
           <?php socialmedia_share_button(); ?>
           <?php if ( get_edit_post_link() ) : ?>
 					<?php

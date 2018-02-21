@@ -32,7 +32,7 @@ if  ( ! empty( $featured_image_url ) ) : ?>
 			<?php peace_posted_on(); ?>
 		</div>
 	</header><!-- .entry-header -->
-
+<div class="clear"></div>
 	<div class="entry-content">
 		<?php
 			the_content();
