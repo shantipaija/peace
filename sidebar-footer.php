@@ -19,24 +19,24 @@
 
 	<div class="footer-widget-area">
 		<?php if ( is_active_sidebar( 'footer-widget-1' ) ) : ?>
-		<div class="footer-widget" role="complementary">
+		<div class="footer-widget col-md-3" role="complementary">
 			<?php dynamic_sidebar( 'footer-widget-1' ); ?>
 		</div><!-- .widget-area .first -->
 		<?php endif; ?>
 		<?php if ( is_active_sidebar( 'footer-widget-2' ) ) : ?>
-		<div class="footer-widget" role="complementary">
+		<div class="footer-widget col-md-3" role="complementary">
 			<?php dynamic_sidebar( 'footer-widget-2' ); ?>
 		</div><!-- .widget-area .first -->
 		<?php endif; ?>
 
 		<?php if ( is_active_sidebar( 'footer-widget-3' ) ) : ?>
-		<div class="footer-widget" role="complementary">
+		<div class="footer-widget col-md-3" role="complementary">
 			<?php dynamic_sidebar( 'footer-widget-3' ); ?>
 		</div><!-- .widget-area .first -->
 		<?php endif; ?>
 
 		<?php if ( is_active_sidebar( 'footer-widget-4' ) ) : ?>
-		<div class="footer-widget" role="complementary">
+		<div class="footer-widget col-md-3" role="complementary">
 			<?php dynamic_sidebar( 'footer-widget-4' ); ?>
 		</div><!-- .widget-area .first -->
 		<?php endif; ?>

@@ -13,7 +13,7 @@
 
 	<div id="footer-area">
 		<div class="container footer-inner">
-			<div class="row jpt">
+			<div class="row">
 				<?php get_sidebar( 'design01footer' ); ?>
 			</div>
 		</div>
