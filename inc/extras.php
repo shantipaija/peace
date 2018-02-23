@@ -120,6 +120,16 @@ if ( ! function_exists( 'peace_header_menu' ) ) :
 			  'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 			  'walker'            => new WP_Bootstrap_Navwalker(),
 		  ));
+
+			wp_nav_menu(array(
+				'menu'              => 'design01',
+				'theme_location'    => 'design01',
+				'container'         => 'div',
+				'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
+				'menu_class'        => 'nav navbar-nav',
+				'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+				'walker'            => new WP_Bootstrap_Navwalker(),
+			));
 	} /* end header menu */
 endif;
 
