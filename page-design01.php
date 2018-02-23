@@ -21,11 +21,11 @@ get_header("design01"); ?>
 
 
 			<!-- Widget Section -->
-		<?php if ( is_active_sidebar( 'loginplustheme_section_1' ) ) : ?>
+		<?php if ( is_active_sidebar( 'peace_design01_section1' ) ) : ?>
 			<section id="services">
 				<div class="container">
 					<div class="row text-center">
-						<?php dynamic_sidebar( 'loginplustheme_section_1' ); ?>
+						<?php dynamic_sidebar( 'peace_design01_section1' ); ?>
 					</div>
 				</div>
 			</section>

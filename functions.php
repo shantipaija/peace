@@ -234,6 +234,8 @@ function peace_widgets_init()
         'after_title'   => '</h3>',
     ));
 
+    /* Design 01 is page template that has its own widgets and sidebar */
+
     register_sidebar(array(
       'name'          => esc_html__('Sidebar for Design 01 page', 'peace'),// add to translation
       'id'            => 'sidebar-design01',
@@ -246,7 +248,7 @@ function peace_widgets_init()
   // registering the Front Page: Content Top Section
     register_sidebar( array(
       'name'          => esc_html__( 'Design01 Page Section 1', 'peace' ),
-      'id'            => 'loginplustheme_section_1',
+      'id'            => 'peace_design01_section1',
       'description'   => esc_html__( 'Displayed on Page types where Template is chosen as "Design01 Page". Page Editor > Page Attributes > Template > Design01 Page', 'peace' ),
         // 'before_widget' => '<section id="%1$s" class="widget %2$s clearfix">',
       'before_widget' => '<section id="%1$s" class="widget %2$s">',
