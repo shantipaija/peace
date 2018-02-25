@@ -2429,7 +2429,7 @@ iframe#wp-custom-header-video {
     .social-sharing-button.social-whatsapp.social-medium:after {content: "Share via WhatsApp";}
     .social-sharing-button.social-telegram.social-medium:after {content: "Share via Telegram";}
     .social-sharing-button.social-pinterest.social-medium:after {content: "Pin on Pinterest";}
-    .social-sharing-button{margin:0px 3px 3px 0px;font-size:14px;}
+    .social-sharing-button{margin:0px;font-size:14px;width:70px;}
 }
 
 #bbpress-forums p.bbp-topic-meta img.avatar, #bbpress-forums ul.bbp-reply-revision-log img.avatar, #bbpress-forums ul.bbp-topic-revision-log img.avatar, #bbpress-forums div.bbp-template-notice img.avatar, #bbpress-forums .widget_display_topics img.avatar, #bbpress-forums .widget_display_replies img.avatar{
