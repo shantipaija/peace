@@ -436,9 +436,14 @@ function peace_scripts()
 		if ( of_get_option( 'cfa_color' ) ) {
 			$custom_css .= '.cfa-text { color: ' . of_get_option( 'cfa_color' ) . ';}';
 		}
-		if ( of_get_option( 'cfa_btn_color' ) || of_get_option( 'cfa_btn_txt_color' ) ) {
-			$custom_css .= '.cfa-button {border-color: ' . of_get_option( 'cfa_btn_color' ) . '; color: ' . of_get_option( 'cfa_btn_txt_color' ) . ';}';
+		if ( of_get_option( 'cfa_btn_border_color' ) || of_get_option( 'cfa_btn_txt_color' ) ) {
+			$custom_css .= '.cfa-button {border-color: ' . of_get_option( 'cfa_btn_border_color' ) . '; color: ' . of_get_option( 'cfa_btn_txt_color' ) . ';}';
 		}
+
+    if ( of_get_option( 'cfa_btn_bg_color' ) ) {
+      $custom_css .= '.cfa-button {background-color: ' . of_get_option( 'cfa_btn_bg_color' ) . ';}';
+    }
+
 		if ( of_get_option( 'heading_color' ) ) {
 			$custom_css .= 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title, .entry-title a {color: ' . of_get_option( 'heading_color' ) . ';}';
 		}
